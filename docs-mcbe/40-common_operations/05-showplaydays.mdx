@@ -1,0 +1,41 @@
+---
+title: "启用游玩天数显示"
+sidebar_position: 5
+---
+
+# 【MCBE】启用游玩天数显示
+
+游玩天数显示是在BE1.21新加入的功能，那么如何在服务器中启用呢？
+
+## 方法A：使用命令
+![说明图片](/img/pages/mcbe/mcbe-showplaydays-1.png)
+
+在终端控制台输入以下命令（控制台内输入需要去掉斜杠）：
+
+```shell
+/gamerule showdaysplayed true
+```
+
+**注：需要**[启用作弊](/mcbe/common_operations/allow_cheat)
+
+## 方法B：修改配置文件
+:::info[信息]
+ℹ **信息**
+
+这段内容是隶属于[关于server.properties](/mcbe/server_properties)文档的。
+
+看完这段内容后想了解更多信息，请阅读父文档。
+
+:::
+
+在 **server.properties** 中添加以下配置并重新启动服务器。
+
+```properties
+op-permission-level=4
+```
+
+如图所示：
+
+![说明图片](/img/pages/mcbe/bds-enable-command-block-2.png)
+
+然后在有OP权限的情况下游戏内的设置就可以更改了。

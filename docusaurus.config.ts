@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: '简幻欢社区维基',
+  title: '简幻欢社区维基legacy',
   tagline: 'Not Official, but still useful.',
   favicon: 'img/favicon.ico',
 
@@ -92,6 +92,46 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'terraria',
+        path: 'docs-terraria',
+        routeBasePath: 'terraria',
+        sidebarPath: './sidebars-terraria.ts',
+        editUrl: 'https://github.com/simpdoc/simpfun-wiki/tree/legacy/',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'mindustry',
+        path: 'docs-mindustry',
+        routeBasePath: 'mindustry',
+        sidebarPath: './sidebars-mindustry.ts',
+        editUrl: 'https://github.com/simpdoc/simpfun-wiki/tree/legacy/',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'rusted-warfare',
+        path: 'docs-rusted-warfare',
+        routeBasePath: 'rusted-warfare',
+        sidebarPath: './sidebars-rusted-warfare.ts',
+        editUrl: 'https://github.com/simpdoc/simpfun-wiki/tree/legacy/',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'custom-image',
+        path: 'docs-custom-image',
+        routeBasePath: 'custom-image',
+        sidebarPath: './sidebars-custom-image.ts',
+        editUrl: 'https://github.com/simpdoc/simpfun-wiki/tree/legacy/',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'mcje',
         path: 'docs-mcje',
         routeBasePath: 'mcje',
@@ -124,12 +164,12 @@ const config: Config = {
         // sets come from standalone plugin instances at /web, /mcje, /mcbe.
         // The plugin defaults to ["docs"], which would index nothing at all.
         // Leading slashes are optional; the plugin strips them.
-        docsRouteBasePath: ['web', 'mcje', 'mcbe'],
+        docsRouteBasePath: ['web', 'mcje', 'mcbe', 'terraria', 'mindustry', 'rusted-warfare', 'custom-image'],
 
         // These are the on-disk source dirs. They are ONLY used to compute the
         // content hash when `hashed` is enabled — they do NOT decide what gets
         // indexed. What gets indexed is driven by `docsRouteBasePath` above.
-        docsDir: ['docs-web', 'docs-mcje', 'docs-mcbe'],
+        docsDir: ['docs-web', 'docs-mcje', 'docs-mcbe', 'docs-terraria', 'docs-mindustry', 'docs-rusted-warfare', 'docs-custom-image'],
 
         // There is no blog, so make sure it is not scanned.
         indexBlog: false,
@@ -183,6 +223,10 @@ const config: Config = {
           {label: '官网使用指南', path: 'web'},
           {label: 'MCJE', path: 'mcje'},
           {label: 'MCBE', path: 'mcbe'},
+          {label: '泰拉瑞亚', path: 'terraria'},
+          {label: '像素工厂', path: 'mindustry'},
+          {label: '铁锈战争', path: 'rusted-warfare'},
+          {label: '自定义镜像', path: 'custom-image'},
         ],
 
         // REQUIRED alongside searchContextByPaths — do not remove.
@@ -270,6 +314,34 @@ const config: Config = {
           label: 'MCBE 文档',
         },
         {
+          type: 'docSidebar',
+          docsPluginId: 'terraria',
+          sidebarId: 'terrariaSidebar',
+          position: 'left',
+          label: '泰拉瑞亚',
+        },
+        {
+          type: 'docSidebar',
+          docsPluginId: 'mindustry',
+          sidebarId: 'mindustrySidebar',
+          position: 'left',
+          label: '像素工厂',
+        },
+        {
+          type: 'docSidebar',
+          docsPluginId: 'rusted-warfare',
+          sidebarId: 'rustedWarfareSidebar',
+          position: 'left',
+          label: '铁锈战争',
+        },
+        {
+          type: 'docSidebar',
+          docsPluginId: 'custom-image',
+          sidebarId: 'customImageSidebar',
+          position: 'left',
+          label: '自定义镜像',
+        },
+        {
           href: 'https://github.com/simpdoc/simpfun-wiki',
           label: 'GitHub',
           position: 'right',
@@ -288,11 +360,27 @@ const config: Config = {
             },
             {
               label: 'MCJE 文档',
-              to: '/mcje/intro',
+              to: '/mcje/select_server',
             },
             {
               label: 'MCBE 文档',
-              to: '/mcbe/intro',
+              to: '/mcbe/select_server',
+            },
+            {
+              label: '泰拉瑞亚',
+              to: '/terraria',
+            },
+            {
+              label: '像素工厂',
+              to: '/mindustry',
+            },
+            {
+              label: '铁锈战争',
+              to: '/rusted-warfare',
+            },
+            {
+              label: '自定义镜像',
+              to: '/custom-image/multi_env/quick_start',
             },
           ],
         },

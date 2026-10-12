@@ -1,0 +1,43 @@
+---
+title: "启用命令方块"
+sidebar_position: 7
+---
+
+# 【MCBE】启用命令方块
+
+想在服务器中使用命令方块但是又不知道怎么打开？那么你就需要看这个！
+
+## 方法A：使用命令
+打开控制台
+
+![说明图片](/img/pages/mcbe/bds-enable-command-block-1.png)
+
+在控制台输入以下命令：
+
+```plain
+gamerule commandblocksenabled true
+```
+
+**注：需要**[启用作弊](/mcbe/common_operations/allow_cheat)
+
+## 方法B：修改配置文件
+:::info[信息]
+ℹ **信息**
+
+这段内容是隶属于[关于server.properties](/mcbe/server_properties)文档的。
+
+看完这段内容后想了解更多信息，请阅读父文档。
+
+:::
+
+在 **server.properties** 中添加以下配置并重新启动服务器。
+
+```properties
+op-permission-level=4
+```
+
+如图所示
+
+![说明图片](/img/pages/mcbe/bds-enable-command-block-2.png)
+
+然后在有OP权限的情况下游戏内的设置就可以更改了。

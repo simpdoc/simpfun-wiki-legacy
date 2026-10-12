@@ -1,0 +1,383 @@
+---
+title: "游戏规则列表"
+sidebar_position: 1
+---
+
+# 【MCJE】游戏规则列表
+
+本文档列出了源码中定义的所有游戏规则及其用途。
+
+如果您未找到该游戏规则,可能是该规则尚未加入或已被移除。
+
+:::warning[警告]
+⚠ **提示**
+
+这些规则ID为1.21.11(25w44a)前的驼峰式命名方式，1.21.11及更高版本规则ID的可前往wiki查看：
+
+[游戏规则 - 中文 Minecraft Wiki](https://zh.minecraft.wiki/w/%E6%B8%B8%E6%88%8F%E8%A7%84%E5%88%99)
+
+:::
+
+## 目录
++ 更新类规则 (UPDATES)
++ 生物类规则 (MOBS)
++ 玩家类规则 (PLAYER)
++ 生成类规则 (SPAWNING)
++ 掉落类规则 (DROPS)
++ 聊天类规则 (CHAT)
++ 杂项类规则 (MISC)
+
+---
+
+## 更新类规则
+### doFireTick
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制火焰是否蔓延和自然熄灭。设为 false 时，火焰将保持静止状态。
+
+### allowFireTicksAwayFromPlayer
++ **类型**: 布尔值 (Boolean)
++ **默认值**: false
++ **用途**: 控制火焰是否可以在远离玩家的地方更新。设为 true 时，即使玩家不在附近，火焰也会蔓延和熄灭。
+
+### doDaylightCycle
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制昼夜循环是否进行。设为 false 时，时间将停止流动。
+
+### randomTickSpeed
++ **类型**: 整数 (Integer)
++ **默认值**: 3
++ **用途**: 控制随机刻的速度，影响植物生长、树叶腐烂等。值越大，这些过程越快。
+
+### doWeatherCycle
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制天气是否变化。设为 false 时，天气将保持当前状态。
+
+### snowAccumulationHeight
++ **类型**: 整数 (Integer)
++ **默认值**: 1
++ **用途**: 控制雪的最大堆积层数。
+
+### waterSourceConversion
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制是否可以通过放置水桶创建无限水源。
+
+### lavaSourceConversion
++ **类型**: 布尔值 (Boolean)
++ **默认值**: false
++ **用途**: 控制是否可以通过放置岩浆桶创建无限岩浆源。
+
+### doVinesSpread
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制藤蔓是否会蔓延生长。
+
+---
+
+## 生物类规则
+### mobGriefing
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制生物是否可以破坏方块（如苦力怕爆炸、末影人搬方块、僵尸破门、村民破坏作物方块等）。
+
+### maxEntityCramming
++ **类型**: 整数 (Integer)
++ **默认值**: 24
++ **用途**: 控制同一位置最多可以挤压多少个实体。超过此数量将造成窒息伤害。
+
+### disableRaids
++ **类型**: 布尔值 (Boolean)
++ **默认值**: false
++ **用途**: 设为 true 时禁用袭击事件。
+
+---
+
+## 玩家类规则
+### keepInventory
++ **类型**: 布尔值 (Boolean)
++ **默认值**: false
++ **用途**: 控制玩家死亡后是否保留物品栏和经验。设为 true 时死亡不掉落物品。
+
+### naturalRegeneration
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制玩家是否可以在饥饿值足够时自然恢复生命值。
+
+### spectatorsGenerateChunks
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制旁观模式玩家是否会生成区块。
+
+### spawnRadius
++ **类型**: 整数 (Integer)
++ **默认值**: 10
++ **用途**: 控制玩家首次进入世界或重生时，距离世界出生点的随机半径范围。
+
+### disableElytraMovementCheck
++ **类型**: 布尔值 (Boolean)
++ **默认值**: false
++ **用途**: 设为 true 时禁用鞘翅飞行速度检查，防止因飞行过快被踢出服务器。
+
+### doLimitedCrafting
++ **类型**: 布尔值 (Boolean)
++ **默认值**: false
++ **用途**: 设为 true 时，玩家只能合成已解锁配方的物品。
+
+### doImmediateRespawn
++ **类型**: 布尔值 (Boolean)
++ **默认值**: false
++ **用途**: 设为 true 时，玩家死亡后立即重生，跳过死亡界面。
+
+### playersNetherPortalDefaultDelay
++ **类型**: 整数 (Integer)
++ **默认值**: 80
++ **用途**: 控制玩家在下界传送门中需要等待的刻数（生存/冒险模式）。80刻 = 4秒。
+
+### playersNetherPortalCreativeDelay
++ **类型**: 整数 (Integer)
++ **默认值**: 1
++ **用途**: 控制玩家在下界传送门中需要等待的刻数（创造模式）。
+
+### drowningDamage
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制玩家是否会受到溺水伤害。
+
+### fallDamage
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制玩家是否会受到跌落伤害。
+
+### fireDamage
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制玩家是否会受到火焰伤害。
+
+### freezeDamage
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制玩家是否会受到冰冻伤害（细雪）。
+
+### playersSleepingPercentage
++ **类型**: 整数 (Integer)
++ **默认值**: 100
++ **用途**: 控制需要多少百分比的玩家睡觉才能跳过夜晚。100 表示所有玩家都需要睡觉。
+
+### enderPearlsVanishOnDeath
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制玩家死亡时，已投掷的末影珍珠是否消失。
+
+---
+
+## 生成类规则
+### doMobSpawning
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制生物是否自然生成。设为 false 时，生物不会自然刷新。
+
+### doInsomnia
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制幻翼是否因玩家失眠而生成。
+
+### doPatrolSpawning
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制灾厄巡逻队是否生成。
+
+### doTraderSpawning
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制流浪商人是否生成。
+
+### doWardenSpawning
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制监守者是否生成。
+
+---
+
+## 掉落类规则
+### doMobLoot
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制生物死亡时是否掉落物品和经验。
+
+### projectilesCanBreakBlocks
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制投射物（如箭、火球等）是否可以破坏方块。设为 false 时，投射物不会破坏方块。
+
+### projectilesCanBreakBlocks
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制投射物（如火球）是否可以破坏方块。
+
+### doTileDrops
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制方块被破坏时是否掉落物品（包括资源和工具耐久消耗）。
+
+### doEntityDrops
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制非生物实体（如矿车、船、物品展示框等）被破坏时是否掉落物品。
+
+### blockExplosionDropDecay
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制方块爆炸时掉落物是否有概率消失。
+
+### mobExplosionDropDecay
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制生物爆炸（如苦力怕）破坏方块时掉落物是否有概率消失。
+
+### tntExplosionDropDecay
++ **类型**: 布尔值 (Boolean)
++ **默认值**: false
++ **用途**: 控制TNT爆炸破坏方块时掉落物是否有概率消失。
+
+---
+
+## 聊天类规则
+### commandBlockOutput
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制命令方块执行命令时是否在聊天栏显示输出信息。
+
+### logAdminCommands
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制是否在服务器日志中记录管理员命令。
+
+### showDeathMessages
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制是否在聊天栏显示死亡消息。
+
+### sendCommandFeedback
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制命令执行后是否向执行者发送反馈信息。
+
+### announceAdvancements
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制玩家获得进度时是否在聊天栏公告。
+
+---
+
+## 杂项类规则
+### reducedDebugInfo
++ **类型**: 布尔值 (Boolean)
++ **默认值**: false
++ **用途**: 设为 true 时减少F3调试屏幕显示的信息。
+
+### maxCommandChainLength
++ **类型**: 整数 (Integer)
++ **默认值**: 65536
++ **用途**: 控制命令方块链的最大长度。
+
+### maxCommandForkCount
++ **类型**: 整数 (Integer)
++ **默认值**: 65536
++ **用途**: 控制单个命令可以创建的最大分支数。
+
+### commandModificationBlockLimit
++ **类型**: 整数 (Integer)
++ **默认值**: 32768
++ **用途**: 控制单个命令（如/fill、/clone）可以修改的最大方块数量。
+
+### forgiveDeadPlayers
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制中立生物（如僵尸猪灵）是否会在激怒它们的玩家死亡后停止愤怒。
+
+### universalAnger
++ **类型**: 布尔值 (Boolean)
++ **默认值**: false
++ **用途**: 设为 true 时，被激怒的中立生物会攻击附近所有玩家，而不仅仅是激怒它的玩家。
+
+### globalSoundEvents
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制某些全局声音事件（如末影龙死亡、凋灵生成）是否播放。
+
+### spawnChunkRadius
++ **类型**: 整数 (Integer)
++ **默认值**: 2
++ **范围**: 0-32
++ **用途**: 控制世界出生点周围始终加载的区块半径。0表示不加载出生区块。
+
+### enderPearlsVanishOnDeath
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制玩家死亡时，已投掷的末影珍珠是否消失。设为 false 时，末影珍珠会继续飞行并传送玩家。
+
+### minecartMaxSpeed
++ **类型**: 整数 (Integer)
++ **默认值**: 8
++ **范围**: 1-1000
++ **用途**: 控制矿车的最大速度（方块/秒）。需要启用矿车改进特性标志。
+
+### tntExplodes
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制TNT是否会爆炸。设为 false 时，TNT被点燃后不会爆炸。
+
+### locatorBar
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制是否显示定位栏（显示其他玩家大致方位的功能）。设为 false 时，所有定位栏连接将被断开。
+
+### pvp
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制玩家之间是否可以互相攻击。设为 false 时，玩家无法伤害其他玩家。
+
+### allowEnteringNetherUsingPortals
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制是否允许通过传送门进入下界。设为 false 时，下界传送门将不起作用。
+
+### spawnMonsters
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制是否生成怪物。设为 false 时，敌对生物将不会自然生成。
+
+### commandBlocksEnabled
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制命令方块是否可以执行命令。设为 false 时，命令方块将被禁用。
+
+### spawnerBlocksEnabled
++ **类型**: 布尔值 (Boolean)
++ **默认值**: true
++ **用途**: 控制刷怪笼是否可以生成生物。设为 false 时，刷怪笼将被禁用。
+
+---
+
+## 使用方法
+在游戏中使用 `/gamerule` 命令来查看或修改游戏规则：
+
+```plain
+/gamerule <规则名称>              # 查询当前值
+/gamerule <规则名称> <值>         # 设置新值
+```
+
+**示例**：
+
+```plain
+/gamerule keepInventory true      # 开启死亡不掉落
+/gamerule randomTickSpeed 0       # 停止随机刻（植物不生长）
+/gamerule mobGriefing false       # 禁止生物破坏方块
+```
+
+---
+
+_本文档作者:xianaldai_

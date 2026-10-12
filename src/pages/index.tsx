@@ -21,10 +21,10 @@ function HomepageHeader() {
           <Link className="button button--secondary button--lg" to="/web/intro">
             官网使用指南
           </Link>
-          <Link className="button button--secondary button--lg" to="/mcje/intro">
+          <Link className="button button--secondary button--lg" to="/mcje/select_server">
             MCJE 文档
           </Link>
-          <Link className="button button--secondary button--lg" to="/mcbe/intro">
+          <Link className="button button--secondary button--lg" to="/mcbe/select_server">
             MCBE 文档
           </Link>
         </div>
