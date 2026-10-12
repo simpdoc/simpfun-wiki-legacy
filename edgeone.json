@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/mcje",
+      "destination": "/mcje/select_server",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe",
+      "destination": "/mcbe/select_server",
+      "statusCode": 301
+    },
+    {
+      "source": "/custom-image",
+      "destination": "/custom-image/multi_env/quick_start",
+      "statusCode": 301
+    },
+    {
+      "source": "/*/",
+      "destination": "/:splat",
+      "statusCode": 301
+    }
+  ]
+}
