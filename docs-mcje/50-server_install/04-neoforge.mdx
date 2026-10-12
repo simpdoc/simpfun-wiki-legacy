@@ -3,8 +3,7 @@ title: "安装/升级NeoForge服务端"
 sidebar_position: 4
 ---
 
-:::info[信息]
-ℹ **提示**
+:::info[提示]
 
 手动安装前可以先去看一下第三方镜像的这个，可能会有你需要的版本。
 
@@ -13,11 +12,15 @@ sidebar_position: 4
 :::
 
 ## 视频教程
-[bilibili](https://player.bilibili.com/player.html?aid=1155696239&autoplay=0)
+<iframe
+  src="https://player.bilibili.com/player.html?aid=1155696239&autoplay=0"
+  width="100%"
+  height="480"
+  allowFullScreen
+></iframe>
 
 ## 图文教程
-:::warning[警告]
-⚠ **提示**
+:::warning[提示]
 
 从 1.17.1 开始，Forge的启动命令是启动一个txt文件，分叉后的NeoForge依旧保留了这一特性，你在根目录下是找不到NeoForge/Vanilla核心的！
 
@@ -77,8 +80,7 @@ ${openjdk17} -server -Xms1024M -Xmx${maxmem}M  @libraries/net/neoforged/forge/1.
 ${openjdk21} -server -Xms1024m -Xmx${maxmem}M @libraries/net/neoforged/neoforge/20.4.217/unix_args.txt "$@" -nogui
 ```
 
-:::info[信息]
-ℹ **关于各项参数的说明：**
+:::info[关于各项参数的说明]
 
 `{openjdk17}`：调用变量`openjdk17`。这个变量在上面的默认内容里被定义过了。
 
@@ -121,8 +123,7 @@ eula=false
 
 将其中的`false`改为`true`。
 
-:::danger[危险]
-⚠ **提示**
+:::danger[提示]
 
 将eula中的`false`改为`true`即视为你已阅读并同意[《MINECRAFT 最终用户许可协议(EULA)》](https://www.minecraft.net/zh-hans/eula)!
 

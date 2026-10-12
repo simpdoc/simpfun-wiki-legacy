@@ -5,8 +5,7 @@ sidebar_position: 30
 
 这里写的是Linux镜像下默认的`start.sh`，如果你“一不小心”把默认的删了就可以来这里恢复。
 
-:::danger[危险]
-ℹ **提示**
+:::danger[提示]
 
 以 "#" 开头的一行为注释，**不会被终端执行**！
 
@@ -32,15 +31,13 @@ maxmem=$((SERVER_MEMORY - 1000))
 #${openjdk17} -Xms1024M -Xmx${maxmem}M -jar server-release.jar nogui
 ```
 
-:::warning[警告]
-⚠ **提示**
+:::warning[提示]
 
 部分基础镜像内的`start.sh`没有完整的内容，如缺少相关路径或变量定义请来此处复制！
 
 :::
 
-:::tip[成功]
-ℹ **提示**
+:::tip[提示]
 
 自2024.4.30起，所有Java镜像(包括所有MinecraftJE的预设镜像)均已**预装**Java 21，路径如上所示。[具体内容详见此文章](https://www.wuye2004.top/archives/4)。
 
@@ -68,11 +65,8 @@ python3 -V
 echo "您需要修改启动参数来配置您的服务端"
 ```
 
-:::warning[警告]
-⚠ **提示**
+:::warning[提示]
 
 Python镜像不含Java运行环境。
 
 :::
-
-****

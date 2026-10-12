@@ -4,8 +4,7 @@ sidebar_position: 5
 ---
 
 ## 前言
-:::danger[危险]
-🔥 ** 危险警告**
+:::danger[危险警告]
 
 + BDS在添加Addon后会造成性能下降（尤其是修改生物类模组），严重时可能会崩服。
 + **BDS无法完美兼容所有Addon**（例：一个Addon在本地客户端上正常运行，当其装载之服务端后就无法运行）。
@@ -14,8 +13,7 @@ sidebar_position: 5
 
 :::
 
-:::warning[警告]
-⚠ **提示**
+:::warning[提示]
 
 + 基岩版修改或新加内容的手段叫做 **Addon(附加包) **，请不要与Java版的 **mod(模组)** 混淆！
 + 在提问时请正确的将基岩版的修改或新加内容的手段称作**Addon**或**附加包**，以便解答者快速判别你所使用的版本！
@@ -38,16 +36,14 @@ sidebar_position: 5
 ![说明图片](/img/pages/mcbe/bds-input-addon-1.png)
 
 ## 方法一：替换世界文件夹
-:::warning[警告]
-⚠ **提示**
+:::warning[提示]
 
 适用服务端：BDS，LLBDS，Endstone
 不适用服务端：所有Nukkit系服务端
 
 :::
 
-:::danger[危险]
-🔥 **警告**
+:::danger[警告]
 
 这种方法只适合在新存档安装Addon，已有的存档无法通过此方法安装！
 
@@ -84,8 +80,7 @@ level-name=Bedrock level
 回到终端界面，重新开服，并检查世界是否正常加载。
 
 ## 方法二：手动导入
-:::warning[警告]
-⚠ **提示**
+:::warning[提示]
 
 适用服务端：BDS，LLBDS，Endstone
 不适用服务端：所有Nukkit系服务端
@@ -127,8 +122,7 @@ level-name=Bedrock level
 ]
 ```
 
-:::info[信息]
-ℹ **uuid与版本号在哪里？**
+:::info[uuid与版本号在哪里？]
 
 在资源包/行为包的`manifest.json`内，如下图所示，红框内为uuid，绿框内为版本号：
 
@@ -140,23 +134,20 @@ level-name=Bedrock level
 回到终端界面，重新开服，并检查addon是否正常加载。
 
 ## 方法三：AddonHelper导入
-:::danger[危险]
-⛔ **过期的内容**
+:::danger[过期的内容]
 
 此部分内容已过期，仅在BE1.20.30及以下的LL2服务端可用！
 
 :::
 
-:::warning[警告]
-⚠ **提示**
+:::warning[提示]
 
 适用服务端：LiteLoaderBDS(LL2)
 不适用服务端：原版BDS，LeviLamina(LL3)，所有Nukkit系服务端
 
 :::
 
-:::danger[危险]
-🔥 **警告**
+:::danger[警告]
 
 这种方法无法导入文件过大的addon！如果你需要导入比较大的addon，请考虑使用第二/三种方式！
 
@@ -178,8 +169,7 @@ level-name=Bedrock level
 
 ![说明图片](/img/pages/mcbe/bds-input-addon-7.png)
 
-:::warning[警告]
-⚠ 提示
+:::warning[提示]
 
 请注意文件格式是否正确！
 
@@ -191,8 +181,7 @@ level-name=Bedrock level
 ![说明图片](/img/pages/mcbe/bds-input-addon-8.png)
 (使用Windows窗口进行演示)
 
-:::tip[成功]
-💡 提示
+:::tip[提示]
 
 使用这种方式导入Addon时，控制台会在加载世界完成后出现一大串红色的`ERROR`，但这是正常现象（服务器检测到原本的世界没有这些东西而出现ERROR），绝大部分情况下不影响使用。
 

@@ -5,15 +5,13 @@ sidebar_position: 3
 
 # 【MCJE】安装/升级 Fabric 服务端
 
-:::danger[危险]
-⚠ **提示**
+:::danger[提示]
 
 如遇到下载失败的情况，请尝试在本地下载后打包上传至服务器上！
 
 :::
 
-:::info[信息]
-ℹ **提示**
+:::info[提示]
 
 手动安装前可以先去看一下第三方镜像的这个镜像，可能会有你需要的版本。
 
@@ -22,7 +20,12 @@ sidebar_position: 3
 :::
 
 ## 视频教程（重装为自定义镜像）
-[bilibili](https://player.bilibili.com/player.html?bvid=BV1RXiUYtETw&autoplay=0)
+<iframe
+  src="https://player.bilibili.com/player.html?bvid=BV1RXiUYtETw&autoplay=0"
+  width="100%"
+  height="480"
+  allowFullScreen
+></iframe>
 
 ## 视频教程（直接在现有镜像升级）
 :::danger[危险]
@@ -30,7 +33,12 @@ sidebar_position: 3
 
 :::
 
-[bilibili](https://player.bilibili.com/player.html?bvid=BV1Wz42127z6&autoplay=0)
+<iframe
+  src="https://player.bilibili.com/player.html?bvid=BV1Wz42127z6&autoplay=0"
+  width="100%"
+  height="480"
+  allowFullScreen
+></iframe>
 
 ## 图文教程（服务端专用安装器版）
 ### 第一步：安装服务端
@@ -50,8 +58,7 @@ sidebar_position: 3
 ${openjdk21} -server -Xms1024M -Xmx${maxmem}M -jar <服务端文件名>.jar -nogui
 ```
 
-:::tip[成功]
-💡 **提示**
+:::tip[提示]
 
 `<服务端文件名>`换成你下载到的安装器的文件名，例如`fabric-server-mc.1.21.3-loader.0.16.9-launcher.1.0.1`：
 
@@ -63,8 +70,7 @@ ${openjdk21} -server -Xms1024M -Xmx${maxmem}M -jar <服务端文件名>.jar -nog
 
 ![说明图片](/img/pages/mcje/customer-mcje-fabric-server-5.png)
 
-:::info[信息]
-ℹ **关于各项参数的说明：**
+:::info[关于各项参数的说明]
 
 `{openjdk17}`：调用变量`openjdk17`。这个变量在上面的默认内容里被定义过了。
 
@@ -108,8 +114,7 @@ eula=false
 
 将其中的`false`改为`true`。
 
-:::danger[危险]
-⚠ 警告
+:::danger[警告]
 
 将eula中的`false`改为`true`即视为你已阅读并同意[《MINECRAFT 最终用户许可协议(EULA)》](https://www.minecraft.net/zh-hans/eula)!
 
@@ -155,8 +160,7 @@ Mod文件放入`/mods`文件夹。
 ${openjdk17} -jar <安装器文件名>.jar server -mcversion <MC版本号> -downloadMinecraft
 ```
 
-:::tip[成功]
-💡 **提示**
+:::tip[提示]
 
 `<安装器文件名>`换成你下载到的安装器的文件名(不要尖括号)
 `<版本号>`换成你需要的服务端版本，例如`1.19.3`(不要尖括号)
@@ -178,8 +182,7 @@ ${openjdk17} -jar <安装器文件名>.jar server -mcversion <MC版本号> -down
 ${openjdk17} -server -Xms1024M -Xmx${maxmem}M -jar fabric-server-launch.jar -nogui
 ```
 
-:::info[信息]
-ℹ **关于各项参数的说明：**
+:::info[关于各项参数的说明]
 
 `{openjdk17}`：调用变量`openjdk17`。这个变量在上面的默认内容里被定义过了。
 
@@ -225,8 +228,7 @@ eula=false
 
 将其中的`false`改为`true`。
 
-:::danger[危险]
-⚠ 警告
+:::danger[警告]
 
 将eula中的`false`改为`true`即视为你已阅读并同意[《MINECRAFT 最终用户许可协议(EULA)》](https://www.minecraft.net/zh-hans/eula)!
 

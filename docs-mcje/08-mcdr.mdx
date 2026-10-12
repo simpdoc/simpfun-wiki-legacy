@@ -18,8 +18,7 @@ sidebar_position: 8
 >
 
 ## 参考文档
-:::info[提示]
-ℹ️参考
+:::info[参考]
 
 [快速上手 — MCDReforged 2.15.1 文档](https://docs.mcdreforged.com/zh-cn/latest/quick_start/index.html)
 
@@ -99,8 +98,7 @@ WARNING: Running pip as the 'root' user can result in broken permissions and con
 ...此处省略若干行...
 ```
 
-:::info[信息]
-💡我们做了什么？
+:::info[我们做了什么？]
 
 我们利用`[mise](https://mise.jdx.dev/)`，全局使用了`Python 3.13.3`，然后使用`[pip3](https://www.runoob.com/w3cnote/python-pip-install-usage.html)`命令安装了`mcdreforged`。
 
@@ -128,8 +126,7 @@ WARNING: Running pip as the 'root' user can result in broken permissions and con
 mcdreforged
 ```
 
-:::info[信息]
-💡技巧
+:::info[技巧]
 
 在**vscode**编辑器中，选中代码块，使用`ctrl+/`快捷切换注释。
 
@@ -191,7 +188,7 @@ Initialized environment for MCDReforged in /home/container
 
 </details>
 
-**做得好！我们已经成功安装并初始化了MCDR****🎉**
+**做得好！我们已经成功安装并初始化了MCDR🎉**
 
 ## 安装MC服务端
 > 要用 MCDR 管理 Minecraft 服务器，你首先需要**准备并配置**好一个 Minecraft 服务端。
@@ -215,8 +212,7 @@ Initialized environment for MCDReforged in /home/container
 └── whitelist.json
 ```
 
-:::info[信息]
-💡已准备好服务端了？
+:::info[已准备好服务端了？]
 
 直接将服务端**所有文件**上传到MCDR的`server`目录！
 
@@ -228,8 +224,7 @@ Initialized environment for MCDReforged in /home/container
 
 :::
 
-:::info[提示]
-ℹ️说明
+:::info[说明]
 
 篇幅有限，仅演示[Leaf](https://www.leafmc.one/download)服务端的部署流程。
 
@@ -272,8 +267,7 @@ cd server
 ${openjdk21} -Xms15G -Xmx15G -jar leaf-1.21.8-101.jar --nogui
 ```
 
-:::warning[警告]
-⚠注意
+:::warning[注意]
 
 `leaf-1.21.8-101.jar`是笔者所用服务端核心的名称，应当**换成你上传的核心名称**。
 
@@ -339,8 +333,7 @@ You need to agree to the EULA in order to run the server. Go to eula.txt for mor
 接下来照其所言，你需要同意并签署[Minecraft最终用户许可协议](https://www.minecraft.net/zh-hans/eula)才能运行此服务器。
 
 ### 签署EULA
-:::warning[警告]
-⚠提醒
+:::warning[提醒]
 
 **确保您已认真阅读并充分理解**[**Minecraft最终用户许可协议**](https://www.minecraft.net/zh-hans/eula)。
 
@@ -380,7 +373,7 @@ server-port=20814
 
 </details>
 
-**好样的！MC服务端已经安装成功****🎉**
+**好样的！MC服务端已经安装成功🎉**
 
 ## 配置MCDR
 > MCDR 的配置文件是 `config.yml`。它位于 MCDR 的工作目录中。
@@ -402,8 +395,7 @@ server-port=20814
 > 当 MCDR 运行时，你可以使用 `!!MCDR reload config` 命令(或其缩写 `!!MCDR r cfg`)来重载配置文件。
 >
 
-:::info[提示]
-ℹ️说明
+:::info[说明]
 
 本教程仅介绍必要配置。完整配置说明见[配置 — MCDReforged 2.15.1 文档](https://docs.mcdreforged.com/zh-cn/latest/configuration.html)。
 
@@ -484,7 +476,7 @@ handler: bukkit_handler
 | velocity_handler | 用于 Velocity 服务端 |
 | basic_handler | 不进行任何分析并返回原始文本的处理器。除非你想使用 MCDR 启动非 Minecraft 相关的服务端，否则无需使用 |
 
-**恭喜！你完成了MCDR的配置****🎉**
+**恭喜！你完成了MCDR的配置🎉**
 
 ## 启动MCDR
 ### 命令
@@ -560,8 +552,8 @@ Done (17.474s)! For help, type "help"
 
 ![说明图片](/img/pages/mcje/mcdr-how-to-use-3.webp)
 
-**大功告成！你成功部署了基于MCDR的Minecraft服务器！恭喜恭喜！****🎉🎉**
+**大功告成！你成功部署了基于MCDR的Minecraft服务器！恭喜恭喜！🎉🎉**
 
 **\(^o^)/**
 
-**欢迎大家的评论和**[**issues**](https://github.com/NorthZeroD/northzerod.github.io/issues)**哦****♥️**
+**欢迎大家的评论和** [**issues**](https://github.com/NorthZeroD/northzerod.github.io/issues)**哦♥️**
