@@ -1,0 +1,87 @@
+# <font style="color:rgb(28, 30, 33);">进入控制台</font>
+![](https://cdn.nlark.com/yuque/0/2024/png/32774263/1717990362586-743a546d-bd78-4491-a000-1ced381f1dfc.png)
+
+# <font style="color:rgb(28, 30, 33);">点击新建实例</font>
+![](https://cdn.nlark.com/yuque/0/2024/png/32774263/1717990362860-9ac6a4ea-a7c4-44b2-a55f-26e19bbe1d81.png)
+
+# <font style="color:rgb(28, 30, 33);">选择实例类别，目前支持一键开服的游戏类型：</font>
+:::info
++ RustedWarfare：铁锈战争
++ Mindustry：像素工坊
++ Terraria：泰拉瑞亚（现支持Terraria原版 / TModLoader / TShock）
++ MinecraftBE：Minecraft 基岩版
++ Minecraft互通：基于 Minecraft JE 服务端 Paper 与互通插件 [Geyser-Spigot](http://geysermc.org/) 的 Minecraft JE 与 BE 互通服务器
++ MinecraftJE：Minecraft Java版
++ 自定义：需要有一定的开服能力，如果你是小白**<font style="color:#DF2A3F;">请勿轻易选择</font>**！
++ 第三方镜像：由开发者提供的实例（请注意，如需获取支持请优先向第三方开发者联系！）
+
+![](https://cdn.nlark.com/yuque/0/2024/png/32774263/1717990363281-97c64454-885e-4280-a064-46616e03ec3d.png)
+
+:::
+
+
+
+# <font style="color:rgb(28, 30, 33);">选择实例服务端(此处以Minecraft JE为例)</font>
+:::info
+在此对 SpongeForge 作补充说明：
+
++ SpongeForge 不支持 Bukkit 插件，仅支持 Sponge 插件
++ Sponge 插件放入 /mods 文件夹即可
+
+:::
+
+![](https://cdn.nlark.com/yuque/0/2024/png/32774263/1717990365123-e8755a14-1a43-47fc-b725-b431c9153e50.png)
+
+# <font style="color:rgb(28, 30, 33);">选择实例版本</font>
+:::info
+服务端由于自身原因，支持的版本不相同。
+
+:::
+
+![](https://cdn.nlark.com/yuque/0/2024/png/32774263/1717990363303-3458ebb9-e5b6-4e86-833f-74d2ed5c115d.png)
+
+# <font style="color:rgb(28, 30, 33);">选择实例规格</font>
+:::info
+ℹ 实例命名规则
+
+实例命名方式为**[CPU级别.CPU厂商.具体配置.操作系统] **
+
++ CPU厂商以字母[A,I]分类，代表AMD,Intel。
++ 操作系统以字母L,W分类，代表实例操作系统Linux或Windows，可能会影响能使用的实例服务端。
++ 推荐在预算或内存足够的情况下，选择更高级别的CPU，以获得更流畅的体验，您也可以更换CPU厂商观察是否获得性能提升。
++ CPU级别以字母[C,B,A,S]等分级，代表具体CPU性能，详情型号等见下引用：
+
+:::
+
+[CPU性能分级说明](https://www.yuque.com/simpfun/sfe/areas)
+
+
+
+:::info
+实例计费方式为按天付费，**当日不开服不扣积分**。
+
++ 当日开服指：服务器实例在当日24小时内启动过，无论是否是否进入服务器，服务器运行状态是否正常，只要启动即视为当日已开服。
+
+:::
+
+:::info
+磁盘可以超额，但超出套餐的磁盘将被额外计费，具体价格为：1积分/GB/天。
+
+:::
+
+:::warning
+若当日开服所需积分不足，则会关闭实例，若连续7天未启动实例，则会**销毁实例**，实例销毁前将会自动创建一个时限60天的备份，可随时通过新建实例->备份->还原功能恢复实例文件。
+
+:::
+
+:::danger
+请注意，**过高**的实例规格可能会导致积分高速消耗，建议**按需**选用，后续仍可以更改配置。初次使用高积分节点时，建议你观察晚上的运行情况，若节点频繁禁止创建，建议暂不使用，否则可能导致 TPS 昼夜波动，或使用[简幻云](https://v2.simpcloud.cn)来满足需求
+
+:::
+
+![](https://cdn.nlark.com/yuque/0/2024/png/32774263/1717990364284-4475ca29-71e0-4f36-8537-ba4866237baf.png)
+
+# <font style="color:rgb(28, 30, 33);">确认信息并创建</font>
+![](https://cdn.nlark.com/yuque/0/2024/png/32774263/1717990364385-dd7290b0-0dcd-42b5-aabd-04f897a7e70a.png)
+
+# <font style="color:rgb(28, 30, 33);">选择完成后，您的服务器就会在控制台主页显示，点击即可进入控制界面。</font>

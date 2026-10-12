@@ -1,0 +1,38 @@
+## 以下为泰拉瑞亚相关帮助页。
+
+
+### 中文wiki：[https://terraria.wiki.gg/zh/wiki/Terraria_Wiki](https://terraria.wiki.gg/zh/wiki/Terraria_Wiki)
+### TShock相关
+#### 一键开服包by羽学：
+前往简幻欢->第三方镜像，寻找相关镜像使用，内置教程。
+
+#### **📖**开服基础教程
+• TS开服基础教程: [https://tr.monika.love/docs/tshock-tutorial-1](https://tr.monika.love/docs/tshock-tutorial-1)
+
+• TS仓库: [https://github.com/Pryaxis/TShock/releases](https://github.com/Pryaxis/TShock/releases)
+
+#### 📘TS相关文档
+• TS中文文档(熙恩版): [http://tsdoc.terraria.ink](http://tsdoc.terraria.ink)
+
+• 官方英文文档: [https://ikebukuro.tshock.co/#](https://ikebukuro.tshock.co/#)
+
+• 插件开发指南(Cai版): [https://gitee.com/e7udyuu/tshock-plugin-document](https://gitee.com/e7udyuu/tshock-plugin-document)
+
+• 插件开发教程(RenderBr版): [https://github.com/RenderBr/TShockTutorials](https://github.com/RenderBr/TShockTutorials)
+
+#### 💊TS插件库
+• GitHub仓库: [https://github.com/UnrealMultiple/TShockPlugin](https://github.com/UnrealMultiple/TShockPlugin)
+
+• Gitee仓库(镜像): [https://gitee.com/kksjsj/TShockPlugin](https://gitee.com/kksjsj/TShockPlugin)
+
+• 插件包下载: [http://plugins.terraria.ink](http://plugins.terraria.ink)
+
+• 官方插件库: [https://github.com/Pryaxis/Plugins](https://github.com/Pryaxis/Plugins)
+
+#### 🔭论坛插件资源
+• [https://tr.monika.love](https://tr.monika.love)
+
+• [https://trhub.cn](https://trhub.cn)
+
+• [https://bbstr.net](https://bbstr.net)
+

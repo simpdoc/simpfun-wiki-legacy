@@ -1,0 +1,32 @@
+:::danger
+⚠️  本文档仅作导航，在此之前，您需要：
+
++ 一个已购买的域名从其它合法渠道获得的二级域名
++ 域名符合法律法规，未被列入境内违法互联网站黑名单  
++ 具备基础的操作能力
+
+:::
+
+
+
+## 域名接入简幻欢方法
+使用`CNAME`的解析方式，解析 `play.simpfun.cn`。
+
+部分服务商解析教程：
+
++ 阿里云：[解析记录类型用途与配置方法-云解析DNS-阿里云](https://help.aliyun.com/zh/dns/pubz-add-parsing-record?scm=20140722.S_help%40%40%E6%96%87%E6%A1%A3%40%402936415._.ID_help%40%40%E6%96%87%E6%A1%A3%40%402936415-RL_cname-LOC_doc%7EUND%7Eab-OR_ser-PAR1_212a5d4017620062814553975d2092-V_4-PAR3_r-RE_new10-P0_0-P1_0&spm=a2c4g.11186623.help-search.i20#65250a5273r0z)
++ 腾讯云：[云解析 DNS CNAME 记录-操作指南-文档中心-腾讯云](https://cloud.tencent.com/document/product/302/3450)
++ 华为云：[添加公网域名解析记录_解析记录管理_公网域名解析管理_用户指南_云解析服务 DNS-华为云](https://support.huaweicloud.com/usermanual-dns/dns_usermanual_0006.html)
++ 百度智能云：[添加解析 - 智能云解析DNS | 百度智能云文档](https://cloud.baidu.com/doc/DNS/s/8jxkag1bu)
++ 西部数码：[域名解析设置方法 -西部数码帮助中心](https://www.west.cn/faq/list.asp?unid=423)
++ Cloudflare：[🔑Manage DNS records](https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/)
+
+:::warning
+⚠ **提示**
+
+当你的DNS服务商为 Cloudflare 时，需要在配置解析的时候关闭由 Cloudflare 提供的代理服务。
+
+
+
+:::
+

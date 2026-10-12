@@ -1,0 +1,286 @@
+:::info
+ℹ **提示**
+
+手动安装前可以先去看一下第三方镜像的这两个镜像，可能会有你需要的版本（不是同一个开发者制作的）。
+
+![](https://cdn.nlark.com/yuque/0/2025/png/44789475/1765335878439-59018a74-d762-4f9b-9efd-7a962b22511a.png)
+
+![](https://cdn.nlark.com/yuque/0/2025/png/44789475/1765335889813-a82d583e-3065-4f37-a610-42f4a9609200.png)
+
+:::
+
+# 视频教程（重装为自定义镜像）
+[bilibili](https://player.bilibili.com/player.html?bvid=BV1z3BdY4EXh&autoplay=0)
+
+# 视频教程（直接在现有镜像升级）
+:::danger
+视频作者留言：有问题先看完，别跳着看或者压根没看就说你不会！
+
+如已安装mod，不推荐直接升级，如有需求，建议放弃当前数据，重新安装forge和相关mod！
+
+本期专项教程包含NeoForge和Minecraft Forge两种加载器，请按需使用。
+
+:::
+
+[bilibili](https://player.bilibili.com/player.html?bvid=BV1FH4y1u7CN&autoplay=0)
+
+# 图文教程
+## 1.17.1及以上版本的服务端
+:::warning
+ℹ️ **提示**
+
++  从 1.17.1 开始，Forge的启动命令是启动一个txt文件，你在根目录下是找不到Forge/Vanilla核心的！ 
++  从 1.20.4 开始，Forge在构建服务端时会在根目录生成一个类似`forge-1.20.6-50.0.29-shim.jar`名字的文件，目前暂不清楚此文件有什么作用。
+
+:::
+
+### 第一步：构建服务端
+打开[Forge官网](https://files.minecraftforge.net/net/minecraftforge/forge/)，选择你需要的版本的Forge安装器进行下载，此处以1.17.1为例，按照下图方式下载安装器可以跳过下载前的~~该死的~~广告。
+
+![](https://cdn.nlark.com/yuque/0/2024/png/44789475/1718169920263-e9482a27-7b14-4bd0-8fea-737d9812fffb.png)
+
+:::info
+⬇️ 其他下载地址：
+
+无极镜像(CN)：[https://www.fastmirror.net/#/download/Forge](https://www.fastmirror.net/#/download/Forge)
+
+:::
+
+下载完成后将其上传至实例文件的根目录。
+
+打开根目录下的`start.sh`，在文件内添加一行下面的命令后保存(不要删除start.sh自带的东西，echo那一行除外)：
+
+```shell
+${openjdk17} -server -Dfile.encoding=UTF-8 -Duser.language=zh -Duser.country=CN -jar [Forge安装器文件名].jar --installServer
+```
+
+ps:去除方括号
+
+如下图第17行所示：  
+![](https://cdn.nlark.com/yuque/0/2024/png/44789475/1718170009762-72ddfd64-29de-4ca9-9000-530f25862fec.png)
+
+回到`终端`界面，启动实例，等待服务端构建完成后会出现以下输出并停止运行。
+
+```systemverilog
+The server installed successfully
+You can delete this installer file now if you wish
+```
+
+### 第二步：调整启动命令
+转到`文件`界面，打开根目录下自动生成的`run.sh`，**<font style="color:#DF2A3F;">复制类似下方的参数</font>**(最前面的java不用复制)：
+
+```shell
+@libraries/net/minecraftforge/forge/1.17.1-37.1.1/unix_args.txt "$@"
+```
+
+打开`start.sh`，删除第一步中添加的命令，防止重新构建毁坏服务端，并添加一行**<font style="color:#DF2A3F;">类似</font>**下方的命令后保存：
+
+```shell
+${openjdk17} -server -Xms1024m -Xmx${maxmem}M @libraries/net/minecraftforge/forge/1.17.1-37.1.1/unix_args.txt "$@" nogui
+```
+
+:::info
+ℹ️ **关于各项参数的说明：**
+
+`{openjdk17}`：调用变量`openjdk17`。这个变量在上面的默认内容里被定义过了。
+
++ _注意：_
++ _1.17.1——1.20.4需要Java 17或更高版本_
++ _1.20.5——1.21.11需要Java 21或更高版本_
++ _26.1+需要Java 25或更高版本_
+
+`-server`：用于指示 JVM（Java虚拟机）在服务器环境中运行。这个参数实际上是一个优化标记，它告诉JVM使用更适合长时间运行和高性能的配置。
+
+`-Xms1024M`：服务器运行最小内存为1024Mib。你可以更改`1024M`这个值：如果觉得最小运存太大可以改为`512M`或其他值，只要数字部分是4的倍数；如果强迫症不想使用M作为单位，可以改为`1G`，效果同样。
+
+`-Xmx${maxmem}M`：服务器运行最大内存为maxmxm M。maxmem是上文定义的变量，为服务器最大物理内存-1000（单位M）。如果不想要这个~~烦人的~~变量名可以把`${maxmem}`整个改成数字，让它变得和`Xmx`这一项看起来一样。**注：**`**Xmx**`**与**`**Xms**`**均不要设为超出实例运行内存上限的值，也不要设反了让最大值比最小值小，会导致服务器无法启动！**
+
+`@libraries/net/minecraftforge/forge/1.17.1-37.1.1/unix_args.txt "$@"`：**<font style="color:#DF2A3F;">此处的参数请填写你在run.sh内复制的！</font>**这个命令是用于启动 Minecraft Forge 1.17.1-37.1.1 的一系列参数设置。它包括引用用户定义的 JVM 参数文件和 Forge 所需的 UNIX 系统下启动参数文件，然后将这些参数传递给 Forge 的执行命令。**<font style="color:#DF2A3F;">不同Forge版本此参数里的版本号不同</font>**。
+
+`nogui`：不启用MC服务端自带的一个GUI窗口，在面板服/命令行环境运行服务端时不能删！
+
+:::
+
+调整完的启动命令应如下图所示：
+
+![](https://cdn.nlark.com/yuque/0/2024/png/44789475/1718170074925-e419fd42-8651-442c-83cf-b041bae11226.png)
+
+此时你可以将Forge安装器删除了。
+
+### 第三步：同意EULA
+启动服务器，稍微等待一会后会出现类似如下的提示并关闭服务器：
+
+```verilog
+[16:28:45] [main/INFO] [minecraft/Main]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
+```
+
+转到`文件`页面，打开根目录下的`eula.txt`。
+
+```properties
+#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://aka.ms/MinecraftEULA).
+#Sat Nov 18 16:28:45 CST 2023
+eula=false
+```
+
+将其中的`false`改为`true`。
+
+:::danger
+⚠ **警告**
+
+将eula中的`false`改为`true`即视为你已阅读并同意[《MINECRAFT 最终用户许可协议(EULA)》](https://www.minecraft.net/zh-hans/eula)!
+
+:::
+
+回到`终端`界面，点击右上角的`启动`，等待服务器生成文件。  
+看到类似以下的提示即可关闭服务端：
+
+```verilog
+[16:30:15 INFO]: Done (27.102s)! For help, type "help"
+```
+
+### 第四步：配置服务端
+再次进入`文件`页面，打开根目录下的`server.properties`。
+
+简幻欢在上一步启动服务端生成文件时已自动修改`server-ip`为`0.0.0.0`，`server-port`为你实例分配到的端口号，因此可以不用管这两个。
+
+如果你或者你的朋友没有正版账户，请把`online-mode`的值由`true`改为`false`。请注意，这样做会显著增加你的服务器遭受恶意攻击的风险！
+
+如何保护你的服务器：[【MCJE】使用正确的登录方式保护服务器](https://www.yuque.com/simpfox/simpdoc/mcje-auth-type)
+
+**更多关于服务器设置的配置请查看这篇文档：**[【MCJE】server.properties详解](https://www.yuque.com/simpfox/simpdoc/serverproperties)
+
+需要更换存档请参考这篇文档：[【MCJE】导入存档到服务端](https://www.yuque.com/simpfox/simpdoc/upload-worlds)
+
+Mod文件放入`/mods`文件夹。
+
+现在你已经配置好服务端了，去愉快的玩游戏吧！
+
+## 1.7.10——1.16.5版本的服务端
+1.16.5及以下版本的Forge服务端是使用一个jar文件启动的。
+
+### 第一步：安装服务端
+打开[Forge官网](https://files.minecraftforge.net/net/minecraftforge/forge/)，选择你需要的版本的Forge安装器进行下载，此处以1.12.2为例，按照下图方式下载Forge安装器，可以跳过某个~~该死的~~广告。
+
+![](https://cdn.nlark.com/yuque/0/2024/png/44789475/1718170170443-8bba812e-f2d3-4b9b-878e-7271a2799b17.png)
+
+:::info
+⬇️ 其他下载地址：
+
+无极镜像(CN)：[https://www.fastmirror.net/#/download/Forge](https://www.fastmirror.net/#/download/Forge)
+
+:::
+
+下载完成后将其上传至实例文件的根目录。
+
+打开根目录下的`start.sh`，在文件内添加一行下面的命令后保存(不要删除start.sh自带的东西，echo那一行除外)：
+
+```shell
+${openjdk8} -server -Dfile.encoding=UTF-8 -Duser.language=zh -Duser.country=CN -jar [Forge安装器文件名].jar --installServer
+```
+
+ps:去除方括号
+
+如下图所示：  
+![](../../static/img/pages/custom/forgeoldversionserver-2.png)![](https://cdn.nlark.com/yuque/0/2024/png/44789475/1718170244311-1bc26af1-91f1-4ea0-bd06-de77edf5e2ac.png)
+
+回到`终端`界面，启动实例，等待服务端构建完成后会出现以下输出并停止运行。
+
+```verilog
+The server installed successfully
+You can delete this installer file now if you wish
+```
+
+### 第二步：调整启动命令
+打开`start.sh`，删除第一步中添加的命令，防止重新构建毁坏服务端，并添加一行类似下方的命令后保存：
+
+```shell
+${openjdk8} -server -Xms1024M -Xmx${maxmem}M -Dfile.encoding=UTF-8 -Duser.language=zh -Duser.country=CN -jar [服务端名字] -nogui
+```
+
+:::color2
+`[服务端名字]`是指例如上面图中目录中的`forge-x.x.x-x.x.x.x.jar`，在上面目录为`forge-1.12.2-14.23.5.2860.jar`。
+
+:::
+
+![](https://cdn.nlark.com/yuque/0/2024/png/44789475/1718170266092-e7ca423e-a178-4de6-a245-406d89ec601d.png)
+
+:::warning
+⚠ **提示**
+
+不要试图启动`minecraft_server.x.x.x.jar`，不然喜提不加载mod（
+
+:::
+
+:::info
+ℹ **关于各项参数的说明**：
+
+`{openjdk8}`：调用变量`openjdk8`。这个变量在上面的默认内容里被定义过了。
+
++ _注意：部分版本的mod可能需要Java11（例如1.16.5）_
+
+`-server`：用于指示 JVM（Java虚拟机）在服务器环境中运行。这个参数实际上是一个优化标记，它告诉JVM使用更适合长时间运行和高性能的配置。
+
+`-Xms1024M`：服务器运行最小内存为1024Mib。你可以更改`1024M`这个值：如果觉得最小运存太大可以改为`512M`或其他值，只要数字部分是4的倍数；如果强迫症不想使用M作为单位，可以改为`1G`，效果同样。
+
+`-Xmx${maxmem}M`：服务器运行最大内存为maxmxm M。maxmxm是上文定义的变量，为服务器最大物理内存-1000（单位M）。如果不想要这个~~烦人的~~变量名可以把`${maxmem}`整个改成数字，让它变得和`Xmx`这一项看起来一样。**注：**`**Xmx**`**与**`**Xms**`**均不要设为超出实例运行内存上限的值，也不要设反了让最大值比最小值小，会导致服务器无法启动！**
+
+`nogui`：不启用MC服务端自带的一个GUI窗口，在面板服/命令行环境运行服务端时不能删！
+
+:::
+
+调整完的启动命令应类似下图所示：
+
+![](https://cdn.nlark.com/yuque/0/2024/png/44789475/1718170358662-99e0ed3c-47b9-4530-a86a-0e533d2b9d20.png)
+
+此时你可以将Forge安装器删除了。
+
+### 第三步：同意EULA
+启动服务器，稍微等待一会后会出现类似如下的提示并关闭服务器：
+
+```verilog
+[16:28:45] [main/INFO] [minecraft/Main]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
+```
+
+转到`文件`页面，打开根目录下的`eula.txt`。
+
+```properties
+#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://aka.ms/MinecraftEULA).
+#Sat Nov 18 16:28:45 CST 2023
+eula=false
+```
+
+将其中的`false`改为`true`。
+
+:::danger
+⚠ **警告**
+
+将eula中的`false`改为`true`即视为你已阅读并同意[《MINECRAFT 最终用户许可协议(EULA)》](https://www.minecraft.net/zh-hans/eula)!
+
+此外，若您需安装整合包，应在修改EULA后 **不启动服务器，**在内容全部正确导入后，再启动。
+
+:::
+
+回到`终端`界面，点击右上角的`启动`，等待服务器生成文件。  
+看到类似以下的提示即可关闭服务端：
+
+```verilog
+[16:30:15 INFO]: Done (27.102s)! For help, type "help"
+```
+
+### 第四步：根据需要配置服务端
+再次进入`文件`页面，打开根目录下的`server.properties`。
+
+简幻欢在上一步启动服务端生成文件时已自动修改`server-ip`为`0.0.0.0`，`server-port`为你实例分配到的端口号，因此可以不用管这两个。
+
+如果你或者你的朋友没有正版账户，请把`online-mode`的值由`true`改为`false`。请注意，这样做会显著增加你的服务器遭受恶意攻击的风险！
+
+如何保护你的服务器：[【MCJE】使用正确的登录方式保护服务器](https://www.yuque.com/simpfox/simpdoc/mcje-auth-type)
+
+**更多关于服务器设置的配置请查看这篇文档：**[【MCJE】server.properties详解](https://www.yuque.com/simpfox/simpdoc/serverproperties)
+
+需要更换存档请参考这篇文档：[【MCJE】导入存档到服务端](https://www.yuque.com/simpfox/simpdoc/upload-worlds)
+
+Mod文件放入`/mods`文件夹。
+
+现在你已经配置好服务端了，去进行愉快的游戏吧！
+

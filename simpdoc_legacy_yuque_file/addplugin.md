@@ -1,0 +1,98 @@
+:::warning
+⚠ **仅适用**
+
+此教程仅适用于以下服务端：
+
++ Spigot，Paper，Leaves**等**插件端
++ Arclight，<font style="color:rgb(28, 30, 33);">Catserver，</font>Mohist等混合端
++ SpongeForge（与Bukkit系服务端方法不一致）
+
+:::
+
+:::success
+💡 **提示**
+
+如果你正在寻找插件，可以访问 [苦力怕论坛](https://klpbbs.com/)、[MineBBS](https://www.minebbs.com/)、[Modrinth](https://modrinth.com/discover/plugins) 等网站。
+
+:::
+
+## <font style="color:rgb(28, 30, 33);">插件类型区分</font>
+### <font style="color:rgb(28, 30, 33);">Bukkit插件</font>
+<font style="color:rgb(28, 30, 33);">使用BukkitAPI进行开发的插件，绝大部分插件端(例如Spigot，Paper，Purpur，Leaves等)，以及Arclight，Catserver，Mohist等混合端都使用Bukkit插件。</font>
+
+:::color2
+<font style="color:rgb(28, 30, 33);">ℹ</font><font style="color:rgb(28, 30, 33);"> </font>**<font style="color:rgb(28, 30, 33);">提示</font>**
+
++ <font style="color:rgb(28, 30, 33);">大部分Bukkit插件支持</font>**<font style="color:rgb(28, 30, 33);">向上兼容</font>**<font style="color:rgb(28, 30, 33);">，例如插件Vault的作者标注为支持1.8——1.17.x，其实际支持版本为1.8——1.21。</font>
++ <font style="color:rgb(28, 30, 33);">插件实际兼容情况请自行测试或在群聊、论坛等地方寻求帮助。</font>
+
+:::
+
+### <font style="color:rgb(28, 30, 33);">Paper插件</font>
+<font style="color:rgb(28, 30, 33);">引入了 Paper 一些特有的API进行开发的Bukkit插件。Paper及分支支持此类插件。</font>
+
+:::color1
+💡 **提示**
+
+就目前来说，使用PaperAPI的插件并不多，并且现在主流插件端均为Paper分支，所以插件你就放心往服务端丢就是。
+
+:::
+
+### <font style="color:rgb(28, 30, 33);">Sponge插件</font>
+<font style="color:rgb(28, 30, 33);">使用SpongeAPI进行开发的插件，目前仅有SpongeVanilla与SpongeForge，以及某些服务端（例如Lantern）支持Sponge插件。</font>
+
+:::danger
+🔥 **提示**
+
+大部分Sponge插件**不支持向上兼容**，例如你不能把API7的插件扔进API8的服务器里面，除非插件作者主动同时适配不同版本的Sponge。
+
+:::
+
+## <font style="color:rgb(28, 30, 33);">Bukkit系服务端</font>
+:::warning
+⚠ **不适用**
+
+此段内容不适用于以下服务端：
+
++ SpongeForge
+
+:::
+
+1. <font style="color:rgb(28, 30, 33);">进入实例，点击</font><font style="color:rgb(28, 30, 33);">文件</font>
+2. <font style="color:rgb(28, 30, 33);">进入</font>`<font style="color:rgb(28, 30, 33);">plugins</font>`<font style="color:rgb(28, 30, 33);">文件夹</font>
+3. <font style="color:rgb(28, 30, 33);">上传您的插件</font>
+
+:::info
+ℹ **提示**
+
+注意检查插件版本，前置等。
+
+**混合端可能出现部分插件不兼容。**
+
+不支持 Sponge 或其他服务端的插件。
+
+:::
+
+## <font style="color:rgb(28, 30, 33);">SpongeForge服务端</font>
+:::warning
+⚠ **提示**
+
+此段内容**仅**适用于以下服务端：
+
++ SpongeForge
+
+:::
+
+1. <font style="color:rgb(28, 30, 33);">进入实例，点击</font><font style="color:rgb(28, 30, 33);">文件</font>
+2. <font style="color:rgb(28, 30, 33);">进入</font><font style="color:rgb(28, 30, 33);">mods</font><font style="color:rgb(28, 30, 33);">文件夹</font>
+3. <font style="color:rgb(28, 30, 33);">上传您的 Sponge 插件。</font>
+
+:::danger
+🔥 警告
+
+本服务端不支持 Bukkit 插件。
+
+您需要下载专门的 Sponge 插件。
+
+:::
+
