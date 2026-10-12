@@ -33,6 +33,8 @@ const config: Config = {
   // this MUST be updated too, or every CSS/JS asset will 404.
   baseUrl: '/',
 
+  trailingSlash: false,
+
   // Only read by the `docusaurus deploy` command (GitHub Pages). Static builds
   // ignore them entirely, so they do not affect the simpdoc.top deployment.
   organizationName: 'simpdoc', // Usually your GitHub org/user name.
