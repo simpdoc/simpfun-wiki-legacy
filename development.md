@@ -91,7 +91,7 @@ npm run write-heading-ids -- --syntax mdx-comment --migrate
        path: 'docs-xxx',
        routeBasePath: 'xxx',
        sidebarPath: './sidebars-xxx.ts',
-       editUrl: 'https://github.com/simpdoc/simpfun-wiki/tree/main/',
+       editUrl: 'https://github.com/simpdoc/simpfun-wiki-legacy/tree/main/',
      },
    ],
    ```
@@ -508,7 +508,7 @@ baseUrl: '/',            // 根路径部署。若将来挪到子路径，这里�
 
 ```ts
 organizationName: 'simpdoc',
-projectName: 'simpfun-wiki',
+projectName: 'simpfun-wiki-legacy',
 ```
 
 这两个字段**仅被 `docusaurus deploy` 命令读取**（见 `@docusaurus/core/lib/commands/deploy.js`），静态构建完全不使用，因此对 simpdoc.top 部署**无影响**，留着也不会导致构建错误。若确定永不使用 `npm run deploy`，可以删掉以减少困惑。

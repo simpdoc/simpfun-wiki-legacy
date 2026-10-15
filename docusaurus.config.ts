@@ -38,7 +38,7 @@ const config: Config = {
   // Only read by the `docusaurus deploy` command (GitHub Pages). Static builds
   // ignore them entirely, so they do not affect the simpdoc.top deployment.
   organizationName: 'simpdoc', // Usually your GitHub org/user name.
-  projectName: 'simpfun-wiki', // Usually your repo name.
+  projectName: 'simpfun-wiki-legacy', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -88,7 +88,7 @@ const config: Config = {
         path: 'docs-web',
         routeBasePath: 'web',
         sidebarPath: './sidebars-web.ts',
-        editUrl: 'https://github.com/simpdoc/simpfun-wiki/tree/main/',
+        editUrl: 'https://github.com/simpdoc/simpfun-wiki-legacy/tree/main/',
       },
     ],
     [
@@ -98,7 +98,7 @@ const config: Config = {
         path: 'docs-terraria',
         routeBasePath: 'terraria',
         sidebarPath: './sidebars-terraria.ts',
-        editUrl: 'https://github.com/simpdoc/simpfun-wiki/tree/legacy/',
+        editUrl: 'https://github.com/simpdoc/simpfun-wiki-legacy/tree/main/',
       },
     ],
     [
@@ -108,7 +108,7 @@ const config: Config = {
         path: 'docs-mindustry',
         routeBasePath: 'mindustry',
         sidebarPath: './sidebars-mindustry.ts',
-        editUrl: 'https://github.com/simpdoc/simpfun-wiki/tree/legacy/',
+        editUrl: 'https://github.com/simpdoc/simpfun-wiki-legacy/tree/main/',
       },
     ],
     [
@@ -118,7 +118,7 @@ const config: Config = {
         path: 'docs-rusted-warfare',
         routeBasePath: 'rusted-warfare',
         sidebarPath: './sidebars-rusted-warfare.ts',
-        editUrl: 'https://github.com/simpdoc/simpfun-wiki/tree/legacy/',
+        editUrl: 'https://github.com/simpdoc/simpfun-wiki-legacy/tree/main/',
       },
     ],
     [
@@ -128,7 +128,7 @@ const config: Config = {
         path: 'docs-custom-image',
         routeBasePath: 'custom-image',
         sidebarPath: './sidebars-custom-image.ts',
-        editUrl: 'https://github.com/simpdoc/simpfun-wiki/tree/legacy/',
+        editUrl: 'https://github.com/simpdoc/simpfun-wiki-legacy/tree/main/',
       },
     ],
     [
@@ -138,7 +138,7 @@ const config: Config = {
         path: 'docs-mcje',
         routeBasePath: 'mcje',
         sidebarPath: './sidebars-mcje.ts',
-        editUrl: 'https://github.com/simpdoc/simpfun-wiki/tree/main/',
+        editUrl: 'https://github.com/simpdoc/simpfun-wiki-legacy/tree/main/',
       },
     ],
     [
@@ -148,7 +148,7 @@ const config: Config = {
         path: 'docs-mcbe',
         routeBasePath: 'mcbe',
         sidebarPath: './sidebars-mcbe.ts',
-        editUrl: 'https://github.com/simpdoc/simpfun-wiki/tree/main/',
+        editUrl: 'https://github.com/simpdoc/simpfun-wiki-legacy/tree/main/',
       },
     ],
   ],
@@ -344,7 +344,7 @@ const config: Config = {
           label: '自定义镜像',
         },
         {
-          href: 'https://github.com/simpdoc/simpfun-wiki',
+          href: 'https://github.com/simpdoc/simpfun-wiki-legacy',
           label: 'GitHub',
           position: 'right',
         },
@@ -416,7 +416,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/simpdoc/simpfun-wiki',
+              href: 'https://github.com/simpdoc/simpfun-wiki-legacy',
             },
           ],
         },

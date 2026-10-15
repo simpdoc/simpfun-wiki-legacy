@@ -6,6 +6,9 @@
 
 > 只想改站点配置、构建或部署？请看 [开发与构建文档](development.md)。
 
+> **注意**：本仓库是即将停止支持的旧页面 Wiki，除必要维护外**不再接受 Issue 与 PR**。
+> 反馈问题、提出建议或参与编辑，请前往新版仓库 <https://github.com/simpdoc/simpfun-wiki>。
+
 ## 我可以怎么贡献
 
 | 方式 | 适合谁 | 入口 |
@@ -20,7 +23,7 @@ GitHub 会直接打开对应的源文件，改完在网页上提交即可，**�
 
 ### 通过 Issue 反馈
 
-不想自己动手改，或想先讨论清楚，请[新建 Issue](https://github.com/simpdoc/simpfun-wiki/issues/new/choose)。
+不想自己动手改，或想先讨论清楚，请到新版仓库[新建 Issue](https://github.com/simpdoc/simpfun-wiki/issues/new/choose)。
 仓库已备好三种模板，新建时会让你选择：
 
 | 模板 | 什么时候用 |

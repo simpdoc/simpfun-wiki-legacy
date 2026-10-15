@@ -32,6 +32,6 @@
 
 感谢每一位为本维基付出的人！
 
-<a href="https://github.com/simpdoc/simpfun-wiki/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=simpdoc/simpfun-wiki" />
+<a href="https://github.com/simpdoc/simpfun-wiki-legacy/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=simpdoc/simpfun-wiki-legacy" />
 </a>
