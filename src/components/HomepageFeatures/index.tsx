@@ -15,7 +15,6 @@ const FeatureList: FeatureItem[] = [
       <>
         我们的源码在 Github 开源！
         <br />
-        欢迎加入我们的编写！
       </>
     ),
   },
@@ -30,8 +29,8 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: '最新内容',
-    description: <>本维基已同步 SFE v4.0 的信息。</>,
+    title: '旧页内容',
+    description: <>本维基为SFE4.0旧页面内容</>,
   },
 ];
 
