@@ -261,23 +261,11 @@ const config: Config = {
     // have a real banner, and update this path.
     image: 'img/docusaurus-social-card.jpg',
 
-    // 旧站停止维护告示：使用 Docusaurus 原生全站顶部横幅（announcementBar）。
-    // 位置在跳转锚点之后、导航栏之前，首页 / 7 套文档 / 404 页都会显示。
-    // 约束与注意事项（均来自 Docusaurus 3.10.2 源码行为，非推测）：
-    //   1) content 按 HTML 解析（不走 Markdown），所以链接必须写成 <a>；
-    //   2) 桌面端（≥997px）高度写死 30px，正文必须能排成一行，否则会压到导航栏上；
-    //      窄屏（<997px）高度为 auto，会自动换行；
-    //   3) 只有 backgroundColor / textColor 两个固定值，没有明暗两套配色，
-    //      同一组颜色要在深色模式下也看得清；
-    //   4) 关闭状态按 id 存在访客浏览器里，改 id 会让所有访客重新看到该告示。
-    // 当前采用：琥珀 #F59E0B 底 + 纯黑 #000000 字（对比度 9.6:1，正文级 AAA，明暗两种主题通用）。
-    // 同底配纯白字只有 2.15:1，深色模式下会糊成一片，所以文字只能走深色。
-    // 若将来在 content 里加链接，记得给 <a> 加内联 color:inherit：主题默认会把链接
-    // 染成站点主色（绿色），在琥珀底上对比不足（仍属纯配置，不需要改 CSS）。
+
     announcementBar: {
       id: 'legacy-eol-2026-10',
       content:
-        '⚠ 当前 wiki 为旧页面 Wiki ，将停止支持，仅作必要维护。',
+        '当前 wiki 为旧页面 Wiki ，已停止支持，仅作必要维护。',
       backgroundColor: '#F59E0B',
       textColor: '#000000',
       isCloseable: true,
