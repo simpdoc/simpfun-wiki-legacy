@@ -8,7 +8,7 @@
 
 ## 注意
 
-旧页面Wiki即将停止支持，除部分必要维护外，将不再接受：
+旧页面Wiki已停止支持，除部分必要维护外，将不再接受：
 - issue
 - PR
 
@@ -18,7 +18,6 @@
 | --- | --- |
 | 简幻欢官网 | <https://simpfun.cn/> |
 | 简幻云官网 | <https://v2.simpcloud.cn/> |
-| 简幻欢官方文档（语雀） | <https://www.yuque.com/simpfun/sfe/main> |
 | 简幻欢社区维基新版 | <https://next.simpdoc.top/> |
 | 第三方镜像文档 | <https://doc.ideafox.top/> |
 
