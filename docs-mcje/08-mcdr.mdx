@@ -5,31 +5,30 @@ sidebar_position: 8
 
 :::info[信息]
 本内容转自[在简幻欢上安装和使用MCDR - NorthZero](https://nzdnzd.top/blog/simpfun-mcdr) ，感谢NorthZeroD为简幻欢社区文档带来的教程。
-
 :::
 
 ## 介绍
+
 ### MCDR 是什么
-> MCDReforged (MCDR, 下同) 是一个管理 Minecraft 服务器的工具，拥有自定义插件系统。完全无需修改 Minecraft 服务器本身。
->
-> 游戏内计算器，玩家高亮，计分板操作，结构文件管理，备份/回档... 你可以用 MCDR 和其插件控制整个 Minecraft 服务器。
->
-> [_点击了解更多_](https://docs.mcdreforged.com/zh-cn/latest/quick_start/introduction.html)
->
+
+MCDReforged (MCDR, 下同) 是一个管理 Minecraft 服务器的工具，拥有自定义插件系统。完全无需修改 Minecraft 服务器本身。
+
+游戏内计算器，玩家高亮，计分板操作，结构文件管理，备份/回档... 你可以用 MCDR 和其插件控制整个 Minecraft 服务器。
+
+[点击了解更多](https://docs.mcdreforged.com/zh-cn/latest/quick_start/introduction.html)
 
 ## 参考文档
+
 :::info[参考]
-
-[快速上手 — MCDReforged 2.15.1 文档](https://docs.mcdreforged.com/zh-cn/latest/quick_start/index.html)
-
-[环境调用方法 - 简幻欢社区文档](/custom-image/multi_env/how_to_use)
-
-[调用信息对应表 - 简幻欢社区文档](/custom-image/multi_env/path_list)
-
++ [快速上手 — MCDReforged 2.15.1 文档](https://docs.mcdreforged.com/zh-cn/latest/quick_start/index.html)
++ [环境调用方法 - 简幻欢社区文档](/custom-image/multi_env/how_to_use)
++ [调用信息对应表 - 简幻欢社区文档](/custom-image/multi_env/path_list)
 :::
 
 ## 准备
+
 ### 实例选择
+
 1. 选择镜像类型 `基础镜像`
 2. 选择实例类别 `自定义-需有开服经验`
 3. 选择实例服务端 `AIO`
@@ -50,6 +49,7 @@ sidebar_position: 8
 </details>
 
 ### 启动脚本
+
 简幻欢使用`/home/container`目录下的`start.sh`脚本作为启动脚本。当你在实例`终端`处按下`▶️启动`按钮时，服务器将执行启动脚本，即`start.sh`中的所有命令。
 
 <details>
@@ -75,7 +75,9 @@ sleep 5
 [_关于Shell命令_](https://www.runoob.com/linux/linux-shell.html)
 
 ## 安装MCDR
+
 ### 使用 pip 安装
+
 在`start.sh`中写入以下内容：
 
 ```bash
@@ -88,7 +90,7 @@ pip3 install mcdreforged
 
 然后运行实例。输出：
 
-```plain
+```log
 mise hint use multiple versions simultaneously with mise use python@3.12 python@3.11
 mise ~/.aio/mise/config.toml tools: python@3.13.3
 ...此处省略若干行...
@@ -99,9 +101,7 @@ WARNING: Running pip as the 'root' user can result in broken permissions and con
 ```
 
 :::info[我们做了什么？]
-
 我们利用`[mise](https://mise.jdx.dev/)`，全局使用了`Python 3.13.3`，然后使用`[pip3](https://www.runoob.com/w3cnote/python-pip-install-usage.html)`命令安装了`mcdreforged`。
-
 :::
 
 <details>
@@ -114,6 +114,7 @@ WARNING: Running pip as the 'root' user can result in broken permissions and con
 </details>
 
 ### 验证安装
+
 在`start.sh`中，注释掉之前安装所用的命令，增加`mcdreforged`命令：
 
 ```bash
@@ -127,11 +128,8 @@ mcdreforged
 ```
 
 :::info[技巧]
-
-在**vscode**编辑器中，选中代码块，使用`ctrl+/`快捷切换注释。
-
+在**vscode**编辑器中，选中代码块，使用`ctrl+/`快捷切换注释。   
 ![说明图片](/img/pages/mcje/mcdr-how-to-use-1.webp)
-
 :::
 
 然后运行实例。输出：
@@ -148,6 +146,7 @@ MCDReforged is open source, u can find it here: https://github.com/MCDReforged/M
 这证明我们已经成功安装了MCDR。
 
 ### 初始化MCDR
+
 在`start.sh`中，为`mcdreforged`命令增加`init`参数：
 
 ```plain
@@ -191,10 +190,11 @@ Initialized environment for MCDReforged in /home/container
 **做得好！我们已经成功安装并初始化了MCDR🎉**
 
 ## 安装MC服务端
-> 要用 MCDR 管理 Minecraft 服务器，你首先需要**准备并配置**好一个 Minecraft 服务端。
->
-> 例如，这是典型的原版 Minecraft 服务端目录结构：
->
+
+要用 MCDR 管理 Minecraft 服务器，你首先需要**准备并配置**好一个 Minecraft 服务端。
+
+例如，这是典型的原版 Minecraft 服务端目录结构：
+
 
 ```plain
 ./
@@ -214,25 +214,20 @@ Initialized environment for MCDReforged in /home/container
 
 :::info[已准备好服务端了？]
 
-直接将服务端**所有文件**上传到MCDR的`server`目录！
-
-别忘了**配置端口**！
-
+直接将服务端**所有文件**上传到MCDR的`server`目录！   
+别忘了**配置端口**！   
 然后跳到**配置 MCDR**章节。
 
 ![说明图片](/img/pages/mcje/mcdr-how-to-use-2.webp)
-
 :::
 
 :::info[说明]
-
-篇幅有限，仅演示[Leaf](https://www.leafmc.one/download)服务端的部署流程。
-
+篇幅有限，仅演示[Leaf](https://www.leafmc.one/download)服务端的部署流程。   
 这些步骤同样适用于其他[插件服务端](https://nitwikit.8aka.org/Java/start/server-core-choose/plugin)，如[Paper](https://papermc.io/downloads/paper), [Purpur](https://purpurmc.org/download/purpur)。
-
 :::
 
 ### 上传核心
+
 挑选你喜欢的服务端，从其官网下载服务端核心：
 
 + [Leaf](https://www.leafmc.one/download) _**推荐**__(_[_为什么?_](https://www.leafmc.one/zh/docs/benchmark/entity-performance)_)_
@@ -240,7 +235,7 @@ Initialized environment for MCDReforged in /home/container
 + [Paper](https://papermc.io/downloads/paper)
 + [Leaves](https://leavesmc.org/downloads/leaves)
 
-[_不知道怎么选？看这里..._](https://nitwikit.8aka.org/Java/start/server-core-choose/plugin)
+[_不知道怎么选？看这里!_](https://nitwikit.8aka.org/Java/start/server-core-choose/plugin)
 
 将下载好的服务端核心上传到MCDR的`server`目录。
 
@@ -252,6 +247,7 @@ Initialized environment for MCDReforged in /home/container
 </details>
 
 ### 启动命令
+
 在`start.sh`中，将`mcdreforged init`命令注释掉，添加新的命令：
 
 ```bash
@@ -268,7 +264,6 @@ ${openjdk21} -Xms15G -Xmx15G -jar leaf-1.21.8-101.jar --nogui
 ```
 
 :::warning[注意]
-
 `leaf-1.21.8-101.jar`是笔者所用服务端核心的名称，应当**换成你上传的核心名称**。
 
 `-Xmx`用来指定服务器最**大**内存，其后接内存大小(带单位)。建议设置为你的实例**可用内存大小减1G**。
@@ -278,7 +273,6 @@ ${openjdk21} -Xms15G -Xmx15G -jar leaf-1.21.8-101.jar --nogui
 `${openjdk21}`是用来启动服务端的java程序，它被定义在环境变量中。可用值见[调用信息对应表](/custom-image/multi_env/path_list)。
 
 有关不同MC版本使用的java版本，见[各Minecraft常见版本所需Java版本及其常见答疑（尽量长期维护）](https://www.bilibili.com/opus/939387567592177669)。
-
 :::
 
 <details>
@@ -333,16 +327,13 @@ You need to agree to the EULA in order to run the server. Go to eula.txt for mor
 接下来照其所言，你需要同意并签署[Minecraft最终用户许可协议](https://www.minecraft.net/zh-hans/eula)才能运行此服务器。
 
 ### 签署EULA
+
 :::warning[提醒]
-
-**确保您已认真阅读并充分理解**[**Minecraft最终用户许可协议**](https://www.minecraft.net/zh-hans/eula)。
-
-**签署EULA后，您将负法律责任，且应同时遵守简幻欢的**[**服务协议**](https://www.yuque.com/simpfun/sfe/tos)**。**
-
+**确保您已认真阅读并充分理解[**Minecraft最终用户许可协议**](https://www.minecraft.net/zh-hans/eula)。   
+**签署EULA后，您将负法律责任，且应同时遵守简幻欢的[**服务协议**](https://www.yuque.com/simpfun/sfe/tos)。
 :::
 
-在服务端核心目录，即`server`目录中，找到`eula.txt`。
-
+在服务端核心目录，即`server`目录中，找到`eula.txt`。   
 编辑其内容，将`eula`字段的值改为`true`：
 
 ```plain
@@ -352,8 +343,8 @@ eula=true
 ```
 
 ### 配置端口
-在服务端核心目录，即`server`目录中，找到`server.properties`。
 
+在服务端核心目录，即`server`目录中，找到`server.properties`。   
 编辑其内容，将`query.port`和`server-port`字段的值改为你的实例端口号：
 
 ```plain
@@ -376,8 +367,8 @@ server-port=20814
 **好样的！MC服务端已经安装成功🎉**
 
 ## 配置MCDR
-> MCDR 的配置文件是 `config.yml`。它位于 MCDR 的工作目录中。
->
+
+MCDR 的配置文件是 `config.yml`。它位于 MCDR 的工作目录中。
 
 本教程中，`config.yml`与`start.sh`在同个目录，即`/home/container`中。
 
@@ -388,26 +379,23 @@ server-port=20814
 
 </details>
 
-> 在启动时，MCDR 将尝试加载配置文件，并将缺失的选项(如果有)添加到你的配置文件末尾。如果配置文件不存在，MCDR 则将生成默认配置文件并退出。
->
-> 配置文件使用 [YAML](https://cn.linux-terminal.com/?p=4520) 格式。
->
-> 当 MCDR 运行时，你可以使用 `!!MCDR reload config` 命令(或其缩写 `!!MCDR r cfg`)来重载配置文件。
->
+在启动时，MCDR 将尝试加载配置文件，并将缺失的选项(如果有)添加到你的配置文件末尾。如果配置文件不存在，MCDR 则将生成默认配置文件并退出。
+
+配置文件使用 [YAML](https://cn.linux-terminal.com/?p=4520) 格式。
+
+当 MCDR 运行时，你可以使用 `!!MCDR reload config` 命令(或其缩写 `!!MCDR r cfg`)来重载配置文件。
 
 :::info[说明]
-
 本教程仅介绍必要配置。完整配置说明见[配置 — MCDReforged 2.15.1 文档](https://docs.mcdreforged.com/zh-cn/latest/configuration.html)。
-
 :::
 
 ### language
-> MCDR 用于输出信息的语言。
->
-> [_更多..._](https://docs.mcdreforged.com/zh-cn/latest/configuration.html#language)
->
 
-将`language`字段的值更改为`zh_cn`以使用简体中文作为MCDR的输出信息的语言。
+MCDR 用于输出信息的语言。
+
+[_更多..._](https://docs.mcdreforged.com/zh-cn/latest/configuration.html#language)
+
+将 `language` 字段的值更改为 `zh_cn` 以使用简体中文作为 MCDR 的输出信息的语言。
 
 ```yaml
 # The language that MCDR will use to display information
@@ -416,12 +404,12 @@ language: zh_cn
 ```
 
 ### start_command
-> 启动服务端的控制台命令。它可以是一个字符串，或一个字符串列表。
->
-> [_更多..._](https://docs.mcdreforged.com/zh-cn/latest/configuration.html#start-command)
->
 
-将`start_command`字段的值更改为**启动命令**章节中所使用的命令。
+启动服务端的控制台命令。它可以是一个字符串，或一个字符串列表。
+
+[_更多..._](https://docs.mcdreforged.com/zh-cn/latest/configuration.html#start-command)
+
+将 `start_command` 字段的值更改为**启动命令**章节中所使用的命令。
 
 ```yaml
 # The command to start the server, it can be a string or a list of string
@@ -434,14 +422,14 @@ start_command: ${openjdk21} -Xms15G -Xmx15G -jar leaf-1.21.8-101.jar --nogui
 ```
 
 ### handler
-> 不同服务端有着截然不同的输出和命令。服务端处理器是用于在各种服务端之间进行处理的模块，也是 MCDR 控制服务端的接入点。
->
-> 处理器确定解析服务端标准输出文本的特定方法，并使用正确的命令控制服务端。
->
-> [_更多..._](https://docs.mcdreforged.com/zh-cn/latest/configuration.html#handler)
->
 
-将`handler`字段的值更改为符合你服务端种类的处理器。
+不同服务端有着截然不同的输出和命令。服务端处理器是用于在各种服务端之间进行处理的模块，也是 MCDR 控制服务端的接入点。
+
+处理器确定解析服务端标准输出文本的特定方法，并使用正确的命令控制服务端。
+
+[_更多..._](https://docs.mcdreforged.com/zh-cn/latest/configuration.html#handler)
+
+将 `handler` 字段的值更改为符合你服务端种类的处理器。
 
 本教程中，使用[Leaf](https://www.leafmc.one/zh/docs/getting-started)服务端，是Paper下游分支，故使用`bukkit_handler`。
 
@@ -479,8 +467,10 @@ handler: bukkit_handler
 **恭喜！你完成了MCDR的配置🎉**
 
 ## 启动MCDR
+
 ### 命令
-在`start.sh`中，将之前安装MC服务端的**启动命令**注释掉，添加新的命令：
+
+在 `start.sh` 中，将之前安装MC服务端的**启动命令**注释掉，添加新的命令：
 
 ```bash
 #!/bin/bash
@@ -531,6 +521,7 @@ Done (17.474s)! For help, type "help"
 这表明你的服务器顺利开起来了！
 
 ### 验证MCDR
+
 在MC多人游戏板块，使用`play.simpfun.cn:你的实例端口号`作为地址加入服务器。
 
 <details>
@@ -556,4 +547,4 @@ Done (17.474s)! For help, type "help"
 
 **\(^o^)/**
 
-**欢迎大家的评论和** [**issues**](https://github.com/NorthZeroD/northzerod.github.io/issues)**哦♥️**
+**欢迎大家的评论和 [**issues**](https://github.com/NorthZeroD/northzerod.github.io/issues)** 哦♥️

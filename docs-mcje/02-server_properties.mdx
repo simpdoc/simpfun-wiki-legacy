@@ -1,9 +1,9 @@
 ---
-title: "server.properties详解"
+title: "server.properties 详解"
 sidebar_position: 2
 ---
 
-# 【MCJE】server.properties 详解
+# server.properties 详解
 
 `server.properties`是 Minecraft 多人游戏服务器的核心配置文件，用于存储所有服务端设置。
 
@@ -32,11 +32,14 @@ sidebar_position: 2
 :::
 
 ## 配置文件原文
-（↓点击下方三角展开）以下内容来自 Minecraft 26.2：
 
-```properties
+<details>
+  <summary>
+    （点击展开）以下内容来自 Minecraft 26.3：
+  </summary>
+```properties title="server.properties"
 #Minecraft server properties
-#Wed Jul 15 23:26:16 CST 2026
+#Wed Oct 28 14:57:22 CST 2026
 accepts-transfers=false
 allow-flight=false
 broadcast-console-to-ops=true
@@ -44,7 +47,6 @@ broadcast-rcon-to-ops=true
 bug-report-link=
 chat-spam-threshold-seconds=10
 command-spam-threshold-seconds=10
-debug=false
 difficulty=easy
 enable-code-of-conduct=false
 enable-jmx-monitoring=false
@@ -71,7 +73,7 @@ management-server-allowed-origins=
 management-server-enabled=false
 management-server-host=localhost
 management-server-port=0
-management-server-secret=XtSEeXuxcIa8ShlAX32VCkgJ4un02KG13vstJvzL
+management-server-secret=g0X7a5RQVOjbeBj57WSnK9ZoyaNcd7Oy4WKNSdHR
 management-server-tls-enabled=true
 management-server-tls-keystore=
 management-server-tls-keystore-password=
@@ -79,11 +81,11 @@ max-chained-neighbor-updates=1000000
 max-players=20
 max-tick-time=60000
 max-world-size=29999984
-motd=Paper 26.2
+motd=Vanilla 26.3
 network-compression-threshold=256
 online-mode=true
 op-permission-level=4
-pause-when-empty-seconds=-1
+pause-when-empty-seconds=60
 player-idle-timeout=0
 prevent-proxy-connections=false
 query.port=25565
@@ -96,7 +98,7 @@ resource-pack=
 resource-pack-id=
 resource-pack-prompt=
 resource-pack-sha1=
-server-ip=
+server-ip=0.0.0.0
 server-port=25565
 simulation-distance=10
 spawn-protection=16
@@ -106,12 +108,15 @@ text-filtering-config=
 text-filtering-version=0
 use-native-transport=true
 view-distance=10
-white-list=false
+white-list=true
 ```
+</details>
 
-（↓点击下方三角展开）以下内容来自 Minecraft 1.21.1：
-
-```properties
+<details>
+  <summary>
+    （点击展开）以下内容来自 Minecraft 1.21.1：
+  </summary>
+```properties title="server.properties"
 #Minecraft server properties
 #Sun Jul 05 21:08:25 CST 2026
 accepts-transfers=false
@@ -176,10 +181,14 @@ use-native-transport=true
 view-distance=10
 white-list=false
 ```
+</details>
 
-（↓点击下方三角展开）以下内容来自 Minecraft 1.12.2：
+<details>
+  <summary>
+    （点击展开）以下内容来自 Minecraft 1.12.2：
+  </summary>
 
-```properties
+```properties title="server.properties"
 #Minecraft server properties
 #Tue Dec 30 16:22:11 CST 2025
 allow-flight=false
@@ -217,12 +226,11 @@ spawn-npcs=true
 view-distance=10
 white-list=false
 ```
+</details>
 
 ## 常用配置项解析
 :::info[提示]
-
 true = 是，false = 否。所有值均以行内代码框标出，示例：`false`
-
 :::
 
 ### allow-flight
@@ -314,7 +322,7 @@ true = 是，false = 否。所有值均以行内代码框标出，示例：`fals
 
 允许值：`false` `true`
 
-:::danger[警告]
+:::warning[警告]
 
 由于 RCON 协议传输数据时没有加密，所以不建议把 RCON 端口暴露在互联网上！
 
@@ -407,7 +415,7 @@ RCON 客户端和服务端交换的所有数据（包括 RCON 密码）都会泄
 ### hardcore
 作用：
 
-是否开启[极限模式](about:blank)。如果设为`true`，服务器难度的设置会被忽略并且锁定为**困难**难度，玩家在死后会自动切换至旁观模式。
+是否开启极限模式。如果设为`true`，服务器难度的设置会被忽略并且锁定为**困难**难度，玩家在死后会自动切换至旁观模式。
 
 默认值：`false`
 
@@ -542,7 +550,7 @@ RCON 客户端和服务端交换的所有数据（包括 RCON 密码）都会泄
 
 此项配置用于设置服务器在多人游戏列表中显示的欢迎信息（MOTD）。支持使用样式代码（`§`）来更改文本的颜色或格式，例如配置为 `§6密室杀手 - party.simpfun.net` 时，显示效果如下图所示：
 
-![说明图片](/img/pages/mcje/serverproperties-1.png)
+![motd 显示效果示例](/img/pages/mcje/mcje-server_properties-1.png)
 
 默认值：`A Minecraft Server`
 
@@ -743,7 +751,7 @@ URI 中的`:`与`=`字符须使用反斜线（`\`）进行转义，示例：`htt
 
 可选值：有效的 IPv4 地址或 IPv6 地址
 
-:::danger[警告]
+:::warning[警告]
 
 在简幻欢平台中，此项配置应填写为 `0.0.0.0`。所有预设的 Minecraft Java 版镜像以及大部分第三方镜像，在启动实例时都会自动将此值覆写为 `0.0.0.0`。
 
@@ -758,7 +766,7 @@ URI 中的`:`与`=`字符须使用反斜线（`\`）进行转义，示例：`htt
 
 允许值：`1`~`65535`（所有有效的端口号）
 
-:::danger[警告]
+:::warning[警告]
 
 此项配置应填写为您的实例分配到的端口号。所有预设的 Minecraft Java 版镜像及大部分第三方镜像，在启动实例时会自动将该值覆盖为实际分配的端口，您无需手动设置。
 
@@ -874,7 +882,7 @@ URI 中的`:`与`=`字符须使用反斜线（`\`）进行转义，示例：`htt
 
 允许值：`false` `true`
 
-:::danger[警告]
+:::warning[警告]
 
 您必须启用正版才能正确的使用这个功能，否则会遇到未知错误！
 

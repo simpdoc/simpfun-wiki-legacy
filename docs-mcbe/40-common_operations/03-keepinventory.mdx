@@ -7,7 +7,8 @@ sidebar_position: 3
 
 想在服务器中开启死亡不掉落（保留物品栏）？
 
-## 使用命令
+## 方法A：使用命令
+
 打开服务器控制台>终端
 
 ![说明图片](/img/pages/mcbe/bds-keepinventory-1.png)
@@ -17,3 +18,22 @@ sidebar_position: 3
 ```plain
 /gamerule keepinventory true
 ```
+
+## 方法B：修改配置文件
+
+:::info[提示]
+这段内容是隶属于[关于server.properties](/mcbe/server_properties)文档的。   
+看完这段内容后想了解更多信息，请阅读父文档。
+:::
+
+在 **server.properties** 中添加以下配置并重新启动服务器。
+
+```properties
+op-permission-level=4
+```
+
+如图所示：
+
+![说明图片](/img/pages/mcbe/bds-setworldspawn-2.png)
+
+然后在有OP权限的情况下游戏内的设置就可以更改了。

@@ -4,271 +4,379 @@ sidebar_position: 4
 ---
 
 ## 首次加载Geyser？
+
 如果你是首次加载Geyser,请等待它把语言文件之类的下载完成。
 
 ![说明图片](/img/pages/mcje/configgeyser-1.png)
 
 _**这里演示的是插件版本**_
 
-在你的服务器根目录文件找到plugins ![说明图片](/img/pages/mcje/configgeyser-2.png)
+在你的服务器根目录文件找到plugins 
+
+![说明图片](/img/pages/mcje/configgeyser-2.png)
 
 然后找到配置文件夹(Geyser-xxx)
 
-"xxx"是你的Geyser类型,这里使用的是Paper服务端,Spigot的下游服务端 ![说明图片](/img/pages/mcje/configgeyser-3.png)
+"xxx"是你的服务端类型,这里使用的是 Paper 服务端，Spigot 的下游服务端，文件夹名为 `Geyser-Spigot`
 
-温馨提示
+![说明图片](/img/pages/mcje/configgeyser-3.png)
 
-不同的类型的Geyser这个文件夹名字会不一样
-
-比如Fabric的是Geyser-Fabric
-
-以及如果你是Fabric和Neoforge,配置文件夹在服务器根目录的config文件夹内。
+:::tip[温馨提示]
+不同的类型的 Geyser 这个文件夹名字会不一样   
+比如 Fabric 的是 `Geyser-Fabric`   
+以及如果你是 Fabric 和 Neoforge 服务端，配置文件夹在服务器根目录的 config 文件夹内。
+:::
 
 ## 配置文件(config.yml)
-![说明图片](/img/pages/mcje/configgeyser-4.png) 配置方面基本只要留意这个文件
+
+![说明图片](/img/pages/mcje/configgeyser-4.png) 
+
+配置方面基本只要留意这个文件
 
 ![说明图片](/img/pages/mcje/configgeyser-5.png)
 
-额，好像看不懂英文,随便找个翻译翻译一下
-
-```yaml
+```yaml title="config.yml"
 # --------------------------------
-# Geyser配置文件
-#
-# Minecraft: Bedrock Edition和Minecraft: Java Edition之间的桥梁。
-#
-# GitHub: https://github.com/GeyserMC/Geyser
-# Discord: https://discord.gg/geysermc
-# Wiki: https://wiki.geysermc.org/
-#
-# 注意：查看 https://wiki.geysermc.org/geyser/setup/ 获取设置指南,许多视频教程已过时
-# 在大多数情况下，特别是与服务器托管提供商一起，需要进一步的特定于托管的配置
+# Geyser 配置文件
+# 
+# 一个用于连接 Minecraft：基岩版与 Minecraft：Java 版的桥接工具。
+# 
+# GitHub：https://github.com/GeyserMC/Geyser
+# Discord：https://discord.gg/geysermc
+# Wiki：https://geysermc.org/wiki
+# 
+# 注意：请参阅 https://geysermc.org/wiki/geyser/setup/ 获取安装指南。许多视频教程已经过时。
+# 在大多数情况下，尤其是使用服务器托管服务商时，还需要进行特定于托管服务商的进一步配置。
 # --------------------------------
 
+# 用于监听基岩版连接的网络设置
 bedrock:
-  # 将侦听连接的IP地址。
-  # 通常，如果要限制哪些IP可以连接到服务器，则应仅取消注释并更改此内容(用来绑定IP,让基岩版客户端只能使用设置的服务器IP进入服务器)
-  #address: 0.0.0.0
-  # 将侦听连接的端口(基岩版客户端可从这个端口进入)clone-remote-port选项为true,则此选项无关紧要
+  # Geyser 绑定用于监听传入基岩版连接的 IP 地址。
+  # 通常，只有当你希望限制可连接到服务器的 IP 时才需要更改此项。
+  address: 0.0.0.0
+
+  # Geyser 用于监听传入基岩版连接的端口。
+  # 内置信令在 TCP 上使用此端口（如果未设置“webrtc-port”，也使用 UDP），而 RakNet 在 UDP 上使用此端口。
   port: 19132
-  # 一些托管服务在每次启动服务器时更改您的Java端口并要求使用相同的端口用于基岩版
-  # 此选项使基岩版端口在每次启动服务器时与Java端口相同
-  # 此选项仅适用于插件版本
+
+  # 用于 NetherNet 连接的 UDP 端口。设置为 0 时，Geyser 使用上面的“port”值。
+  # 玩家会直接连接到此端口，因此如果在路由器后面，请转发该端口。使用“nxs”信令且关闭 assisted-joins 时，
+  # 否则玩家将无法连接。
+  webrtc-port: 0
+
+  # 基岩版玩家如何连接。更改需要重启。
+  # “nethernet”：基岩版的新连接方式。它需要信令，请参见下面的“signaling”。
+  # “both”：同时接受 NetherNet 和 RakNet。每种方式都需要自己的 UDP 端口，请参见“port”和“webrtc-port”。
+  # “raknet”：旧连接方式。基岩版将在未来版本中停止支持它。
+  transport: raknet
+
+  # 一些托管服务每次启动服务器时都会更改你的 Java 端口，并要求基岩版使用相同端口。
+  # 此选项使每次启动服务器时基岩版端口都与 Java 端口相同。
+  # 如果你使用此选项，则需要一个额外的信令端口，或使用 NXS 作为信令，因为信令不能与 Java 服务器共享端口。
   clone-remote-port: false
-  # 将广播到Minecraft 基岩版客户端的MOTD,如果“passthrough-motd”设置为true,则此选项无关紧要
-  # 如果其中任何一个为空,则相应的字符串将默认为“Geyser”
-  motd1: "Geyser"
-  motd2: "Another Geyser server."
-  # 将发送到Minecraft 基岩版客户端的服务器名称,这在暂停菜单和设置菜单中可见
-  server-name: "Geyser"
-  # 压缩网络流量到基岩版客户端的程度,数字越高,使用的CPU越多,但使用的带宽越小,在-1以下或9以上没有任何效果,设置为-1以禁用
-  compression-level: 6
-  # 广播到基岩版客户端的端口,显示他们应该用来连接服务器的MOTD
-  # 除非Geyser在用于连接的内部端口上运行不同的端口，否则不要取消注释并更改此内容
-  # broadcast-port: 19132
-  # 是否为客户端启用PROXY协议,除非在Geyser实例前运行UDP反向代理，否则您不想要此功能
-  enable-proxy-protocol: false
-  # 允许的PROXY协议讲话代理IP地址/子网的列表。仅在启用“enable-proxy-protocol”时有效，并且
-  # 当您无法使用适当的防火墙时（通常与共享托管提供商等为真）才应该使用
-  # 保持此列表为空意味着没有IP地址白名单
-  # IP地址和子网都受支持
-  #proxy-protocol-whitelisted-ips: [ "127.0.0.1", "172.18.0.0/16" ]
-remote:
-  # Minecraft Java服务器的IP地址
-  # 如果是“auto”，对于独立版本,远程地址将设置为127.0.0.1
-  # 对于插件版本,建议将其保留为“auto”,这样Geyser将自动配置地址、端口和auth-type
-  # 如果安装了floodgate，则请保持为“auto”
-  address: auto
-  # Minecraft Java服务器的端口
-  # 对于插件版本,如果地址已设置为“auto”,端口也将遵循服务器的侦听端口
-  port: 25565
-  # 认证类型 可以是offline、online或floodgate（参见https://github.com/GeyserMC/Geyser/wiki/Floodgate）
-  # 对于插件版本,建议将`address`字段保持为“auto”,以便自动配置Floodgate支持
-  # 如果安装了Floodgate并且`address:`设置为“auto”,则将自动使用“auth-type: floodgate”
+
+  # 信令是基岩版玩家找到此服务器，以与其建立 NetherNet WebRTC 连接的方式。
+  # 仅在“nethernet”和“both”传输方式下使用。更改需要重启。
+  signaling:
+    # 使用 NetherNet 时，基岩版玩家如何找到此服务器。
+    # “builtin”：Geyser 在基岩版端口上通过 TCP 运行自己的信令服务器。如果 Java 服务器使用相同端口
+    # （例如使用“clone-remote-port”），则此方式无效。在这种情况下，Geyser 会自动回退到“nxs”。
+    # “nxs”：Geyser 将此服务器注册到下面“nxs.endpoint”中配置的外部信令服务。
+    # “hybrid”：同时使用“builtin”和“nxs”。
+    mode: builtin
+
+    # 内置信令和外部信令都会向连接的玩家发送用于 NetherNet WebRTC 连接的地址，
+    # 例如 play.example.com、198.51.100.1 或 [2001:db8::1]:19133。如果未给出端口，则使用 NetherNet UDP 端口。
+    # 主机名会在信令启动时解析；如果无法解析，则信令不会启动。
+    # 你可以列出此机器并不拥有的地址，例如你的公网 IP，只要你的路由器将该端口转发到此机器。
+    # 你需要自行设置端口转发。
+    # 留空则使用此机器自身的地址，以及通过“stun-discovery”找到的公网地址。
+    advertise-addresses: []
+
+    # 当“advertise-addresses”为空时，通过 STUN 查找此服务器的公网地址。
+    # 内置信令会询问公共 STUN 服务器，外部信令服务则会询问它自己的 STUN。
+    stun-discovery: true
+
+    # 内置信令的设置。仅在“builtin”和“hybrid”模式下使用。
+    builtin:
+      # 通过 HTTPS 提供内置信令的设置。配置后，HTTP 将被拒绝。
+      https:
+        # TLS 证书路径。可以是 PEM 证书链（将其密钥放在“private-key”中），
+        # 也可以是 PKCS12 文件（将“private-key”留空）。
+        # 通过 HTTPS 连接的玩家不会看到“首次使用信任”提示。
+        # 留空则仅使用 HTTP。
+        certificate: ''
+
+        # “certificate”的 PEM 私钥路径。如果“certificate”是 PKCS12 文件，则留空。
+        private-key: ''
+
+        # PKCS12 文件的密码，或加密 PEM 私钥的密码。如果没有密码则留空。
+        # 你也可以使用“file:/path/to/password”从文件读取密码，这比直接写在这里更安全。
+        password: ''
+
+    # 外部信令服务的设置。仅在“nxs”和“hybrid”模式下，或内置信令无法运行时使用。
+    nxs:
+      # 信令服务的访问令牌，或 file:/path/to/token 以从文件读取。留空则以无账户方式注册。
+      token: ''
+
+      # 外部信令服务（NXS）的地址。
+      endpoint: https://agent.warden.cloud
+
+# Java 服务器连接的网络设置
+java:
+  # 基岩版玩家登录 Java 服务器时，将使用哪种类型的身份验证进行检查。
+  # 可以是“floodgate”（参见 https://wiki.geysermc.org/floodgate/）、“online”或“offline”。
   auth-type: online
-  # 允许通过Geyser进行基于密码的身份验证方法。仅在在线模式下有用
-  # 如果此选项为false，则用户必须使用Geyser在其桌面上提供的代码对Microsoft进行身份验证
-  allow-password-authentication: true
-  # 在连接到服务器时是否启用PROXY协议
-  # 仅当：
-  # 1）您的服务器支持PROXY协议（可能不支持）
-  # 2）您在代理的主配置中启用了选项时，Velocity或BungeeCord
-  # 如果您不知道这是什么，请勿修改！
-  use-proxy-protocol: false
-  # 将基岩版客户端用于连接的主机名转发到Java服务器
-  # 这是为强制指向域名在代理上使用而设计的
-  forward-hostname: false
 
-# Floodgate使用加密以确保来自授权来源的使用
-# 这应该指向Floodgate生成的公钥（BungeeCord、Spigot或Velocity）
-# 如果不使用Floodgate，则可以忽略此项
-# 如果您在同一服务器上使用插件版本的Floodgate，则密钥将自动从Floodgate中获取
-floodgate-key-file: key.pem
+# MOTD 设置
+motd:
+  # 将向 Minecraft：基岩版客户端广播的 MOTD。如果“passthrough-motd”设置为 true，则此项无关紧要。
+  # 如果其中任一字符串为空，则相应字符串将默认为“Geyser”
+  primary-motd: Geyser
+  secondary-motd: Another Geyser server.
 
-# 仅适用于在线模式身份验证类型
-# 存储应在登录后保存其Java Edition帐户的基岩版玩家列表
-# 这将保存一个令牌,可以在以后重新验证玩家,这不会保存电子邮件或密码
-# 但在向此列表添加内容并向其他人提供对此Geyser实例文件的访问时,仍应谨慎
-# 从此列表中删除名称将在下次Geyser启动时删除其缓存的登录信息
-# 将保存刷新令牌的文件位于与此配置文件相同的文件夹中，命名为“saved-refresh-tokens.json”
+  # Geyser 是否应将 Java 服务器的 MOTD 转发给基岩版玩家。
+  passthrough-motd: true
+
+  # 可连接的最大玩家数量。
+  # 这仅是视觉效果，并且仅在禁用 passthrough-motd 时生效。
+  max-players: 100
+
+  # 是否将 Java 服务器的玩家数量和最大玩家数量转发给基岩版玩家。
+  passthrough-player-counts: true
+
+  # 是否使用服务器 API 方法来确定 Java 服务器的 MOTD 和 ping 转发。
+  # 除非你的 MOTD 或玩家数量显示不正常，否则无需禁用此项。
+  integrated-ping-passthrough: true
+
+  # 以秒为单位，多久 ping 一次 Java 服务器以刷新 MOTD 和玩家数量。
+  # 仅在禁用 integrated-ping-passthrough 时相关。
+  ping-passthrough-interval: 3
+
+# 影响基岩版玩家的游戏玩法选项
+gameplay:
+  # 将发送给 Minecraft：基岩版客户端的服务器名称。此名称在暂停菜单和设置菜单中都可见。
+  server-name: Geyser
+
+  # 允许发送一个假的冷却指示器。否则基岩版玩家看不到冷却，因为他们仍使用 1.8 战斗机制。
+  # 请注意：在禁用集成资源包的情况下，一些用户可能会在冷却序列期间看到黑框，如下所示：
+  # https://geysermc.org/img/external/cooldown_indicator.png
+  # 可以通过启用集成资源包，或在基岩版设置的辅助功能选项卡中将“文本背景不透明度”设置为 0 来解决此问题。
+  # 此设置可设置为“crosshair”、“hotbar”或“disabled”
+  cooldown-type: crosshair
+
+  # 如果向基岩版客户端提供大量命令，首次打开命令提示符时客户端可能会冻结。
+  # 禁用此项将阻止发送命令建议，并解决基岩版客户端冻结的问题。
+  command-suggestions: true
+
+  # 控制是否向玩家显示坐标。
+  show-coordinates: true
+
+  # 是否阻止基岩版玩家进行其脚手架式搭桥。
+  disable-bedrock-scaffolding: false
+
+  # 基岩版阻止在下界 Y127 以上建造和显示方块。
+  # 此配置选项通过将下界维度 ID 更改为末地 ID 来绕过该限制。
+  # 主要缺点是整个下界将具有相同的红色雾气，而不是每个生物群系有不同的雾气。
+  nether-roof-workaround: false
+
+  # 是否向其他基岩版玩家显示基岩版表情动作。
+  emotes-enabled: true
+
+  # 是否移除基岩版玩家发送的旧版文本格式代码。
+  # 与 Java 版不同，在基岩版中可以输入用于旧版颜色代码的节符号。
+  # 更多信息请参见 https://minecraft.wiki/w/Formatting_codes。
+  block-legacy-codes: true
+
+  # 用于标记基岩版玩家物品栏中不可用槽位的物品。例如创造模式下的 2x2 合成格，
+  # 或大小不同于通常 3x9 的自定义物品栏菜单。默认物品是屏障方块。
+  # 此配置选项可设置为任何基岩版物品标识符。如果要将其设置为自定义物品，请确保按以下格式指定物品："geyser_custom:<mapping-name>"
+  unusable-space-block: minecraft:barrier
+
+  # 是否添加基岩版中通常不存在的任何物品和方块。
+  # 只有在使用不使用“transfer packet”风格服务器切换的代理时，才可能需要禁用此项。
+  # 如果禁用此项，熔炉矿车物品将映射为漏斗矿车物品。
+  # Geyser 的方块、物品和头颅映射系统也将被禁用。
+  # 此选项需要重启 Geyser 才能更改其设置。
+  enable-custom-content: true
+
+  # 如果有任何资源包，强制客户端加载所有资源包。
+  # 如果设置为 false，则允许用户即使不想下载资源包也可以连接到服务器。
+  force-resource-packs: true
+
+  # 是否自动向所有连接的基岩版玩家提供 Geyser 某些功能所需的资源包。
+  # 如果启用，force-resource-packs 将被启用。
+  enable-integrated-pack: true
+
+  # 是否将玩家 ping 转发到服务器。启用此项可以让基岩版玩家拥有更准确的 ping，
+  # 但也可能导致玩家更容易超时。
+  forward-player-ping: false
+
+  # 允许解锁 Xbox 成就。
+  # 如果玩家输入未知命令，他们将收到一条消息，说明作弊已禁用。
+  # 否则，命令会按预期工作。
+  xbox-achievements-enabled: false
+
+  # 每位玩家最多显示的自定义头颅数量。增加此值可能会降低较弱设备的性能。
+  # 值为 0 将禁用所有自定义头颅。
+  # 将此设置为 -1 将导致无论距离或数量如何都显示所有自定义头颅。
+  max-visible-custom-skulls: 128
+
+  # 显示自定义头颅的玩家周围半径（以方块为单位）。
+  custom-skull-render-distance: 32
+
+# 如果我们没有客户端请求的默认语言环境，则使用此默认语言环境。如果设置为“system”，将使用系统语言。
+default-locale: system
+
+# 服务器是否记录玩家 IP 地址。
+log-player-ip-addresses: true
+
+# 仅用于 online 模式身份验证类型。
+# 存储在登录后应保存其 Java 版账户的基岩版玩家用户名列表。
+# 这会保存一个令牌，之后可用于重新验证玩家。这不会保存电子邮件或密码，
+# 但在添加到此列表并允许他人访问此 Geyser 实例的文件时，你仍应谨慎。
+# 从列表中移除某个名称将在下次 Geyser 启动时删除其缓存的登录信息。
+# 令牌将保存在与此配置相同文件夹中的文件中，文件名为“saved-refresh-tokens.json”。
 saved-user-logins:
   - ThisExampleUsernameShouldBeLongEnoughToNeverBeAnXboxUsername
   - ThisOtherExampleUsernameShouldAlsoBeLongEnough
 
-# 指定等待用户授权Geyser访问其Microsoft帐户的秒数
-# 用户在此期间可以断开与服务器的连接
+# 仅用于 online 模式身份验证类型。
+# 指定在用户授权 Geyser 访问其 Microsoft 账户时等待多少秒。
+# 允许用户在此期间断开连接。
 pending-authentication-timeout: 120
 
-# 当第一次打开命令提示符时，基岩版客户端可能会冻结
-# 禁用此功能将阻止发送命令建议并解决基岩版客户端的冻结问题
-command-suggestions: true
-
-# 以下三个选项启用“ping passthrough” - MOTD、玩家计数和/或协议名称从Java服务器检索
-# 将MOTD从远程服务器中继到基岩版玩家
-passthrough-motd: true
-# 将玩家计数和最大玩家从远程服务器中继到基岩版玩家
-passthrough-player-counts: true
-# 启用LEGACY ping passthrough。除非您的MOTD或玩家计数未正确显示,否则不需要启用此选项
-# 这个选项在独立模式下什么也不做
-legacy-ping-passthrough: false
-# 每隔多少秒ping远程服务器,仅适用于独立或传统ping通过
-# 如果出现BrokenPipe错误,请增加此值
-ping-passthrough-interval: 3
-
-# 是否将玩家ping转发到服务器,启用此选项将允许基岩版玩家具有更准确的
-# ping，但也可能导致玩家更容易超时
-forward-player-ping: false
-
-# 可连接的最大玩家数量,目前仅是视觉上的限制,实际上不会限制玩家数量,取决于服务端的最大玩家数量
-max-players: 100
-
-# 如果应通过控制台发送调试消息
-debug-mode: false
-
-# 允许第三方披风可见,当前允许的有：
-# OptiFine披风、LabyMod披风、5Zig披风和Minecraft披风
-allow-third-party-capes: false
-
-# 允许第三方deadmau5耳朵可见,当前允许的有：
-# Minecraft披风
-allow-third-party-ears: false
-
-# 允许发送虚假冷却指示器,否则,基岩版玩家不会看到冷却，因为他们仍在使用1.8战斗
-# 请注意：如果启用了冷却,一些用户可能在冷却序列期间看到黑色框，如下所示：
-# https://cdn.discordapp.com/attachments/613170125696270357/957075682230419466/Screenshot_from_2022-03-25_20-35-08.png
-# 可以通过进入基岩版设置，在可访问性选项卡下设置“文本背景不透明度”为0来禁用此功能
-# 此设置可以设置为“title”、“actionbar”或“false”
-show-cooldown: title
-
-# 控制是否向玩家显示坐标
-show-coordinates: true
-
-# 是否阻止基岩版玩家执行他们的脚手架式桥接
-disable-bedrock-scaffolding: false
-
-# 如果设置，当基岩版玩家执行任何表情时，它将交换副手和主手物品,就像Java Edition键绑定一样
-# 有三个选项可以设置：
-# disabled - 默认/回退，不应用此解决方法
-# no-emotes - 表情将不会发送到其他基岩版客户端,副手将被交换,这实际上禁用所有表情的显示
-# emotes-and-offhand - 表情将发送到基岩版客户端并交换副手
-emote-offhand-workaround: "disabled"
-
-# 如果我们没有客户端请求的默认语言，则使用默认的语言环境。取消注释以不使用默认系统语言
-# default-locale: en_us
-
-# 指定将图像缓存到磁盘以节省从互联网下载的时间的秒数
-# 值为0表示禁用。（默认值：0）
-cache-images: 0
-
-# 允许显示自定义头骨,保持启用可能会导致旧/较弱设备性能下降
-allow-custom-skulls: true
-
-# 每个玩家显示的最大自定义头骨数量,增加此值可能会降低较弱设备的性能
-# 将此设置为-1将导致显示所有自定义头骨,而不考虑距离或数量
-max-visible-custom-skulls: 128
-
-# 玩家周围多少个方块的半径内显示自定义头骨
-custom-skull-render-distance: 32
-
-# 是否添加基岩版中原本不存在的物品与方块？
-# 仅在使用的代理服务器不支持"传输数据包"式服务器切换时才需禁用此选项。
-# 若禁用，动力矿车物品将被映射为漏斗矿车物品。
-# 同时将禁用Geyser的方块、物品及头颅映射系统。
-# 更改此设置需要重启Geyser
-add-non-bedrock-items: true
-
-基岩版会阻止在下界（Y>127）处建造和显示方块。
-此配置选项通过将下界维度ID更改为末地ID来解决该限制。
-主要缺点是整个下界将呈现相同的红色迷雾效果，而无法按生物群系显示不同迷雾。
-above-bedrock-nether-building: false
-
-# 强制客户端加载所有资源包（如果有）
-# 如果设置为false,玩家可以在不接受服务器资源包的情况下加入服务器
-force-resource-packs: true
-
-# 允许解锁Xbox成就。
-# 这将禁止所有基岩版游戏内命令成功运行,否则基岩版会认为您在作弊
-xbox-achievements-enabled: false
-
-# 是否由服务器记录玩家IP地址。
-log-player-ip-addresses: true
-
-# 是否向控制台和操作员通知新版本的Geyser可用，该版本支持此Geyser版本不支持的基岩版版本
-# 建议保持此选项启用,因为许多基岩版平台会自动更新
+# 是否在控制台和操作员中提醒有新的 Geyser 版本可用，该版本支持此 Geyser 版本不支持的基岩版版本。
+# 建议保持启用此选项，因为许多基岩版平台会自动更新。
 notify-on-new-bedrock-update: true
 
-# 用于标记基岩版玩家库存中不可用插槽的项目,这些示例包括在创意模式下的2x2配方网格
-# 或具有与通常的3x9不同大小的自定义库存菜单,默认项目是屏障方块
-unusable-space-block: minecraft:barrier
+# 高级配置选项。通常不需要修改。
+advanced:
+  # 指定玩家皮肤图像将缓存到磁盘多少天，以节省从互联网下载它们。
+  # 值为 0 表示禁用。（默认：0）
+  cache-images: 0
 
-# bStats是一个完全匿名的统计跟踪器，仅跟踪关于Geyser的基本信息
-# 例如在线人数、使用Geyser的服务器数量、正在使用的操作系统等,您可以在这里了解有关bStats的更多信息：https://bstats.org/
-# https://bstats.org/plugin/server-implementation/GeyserMC
-metrics:
-  # 是否启用度量
-  enabled: true
-  # 服务器的UUID，不要更改！
-  uuid: 2c685abc-5b4e-4dda-8405-7216c7086662
+  # Geyser 会在每个 Scoreboard 数据包后更新记分板，但当 Geyser 尝试每秒处理
+  # 大量记分板数据包时，这可能导致严重卡顿。
+  # 此选项允许你指定每秒多少个记分板数据包后，
+  # 将记分板更新限制为每秒四次更新。
+  scoreboard-packet-threshold: 20
 
-# 高级选项 - 除非您知道自己在做什么，否则请勿触摸！
+  # Geyser 是否应在命令建议中发送队伍名称。
+  # 如果你有许多不需要作为建议的队伍，请禁用此项。
+  add-team-suggestions: true
 
-# Geyser在每个记分板数据包后更新记分板，但当Geyser尝试每秒处理大量记分板数据包时可能会导致严重的延迟
-# 此选项允许您指定每秒多少个记分板数据包
-# 记分板更新将限制为每秒四次更新
-scoreboard-packet-threshold: 20
+  # 要发送给基岩版客户端下载的远程资源包 URL 列表。
+  # 基岩版客户端对这些内容的传输方式非常挑剔——更多信息请参见我们的 wiki 页面：https://geysermc.org/wiki/geyser/packs/
+  resource-pack-urls: []
 
-# 允许来自ProxyPass和Waterdog的连接
-# 请参阅https://www.spigotmc.org/wiki/firewall-guide/以获取帮助-使用UDP而不是TCP
-enable-proxy-connections: false
+  # Floodgate 使用加密来确保仅从授权来源使用。
+  # 此项应指向 Floodgate 生成的公钥（BungeeCord、Spigot 或 Velocity）
+  # 不使用 Floodgate 时你可以忽略此项。
+  # 如果你在同一服务器上使用 Floodgate 的插件版本，密钥将自动从 Floodgate 获取。
+  floodgate-key-file: key.pem
 
-# 互联网支持最大MTU为1492，但可能会导致数据包分片问题
-# 默认值为1400
-mtu: 1400
+  # Geyser 到 Java 服务器连接的高级网络选项
+  java:
+    # 连接到 Java 服务器时是否启用 HAPROXY 协议。
+    # 仅在以下情况下有用：
+    # 1）你的 Java 服务器支持 HAPROXY 协议（它可能不支持）
+    # 2）你在代理的主配置中启用了该选项并运行 Velocity 或 BungeeCord。
+    # 如果你不知道这是什么，请不要改动它！
+    use-haproxy-protocol: false
 
-# 是否直接连接到Java服务器而不创建TCP连接
-# 仅当插件与数据包或网络进行交互的插件无法正确使用Geyser时才应禁用此功能
-# 如果在插件版本上启用，将忽略远程地址和端口部分
-# 如果在插件版本上禁用，预期性能降低和延迟增加
-use-direct-connection: true
+    # 是否在不创建 TCP 连接的情况下直接连接到 Java 服务器。
+    # 只有在与数据包或网络交互的插件无法与 Geyser 正常工作时才应禁用此项。
+    # 如果启用，remote address 和 port 部分将被忽略。
+    # 如果禁用，预计性能会下降，延迟会增加。
+    use-direct-connection: true
 
-# 是否尝试为基岩版玩家禁用压缩,这应该是一个好处,因为在不处理Java数据包的情况下,没有必要压缩数据
-# 当需要通过网络处理Java数据包时
-# 这要求use-direct-connection为true
-disable-compression: true
+    # Geyser 是否应尝试为基岩版玩家禁用数据包压缩（从 Java 服务器到 Geyser）。
+    # 这应该是有益的，因为当 Java 数据包不通过网络处理时，无需压缩数据。
+    # 这要求 use-direct-connection 为 true。
+    disable-compression: true
 
-config-version: 4
+  # Geyser 基岩版监听器的高级网络选项
+  bedrock:
+    # 通过 MOTD 向基岩版客户端广播的端口，告诉他们应使用该端口连接到服务器。
+    # 值为 0 将广播上面指定的端口。
+    # 除非 Geyser 运行的端口与用于连接的端口不同，否则不要更改此项。
+    # 此选项对 NetherNet 不再相关，并将在 RakNet 不再受支持后移除。
+    broadcast-port: 0
+
+    # 向基岩版客户端压缩网络流量的程度。数值越高，CPU 使用越多，但
+    # 使用的带宽越小。低于 -1 或高于 9 没有任何效果。设置为 -1 可禁用。
+    compression-level: 6
+
+    # 是否期望连接基岩版客户端时使用 HAPROXY 协议。
+    # 仅当你在 Geyser 实例前面运行反向代理时有用。
+    # RakNet：不发送 HAPROXY 头的客户端将被忽略。
+    # 内置信令：仅从“haproxy-protocol-whitelisted-ips”中列出的代理读取 HAPROXY 头。
+    # 没有该头的连接仍会被接受。
+    # 如果你不知道这是什么，请不要改动它！
+    use-haproxy-protocol: false
+
+    # 允许的会说 HAPROXY 协议的代理 IP 地址/子网列表。仅在启用“use-haproxy-protocol”时有效。
+    # 保持此列表为空意味着对发送 HAPROXY 头的连接没有 IP 地址白名单。
+    # 内置信令仅从此列表中的代理读取 HAPROXY 头，因此列表为空时它不读取任何头。
+    # 此列表中的代理也不受内置信令的每地址连接限制影响。
+    # 支持 IP 地址、子网和纯文本文件链接。
+    haproxy-protocol-whitelisted-ips: []
+
+    # 内置信令前面的反向代理地址列表（例如 HTTP 负载均衡器）。
+    # 内置信令从“X-Forwarded-For”头读取玩家的真实地址，并且不会对所有列出的代理
+    # 应用其每地址连接限制。这与 HAPROXY 协议是分开的。
+    # 支持 IP 地址、子网和纯文本文件链接。
+    signaling-trusted-proxies: []
+
+    # 如果此 Geyser 实例位于 WaterdogPE 代理后面，应启用此项。如果启用，Geyser 将
+    # 使用 WaterdogPE 发送的 xuid / address，并拒绝不发送它们的客户端。
+    use-waterdogpe-forwarding: false
+
+    # 互联网支持的最大 MTU 为 1492，但可能导致数据包分片问题。
+    # 1400 是默认值。
+    mtu: 1400
+
+    # 此选项禁用 Geyser 为连接基岩版玩家执行的身份验证步骤。
+    # 可用于允许来自 ProxyPass 和 WaterdogPE 的连接。在这些情况下，请确保用户
+    # 无法直接连接到此 Geyser 实例。请参阅 https://www.spigotmc.org/wiki/firewall-guide/ 获取
+    # 帮助——并使用 UDP 而不是 TCP。
+    # 不建议为其他用例禁用基岩版身份验证，因为这允许任何人伪造用户名，因此存在安全风险。
+    # 当此选项禁用时，所有 Floodgate 功能（包括皮肤上传和账户链接）也将无法工作。
+    validate-bedrock-login: true
+
+    # 是否记录 NetherNet 的调试消息，来自 libdatachannel 和 NetherNet 本身，例如信令
+    # 和 STUN 发现做了什么。当玩家无法通过 NetherNet 连接时很有用。
+    nethernet-debug: false
+
+  # 外部信令服务的高级选项。仅在“nxs”和“hybrid”信令模式下使用。
+  nxs:
+    # 让信令服务在玩家无法直接到达此服务器时帮助玩家连接，
+    # 例如服务器位于没有端口转发的 NAT 后面时。
+    assisted-joins: false
+
+    # 让信令服务从多个区域检查玩家是否可以到达此服务器，
+    # 并停止提供失败的地址。
+    connection-checks: true
+
+    # 此服务器所在位置：“country”（两位字母代码）、“city”、“latitude”和“longitude”。
+    # 留空以让信令服务估计或配置它。
+    location: {}
+
+    # 当 Geyser 关闭时，从信令服务中移除此服务器。
+    # 如果“nethernet”文件夹在每次重启时都会丢失（例如在没有卷的容器中），请启用此项。
+    # 否则，每次重启都会将此服务器重新注册为一个新服务器。
+    deregister-on-shutdown: false
+
+# 是否应通过控制台发送调试消息
+debug-mode: false
+
+# 不要更改！
+config-version: 11
 ```
 
-示例配置文件服务器的UUID,与实际服务器UUID有所不同
-
 :::warning[警告]
-
-每次调整完配置文件需要重启
-
-不推荐**reload**命令重载
-
-可能会遇到奇奇怪怪的问题
-
+每次调整完配置文件需要重启   
+不推荐**/reload**命令重载，可能会遇到奇奇怪怪的问题   
 该页面的配置文件可能会因为随着Geyser更新而落后
-
 :::

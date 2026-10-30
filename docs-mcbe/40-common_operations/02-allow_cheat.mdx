@@ -4,24 +4,21 @@ sidebar_position: 2
 ---
 
 :::info[信息]
-
 本文档是隶属于[关于server.properties](/mcbe/server_properties)文档的子文档。
-
 看完此文档后想了解更多信息，请阅读父文档。
-
 :::
 
 ## 作弊未启用？
-如果发现自己**拥有op权限**却不能执行`/give`、`/gamemode`、`/time`、`/tp`和/gamerule等命令的话，说明服务器**未启用作弊**。
+
+如果发现自己**拥有管理员权限**却不能执行`/give`、`/gamemode`、`/time`、`/tp`和/gamerule等命令的话，说明服务器**未启用作弊**。
 
 ## 启用作弊
+
 :::warning[提示]
-
-`server.properties`不支持热重载，请在关闭服务器的情况下对其进行修改。
-
+`server.properties` 不支持热重载，请在关闭服务器的情况下对其进行修改。
 :::
 
-在服务器文件管理根目录找到`server.properties`文件并打开，在其中找到这一行：
+在服务器文件管理根目录找到 `server.properties` 文件并打开，在其中找到这一行：
 
 ```properties
 allow-cheat=false
@@ -32,6 +29,7 @@ allow-cheat=false
 将`false`改为`true`并重启服务器即可启用作弊。
 
 ## 启用作弊后游戏里的设置点不动？
+
 在 **server.properties** 中添加以下配置并重新启动服务器。
 
 ```properties
@@ -46,6 +44,6 @@ op-permission-level=4
 
 ---
 
-~~(群友的愤怒)~~
+![群友的愤怒](/img/pages/mcbe/bds-allow_cheat-2.png)
 
- ![说明图片](/img/pages/mcbe/bds-allow_cheat-2.png)
+~~(群友的愤怒)~~

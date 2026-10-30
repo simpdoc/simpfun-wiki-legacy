@@ -3,50 +3,47 @@ title: "Floodgate"
 sidebar_position: 5
 ---
 
-Floodgate允许从[Geyser](https://geysermc.org/)连接以加入在线模式(开启了正版验证)的服务器
+Floodgate 允许从 [Geyser](https://geysermc.org/) 连接以加入在线模式(开启了正版验证)的服务器
 
 ## 下载
+
 ### 首先前往[Geyser主页](https://geysermc.org/)下载Floodgate
-![说明图片](/img/pages/mcje/floodgate-4.png) ![说明图片](/img/pages/mcje/floodgate-5.png) ![说明图片](/img/pages/mcje/floodgate-1.png)
+
+![说明图片](/img/pages/mcje/floodgate-4.png)    
+![说明图片](/img/pages/mcje/floodgate-5.png)    
+![说明图片](/img/pages/mcje/floodgate-1.png)   
 
 ### 选择你需要的Geyser类型下载
-Floodgate BungeeCord是给[BungeeCord](https://github.com/SpigotMC/BungeeCord)用的 Floodgate 插件
 
-Floodgate Spigot/Paper是给[Spigot](https://www.spigotmc.org/)系列插件加载器使用的 Floodgate 插件
-
-:::info[支持]
-
-+ Paper
-+ Purpur
-+ Leaves
-
-等等,支持spigot插件的服务端....
-
-Floodgate Velocity是给[Velocity](https://papermc.io/software/velocity)用的 Floodgate 插件
-
-Floodgate Fabric是给[Fabric](https://fabricmc.net/)Mod加载器使用的 Floodgate Mod
-
-:::
+Floodgate BungeeCord 是给 [BungeeCord](https://github.com/SpigotMC/BungeeCord) 用的 Floodgate 插件   
+Floodgate Spigot/Paper 是给 [Spigot](https://www.spigotmc.org/) 系列插件加载器使用的 Floodgate 插件   
+Floodgate Velocity 是给 [Velocity](https://papermc.io/software/velocity)用的 Floodgate 插件   
+Floodgate Fabric 是给 [Fabric](https://fabricmc.net/) Mod加载器使用的 Floodgate Mod   
+Floodgate NeoForge [NeoForge](https://neoforged.net/) Mod加载器使用的 Floodgate Mod
 
 ## 使用方法
-插件版本的把Floodgate插件丢进plugins文件夹
 
-Mod版本的丢进Mods文件夹
+插件版本的把 Floodgate 插件丢进 `plugins` 文件夹   
+Mod 版本的丢进 `mods` 文件夹
 
 ## 配置文件
+
 这里演示的是插件版本
 
-在你的服务器根目录文件找到plugins ![说明图片](/img/pages/mcje/floodgate-6.png) 然后找到配置文件夹(floodgate) ![说明图片](/img/pages/mcje/floodgate-7.png) **config.yml** ![说明图片](/img/pages/mcje/floodgate-2.png)
+在你的服务器根目录文件找到 `plugins` 文件夹    
+![说明图片](/img/pages/mcje/floodgate-6.png) 
+然后找到 `floodgate` 文件夹    
+![说明图片](/img/pages/mcje/floodgate-7.png) 
+打开 **config.yml**    
+![说明图片](/img/pages/mcje/floodgate-2.png)
 
 :::info[温馨提示]
-
-如果你是Fabric服务端，那么配置文件夹将保存在服务器根目录的config文件夹下。
-
+如果你是 Fabric/NeoForge 服务端，那么配置文件夹将保存在服务器根目录的 `config` 文件夹下。
 :::
 
 ![说明图片](/img/pages/mcje/floodgate-3.png)
 
-配置文件翻译
+配置文件翻译：
 
 ```yaml
 # 在Floodgate中,基岩版玩家数据是加密发送的
@@ -113,14 +110,9 @@ metrics:
 config-version: 3
 ```
 
-示例配置文件服务器的UUID,与实际服务器UUID有所不同！！！
 
 :::warning[警告]
-
-每次调整完配置文件需要重启
-
-不推荐**reload**命令重载，可能会遇到奇奇怪怪的问题
-
-该页面的配置文件可能会因为随着Floodgate更新而落后
-
+每次调整完配置文件需要重启   
+不推荐**/reload**命令重载，可能会遇到奇奇怪怪的问题   
+该页面的配置文件可能会因为随着Floodgate更新而落后   
 :::

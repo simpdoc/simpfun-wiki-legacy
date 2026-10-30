@@ -6,9 +6,7 @@ sidebar_position: 30
 这里写的是Linux镜像下默认的`start.sh`，如果你“一不小心”把默认的删了就可以来这里恢复。
 
 :::danger[提示]
-
 以 "#" 开头的一行为注释，**不会被终端执行**！
-
 :::
 
 ## Java镜像
@@ -32,22 +30,18 @@ maxmem=$((SERVER_MEMORY - 1000))
 ```
 
 :::warning[提示]
-
 部分基础镜像内的`start.sh`没有完整的内容，如缺少相关路径或变量定义请来此处复制！
-
 :::
 
 :::tip[提示]
-
-自2024.4.30起，所有Java镜像(包括所有MinecraftJE的预设镜像)均已**预装**Java 21，路径如上所示。[具体内容详见此文章](https://www.wuye2004.top/archives/4)。
-
+自2024.4.30起，所有Java镜像(包括所有MinecraftJE的预设镜像)均已**预装**Java 21，路径如上所示。[具体内容详见此文章](https://www.wuye2004.top/archives/4)。   
 自2026.3.24起，所有Java镜像(包括所有MinecraftJE的预设镜像)均已**预装**Java 25，路径如上所示。
-
 :::
 
 ### 部分MCJE服务端启动命令示例
-Forge：1.17.1+ → [【MCJE】安装/升级Forge服务端](/mcje/server_install/forge)
 
+Forge：   
+1.17.1+ → [【MCJE】安装/升级Forge服务端](/mcje/server_install/forge)   
 1.16.5- → [【MCJE】安装/升级Forge服务端](/mcje/server_install/forge)
 
 Fabric：[【MCJE】安装/升级Fabric服务端](/mcje/server_install/fabric)
@@ -55,6 +49,7 @@ Fabric：[【MCJE】安装/升级Fabric服务端](/mcje/server_install/fabric)
 NeoForge：[【MCJE】安装/升级NeoForge服务端](/mcje/server_install/neoforge)
 
 ## Python镜像
+
 ```shell
 #!/bin/bash
 
@@ -66,7 +61,5 @@ echo "您需要修改启动参数来配置您的服务端"
 ```
 
 :::warning[提示]
-
 Python镜像不含Java运行环境。
-
 :::

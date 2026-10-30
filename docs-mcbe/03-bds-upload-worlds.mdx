@@ -4,21 +4,18 @@ sidebar_position: 3
 ---
 
 :::warning[提示]
-
-适用服务端：BDS，LLBDS
-
-不适用服务端：Nukkit系，Pocketmine系等
-
+适用服务端：BDS，LLBDS，Endstone   
+不适用服务端：Nukkit 系，Pocketmine 系等非 BDS 服务端
 :::
 
 ---
 
 ## 从客户端导出存档
+
 ### Android导出教程
-由于谷歌对App做出了限制，在BE1.18后，"外部存储"的存储目录被移动至`Android/data/com.mojang.minecraftpe/files/games/com.mojang/minecraftWorlds/`下。
 
-如果是您本地创建的存档，其文件夹名称将会是一串无规则英文字符or数字+等号(=)，如下图所示。
-
+由于谷歌对App做出了限制，在BE1.18后，"外部存储"的存储目录被移动至`Android/data/com.mojang.minecraftpe/files/games/com.mojang/minecraftWorlds/`下。   
+如果是您本地创建的存档，其文件夹名称将会是一串无规则英文字符or数字+等号(=)，如下图所示。     
 请打开文件夹内的`levelname.txt`查看存档名，确保你选择的是需要导出的存档。
 
 ![说明图片](/img/pages/mcbe/bds-upload-worlds-1.png)
@@ -28,14 +25,13 @@ sidebar_position: 3
 ![说明图片](/img/pages/mcbe/bds-upload-worlds-2.jpeg)
 
 :::warning[警告]
-
 在Android11及更高的版本中，由于谷歌的限制，您需要将存档文件夹复制到非Android/data的目录下进行压缩！
-
 :::
 
 或者也可以选择不压缩，使用[SFTP工具](/web/features/instance/fileoperations)直接上传整个文件夹。
 
 ### Windows导出教程
+
 _是三个教程里最简单的一个端_
 
 在游戏内点击`编辑`
@@ -51,13 +47,18 @@ _是三个教程里最简单的一个端_
 ![说明图片](/img/pages/mcbe/bds-upload-worlds-5.png)
 
 ### iOS导出教程
-与安卓端导出教程基本相同。打开“文件”，在我的iPhone/iPad里找到`Minecraft`，进入以下目录：`/Minecraft/games/com.mojang/minecraftWorlds`后根据文件夹内的`levelname.txt`寻找需要导出的存档并将整个乱码文件夹压缩为zip即可。
+
+与安卓端导出教程基本相同。打开“文件”，在我的 iPhone/iPad 里找到 `Minecraft` ，进入以下目录：   
+```
+/Minecraft/games/com.mojang/minecraftWorlds
+```
+然后根据文件夹内的 `levelname.txt` 寻找需要导出的存档并将整个文件夹压缩为 zip 即可。
 
 ![说明图片](/img/pages/mcbe/bds-upload-worlds-6.png)
 
 ### 移动端：使用资源包快捷导出
-下载“存档导出mod”的资源包，打开方式选择“Minecraft”来导入。
 
+下载“存档导出mod”的资源包，打开方式选择“Minecraft”来导入。   
 这个包在综合交流群10的群文件里存了一份，[或者可以看这里的帖子](https://www.wuye2004.top/archives/3)（←点击即可快捷到达！）
 
 ![说明图片](/img/pages/mcbe/bds-upload-worlds-7.jpeg)
@@ -71,12 +72,14 @@ _是三个教程里最简单的一个端_
 ![说明图片](/img/pages/mcbe/bds-upload-worlds-9.png)
 
 ## 下载的存档
+
 你已经有存档了，请直接快进下一步。
 
 ## 导入存档到服务器
-### 第零步
-在往文件管理里扔存档之前，你应该先检查一下存档文件结构是否正确。
 
+### 第零步
+
+在往文件管理里扔存档之前，你应该先检查一下存档文件结构是否正确。   
 基岩版存档内有最少7项、最多（我见过的最多）12项文件/文件夹，只有符合这个格式的存档能被游戏识别。如下表（斜体+下划线部分表示非必须）
 
 | 文件或文件夹 | 说明 |
@@ -97,20 +100,23 @@ _是三个教程里最简单的一个端_
 _虽然一般不会有错，但是看看为好，以免套了个文件夹。_
 
 ### 第一步
+
 打开SFE4控制台，选择实例，转到文件页面，并转到/worlds/文件夹，如下图所示：
 
 ![说明图片](/img/pages/mcbe/bds-upload-worlds-10.png)
 
 ### 第二步
-上传存档文件夹（或存档压缩包），如果上传的是压缩包，在上传完毕后解压。
-如果压缩包后缀名为`.mcworld`，请将其改为`.zip`。
 
-最终结果应如下图所示：
+上传存档文件夹（或存档压缩包），如果上传的是压缩包，在上传完毕后解压。   
+如果压缩包后缀名为`.mcworld`，请将其改为`.zip`。   
+
+最终结果应如下图所示：   
 例：此处我上传的新存档文件夹名称为`Fontaine`。
 
 ![说明图片](/img/pages/mcbe/bds-upload-worlds-11.png)
 
 ### 第三步
+
 回到服务器根目录，打开`server.properties`，找到下面这行配置：
 
 ```properties
@@ -118,10 +124,11 @@ level-name=Bedrock level
 # Allowed values: Any string without semicolon symbol or symbols illegal for file name: /\n\r\t\f`?*\\<>|\":
 ```
 
-将其中的`Bedrock level`更改为你上传的存档文件夹的名字。
-例：在上一步中我上传的存档文件夹名为Fontaine，那么我就需要把Bedrock level更改为Fontaine，如下图所示：
+将其中的`Bedrock level`更改为你上传的存档文件夹的名字。   
+例：在上一步中我上传的存档文件夹名为 `Fontaine` ，那么我就需要把 `Bedrock level` 更改为 `Fontaine` ，如下图所示：
 
 ![说明图片](/img/pages/mcbe/bds-upload-worlds-12.png)
 
 ### 第四步
+
 回到终端界面，开启服务器，查看存档是否正确导入。

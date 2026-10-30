@@ -8,6 +8,7 @@ sidebar_position: 2
 本篇文档将介绍如何从服务端导出存档。
 
 ## 从Vanilla/Fabric/Forge/NeoForge服务端导出
+
 按照下图方式将`world`文件夹压缩(此处的`world`为你的服务器的`server.properties`中[level-name设置的值](/mcje/server_properties))。
 
 ![说明图片](/img/pages/mcje/download-worlds-1.png)
@@ -23,7 +24,6 @@ compressed后的数字即代表文件完成压缩时的时间(精确到秒)。
 ![说明图片](/img/pages/mcje/download-worlds-3.png)
 
 :::warning[提示]
-
 如果浏览器无法创建下载任务或下载失败，请尝试更换浏览器！
 
 推荐的浏览器：
@@ -31,15 +31,16 @@ compressed后的数字即代表文件完成压缩时的时间(精确到秒)。
 PC端：[Chrome](https://www.google.cn/chrome/)，[Edge](https://www.microsoft.com/zh-cn/edge/download)，[Supermium](https://win32subsystem.live/supermium/)，[FireFox](https://www.firefox.com.cn/)
 
 安卓端(前往手机应用商店即可下载)：[Edge](https://learn.microsoft.com/zh-cn/deployedge/microsoft-edge-install-mobile-china)，[Chrome](https://www.techspot.com/downloads/5818-google-chrome-for-android.html)
-
 :::
 
 **如需要导入到客户端，则将解压后的world文件夹移入客户端存档目录即可。**
 
 ## 从Bukkit系服务端导出（26.1及更新版本）
+
 同上方“从Vanilla/Fabric/Forge/NeoForge服务端导出”一致。
 
 ## 从Bukkit系服务端导出（1.21.11及更早版本）
+
 Bukkit系服务端(例如：Spigot、Paper、Purpur等服务端)的世界存储如下所示：
 
 | 服务端类型 | 主世界及其他数据 | 下界数据 | 末地数据 |
@@ -48,8 +49,8 @@ Bukkit系服务端(例如：Spigot、Paper、Purpur等服务端)的世界存储�
 | Bukkit系服务端 | `/world` | `/world_nether/DIM-1` | `/world_the_end/DIM1` |
 
 ### 仅备份，不导入到客户端时
-直接压缩服务器根目录下的`/world`、`/world_nether`、`/world_the_end`三个文件夹。
 
+直接压缩服务器根目录下的`/world`、`/world_nether`、`/world_the_end`三个文件夹。   
 此处的world为你的服务器的server.properties中[level-name设置的值](/mcje/server_properties)。
 
 ![说明图片](/img/pages/mcje/download-worlds-4.png)
@@ -65,7 +66,6 @@ compressed后的数字即代表文件完成压缩时的时间(精确到秒)。
 ![说明图片](/img/pages/mcje/download-worlds-6.png)
 
 :::warning[提示]
-
 如果浏览器无法创建下载任务或下载失败，请尝试更换浏览器！
 
 推荐的浏览器：
@@ -73,10 +73,10 @@ compressed后的数字即代表文件完成压缩时的时间(精确到秒)。
 PC端：[Chrome](https://www.google.cn/chrome/)，[Edge](https://www.microsoft.com/zh-cn/edge/download)，[Supermium](https://win32subsystem.live/supermium/)，[FireFox](https://www.firefox.com.cn/)
 
 安卓端(前往手机应用商店即可下载)：[Edge](https://learn.microsoft.com/zh-cn/deployedge/microsoft-edge-install-mobile-china)，[Chrome](https://www.techspot.com/downloads/5818-google-chrome-for-android.html)
-
 :::
 
 ### 导入到客户端
+
 按照**上面的方式**压缩三个文件夹并下载，下载完成后在本地找一个地方进行解压。
 
 + 将 `/world_nether/DIM-1` 文件夹复制到 `/world` 文件夹中。

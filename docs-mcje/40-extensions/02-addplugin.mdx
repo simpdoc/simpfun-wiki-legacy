@@ -6,57 +6,45 @@ sidebar_position: 2
 # 【MCJE】如何添加插件
 
 :::warning[仅适用]
-
 此教程仅适用于以下服务端：
 
-+ Spigot，Paper，Leaves**等**插件端
-+ Arclight，Catserver，Mohist等混合端
-+ SpongeForge（与Bukkit系服务端方法不一致）
-
++ Spigot，Paper，Leaves **等**插件端
++ Arclight，Catserver，Mohist 等混合端
++ SpongeForge（与 Bukkit 系服务端方法不一致）
 :::
 
 :::tip[提示]
-
 如果你正在寻找插件，可以访问 [苦力怕论坛](https://klpbbs.com/)、[MineBBS](https://www.minebbs.com/)、[Modrinth](https://modrinth.com/discover/plugins) 等网站。
-
 :::
 
 ## 插件类型区分
-### Bukkit插件
+
+### Bukkit 插件
+
 使用BukkitAPI进行开发的插件，绝大部分插件端(例如Spigot，Paper，Purpur，Leaves等)，以及Arclight，Catserver，Mohist等混合端都使用Bukkit插件。
 
 :::info[提示]
-
-+ 大部分Bukkit插件支持**向上兼容**，例如插件Vault的作者标注为支持1.8——1.17.x，其实际支持版本为1.8——1.21。
++ 大部分 Bukkit 插件支持**向上兼容**，例如插件Vault的作者标注为支持 1.8——1.17.x，其实际支持版本为 1.8——26.3。
 + 插件实际兼容情况请自行测试或在群聊、论坛等地方寻求帮助。
-
 :::
 
-### Paper插件
-引入了 Paper 一些特有的API进行开发的Bukkit插件。Paper及分支支持此类插件。
+### Paper 插件
 
-:::info[提示]
+引入了 Paper 一些特有的 API 进行开发的 Bukkit 插件。Paper 及分支支持此类插件。
 
-就目前来说，使用PaperAPI的插件并不多，并且现在主流插件端均为Paper分支，所以插件你就放心往服务端丢就是。
+### Sponge 插件
 
-:::
-
-### Sponge插件
-使用SpongeAPI进行开发的插件，目前仅有SpongeVanilla与SpongeForge，以及某些服务端（例如Lantern）支持Sponge插件。
+使用 SpongeAPI 进行开发的插件，目前仅有 SpongeVanilla 与 SpongeForge，以及某些服务端（例如 Lantern）支持 Sponge 插件。
 
 :::danger[提示]
-
-大部分Sponge插件**不支持向上兼容**，例如你不能把API7的插件扔进API8的服务器里面，除非插件作者主动同时适配不同版本的Sponge。
-
+大部分 Sponge 插件**不支持向上兼容**，例如你不能把 API7 的插件扔进 API8 的服务器里面，除非插件作者主动同时适配不同版本的 Sponge。
 :::
 
-## Bukkit系服务端
+## Bukkit 系服务端
+
 :::warning[不适用]
-
 此段内容不适用于以下服务端：
-
 + SpongeForge
-
 :::
 
 1. 进入实例，点击文件
@@ -64,32 +52,25 @@ sidebar_position: 2
 3. 上传您的插件
 
 :::info[提示]
-
 注意检查插件版本，前置等。
-
 **混合端可能出现部分插件不兼容。**
-
 不支持 Sponge 或其他服务端的插件。
 
 :::
 
-## SpongeForge服务端
+## Sponge 服务端
+
 :::warning[提示]
-
 此段内容**仅**适用于以下服务端：
-
 + SpongeForge
-
++ SpongeVanilla
 :::
 
 1. 进入实例，点击文件
-2. 进入mods文件夹
+2. 进入 `mods` 文件夹
 3. 上传您的 Sponge 插件。
 
 :::danger[警告]
-
-本服务端不支持 Bukkit 插件。
-
+本服务端不支持 Bukkit 插件。   
 您需要下载专门的 Sponge 插件。
-
 :::

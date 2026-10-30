@@ -6,13 +6,13 @@ sidebar_position: 4
 # 【MCBE】从服务端导出存档
 
 :::info[提示]
-
 **任何**对服务器文件的操作均建议在服务器**关闭**状态下进行！
-
 :::
 
 ## 从服务端导出存档
+
 ### 第一步 找到服务器存档
+
 在文件管理中找到文件夹`worlds`后打开，进入目录`/worlds`，如下图：
 
 ![说明图片](/img/pages/mcbe/bds-input-worlds-1.png)
@@ -31,25 +31,21 @@ sidebar_position: 4
 ![说明图片](/img/pages/mcbe/bds-input-worlds-4.png)
 
 :::warning[提示]
-
-如果浏览器无法创建下载任务或下载失败，请尝试更换浏览器！
-
-推荐的浏览器：
-
-PC端：[Chrome](https://www.google.cn/chrome/)，[Edge](https://www.microsoft.com/zh-cn/edge/download)，[Supermium](https://win32subsystem.live/supermium/)，[FireFox](https://www.firefox.com.cn/)
-
+如果浏览器无法创建下载任务或下载失败，请尝试更换浏览器！   
+推荐的浏览器：   
+PC端：[Chrome](https://www.google.cn/chrome/)，[Edge](https://www.microsoft.com/zh-cn/edge/download)，[Supermium](https://win32subsystem.live/supermium/)，[FireFox](https://www.firefox.com.cn/)   
 安卓端(前往手机应用商店即可下载)：[Edge](https://learn.microsoft.com/zh-cn/deployedge/microsoft-edge-install-mobile-china)，[Chrome](https://www.techspot.com/downloads/5818-google-chrome-for-android.html)
-
 :::
 
-如果您只是在本地备份存档，那么教程到此为止。
-
+如果您只是在本地备份存档，那么教程到此为止。   
 如果您想把存档导入至客户端，请接着往下看。
 
 ## 导入存档到游戏客户端
+
 向游戏导入存档有两种方法：将存档打包给游戏识别和直接添加到游戏文件。
 
 ### 检查存档内文件格式
+
 打开下载的压缩包，在里面找到以存档名为名的文件夹（真正的存档）。
 
 ![说明图片](/img/pages/mcbe/bds-input-worlds-5.png)
@@ -72,63 +68,69 @@ PC端：[Chrome](https://www.google.cn/chrome/)，[Edge](https://www.microsoft.c
 | _world_resource_packs_history.json_ | _记录所有启用过的资源包_ |
 
 ### 方法一 将存档打包给游戏识别
-此方法在**所有系统**上都适用，所以截图可能来自于不同系统的终端。
 
-将备份文件里的存档目录（如`Bedrock Level`）解压到任意文件夹，然后压缩为.zip格式的压缩包。
+此方法在**所有系统**上都适用，所以截图可能来自于不同系统的终端。   
+将备份文件里的存档目录（如 `Bedrock Level`）解压到任意文件夹，然后压缩为 .zip 格式的压缩包。
 
-![说明图片](/img/pages/mcbe/bds-input-worlds-6.png)
+<img src="/img/pages/mcbe/bds-input-worlds-6.png" alt="重新压缩" width="40%" />
 
-将压缩包后缀名**直接更改**为`.mcworld`，然后打开，打开方式选择`Minecraft`。_（如果弹出“打开为：文档/音乐/视频 等”的窗口，选择文档/其他后选择_`_Minecraft_`_）_
+将压缩包后缀名**直接更改**为 `.mcworld`，然后打开，打开方式选择 `Minecraft`。_（如果弹出“打开为：文档/音乐/视频 等”的窗口，选择文档/其他后选择 `Minecraft`）_
 
-![说明图片](/img/pages/mcbe/bds-input-worlds-7.png)
+<img src="/img/pages/mcbe/bds-input-worlds-7.png" alt="打开方式" width="50%" />
 
 如果存档格式正确，游戏会自动识别并导入。
 
 ### 方法二 直接添加到游戏文件
+
 :::info[提示]
-提示
-
 请确保您的游戏开启了“将文件保存到外部存储”，否则以下目录可能不存在！
-
 :::
 
 #### iOS/iPadOS
+
 在“文件”App中打开以下目录：`(我的iPhone/iPad)/Minecraft/games/com.mojang/minecraftWorlds`
 
-![说明图片](/img/pages/mcbe/bds-input-worlds-8.png)
+<img src="/img/pages/mcbe/bds-input-worlds-8.png" alt="ios" width="50%" />
 
 将上一步中的文件夹Bedrock Level直接复制到此文件夹内，打开游戏即可发现存档已经导入。
 
 #### Android
+
 在文件管理(推荐使用第三方文件管理器，例如ES，MT等)内打开以下目录：`Android/data/com.mojang.minecraftpe/files/games/com.mojang/minecraftWorlds/`
 
-![说明图片](/img/pages/mcbe/bds-input-worlds-9.png)
+<img src="/img/pages/mcbe/bds-input-worlds-9.png" alt="Android" width="50%" />
 
 将[上一步](https://simpdoc.top/docs/mcbe/input-worlds#%E7%AC%AC%E4%B8%89%E6%AD%A5-%E6%A3%80%E6%9F%A5%E5%AD%98%E6%A1%A3%E5%86%85%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F)中的文件夹Bedrock Level直接复制到此文件夹内，打开游戏即可发现存档已经导入。
 
 #### Windows 10/11（BE1.21.120前）
-在文件资源管理器种打开以下目录`C:\Users\（这里是你电脑的用户名）\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftWorlds`
+
+在文件资源管理器种打开以下目录：
+
+```text
+C:\Users\（这里是你电脑的用户名）\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftWorlds
+```
 
 ![说明图片](/img/pages/mcbe/bds-input-worlds-10.png)
 
 将上一步中的文件夹`Bedrock Level`直接复制到此文件夹内，打开游戏即可发现存档已经导入。
 
 #### Windows 10/11（BE1.21.120后）
-Win+R打开运行，输入下方内容后回车打开文件夹：
 
-![说明图片](/img/pages/mcbe/bds-input-worlds-11.png)
+Win+R打开运行，输入下方内容后回车打开文件夹：
 
 ```plain
 %appdata%\Minecraft Bedrock
 ```
 
-![说明图片](/img/pages/mcbe/bds-input-worlds-12.png)
+<img src="/img/pages/mcbe/bds-input-worlds-11.png" alt="运行窗口" width="50%" />
+
+<img src="/img/pages/mcbe/bds-input-worlds-12.png" alt="打开的文件夹1" width="70%" />
+
 
 然后打开`Users\<一串数字>\games\com.mojang\minecraftWorlds\`这个文件夹：
 
-> （关于一串数字：目前不知道这串数字对应的是什么，但总之是跟微软账户相关的，登录过多个账户需要注意）
->
+> 关于一串数字：目前不知道这串数字对应的是什么，但总之是跟微软账户相关的，登录过多个账户需要注意
 
-![说明图片](/img/pages/mcbe/bds-input-worlds-13.png)
+<img src="/img/pages/mcbe/bds-input-worlds-13.png" alt="打开的文件夹2" width="70%" />
 
 将上一步中的文件夹`Bedrock Level`直接复制到此文件夹内，打开游戏即可发现存档已经导入。

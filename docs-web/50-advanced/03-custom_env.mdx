@@ -7,31 +7,28 @@ sidebar_position: 3
 
 :::info[信息]
 您是否遇到以下问题：
-
-+ 垃圾程序插件必须使用环境变量java
++ 垃圾程序插件必须使用环境变量 `java` `JAVA_HOME`
 + 想要偷懒直接使用一个命令
-
 :::
 
 **本文档将教你如何在Linux使用环境变量！**
 
 :::danger[危险]
 必须是非root才能运行的程序，且不可直接指向程序名，例如`export PATH="$PATH:/usr/bin/jdk/jdk-17.0.6/bin/java"`
-
 :::
 
 ### 修改启动参数
+
 在启动脚本`start.sh`内添加一个`export PATH="$PATH:你需要的程序目录"`
 
 :::warning[注意]
-
 这个脚本必须置于主启动命令前（一般为最后一行命令），否则主启动命令使用环境变量时将可能出现问题。
-
 :::
 
 ![说明图片](/img/pages/web/check-the-file-size-1.png)
 
 ### 使用bash实验可用性(可选)
+
 在`export`的下面添加一个bash，并保存与启动服务器
 
 您可以输入`java -version`来测试引用的java程序
@@ -40,5 +37,4 @@ sidebar_position: 3
 
 :::info[信息]
 如需了解更多 `export` 命令相关，可前往搜索引擎查阅更多教程！
-
 :::
