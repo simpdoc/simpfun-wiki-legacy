@@ -27,6 +27,18 @@ function HomepageHeader() {
           <Link className="button button--secondary button--lg" to="/mcbe/select_server">
             MCBE 文档
           </Link>
+          <Link className="button button--secondary button--lg" to="/terraria">
+            泰拉瑞亚
+          </Link>
+          <Link className="button button--secondary button--lg" to="/mindustry">
+            像素工厂
+          </Link>
+          <Link className="button button--secondary button--lg" to="/rusted-warfare">
+            铁锈战争
+          </Link>
+          <Link className="button button--secondary button--lg" to="/custom-image/multi_env/quick_start">
+            自定义镜像
+          </Link>
         </div>
       </div>
     </header>

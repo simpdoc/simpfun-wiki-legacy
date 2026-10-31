@@ -9,7 +9,7 @@
 - [环境要求](#环境要求)
 - [常用命令](#常用命令)
 - [目录结构](#目录结构)
-- [三套文档实例的工作方式](#三套文档实例的工作方式)
+- [七套文档实例的工作方式](#七套文档实例的工作方式)
 - [关于默认文档实例](#关于默认文档实例)
 - [v4 迁移准备](#v4-迁移准备)
 - [第三方插件：图片放大预览](#第三方插件图片放大预览)
@@ -47,24 +47,32 @@ npm run write-heading-ids -- --syntax mdx-comment --migrate
 
 ```
 .
-├── docs-web/             # Web 文档      → /web      （实例 id: web）
-├── docs-mcje/            # MCJE 文档     → /mcje     （实例 id: mcje）
-├── docs-mcbe/            # MCBE 文档     → /mcbe     （实例 id: mcbe）
-├── sidebars-web.ts       # Web 实例侧边栏（key: webSidebar）
-├── sidebars-mcje.ts      # MCJE 实例侧边栏（key: mcjeSidebar）
-├── sidebars-mcbe.ts      # MCBE 实例侧边栏（key: mcbeSidebar）
+├── docs-web/             # Web 文档          → /web
+├── docs-mcje/            # MCJE 文档         → /mcje
+├── docs-mcbe/            # MCBE 文档         → /mcbe
+├── docs-terraria/        # 泰拉瑞亚文档      → /terraria
+├── docs-mindustry/       # 像素工厂文档      → /mindustry
+├── docs-rusted-warfare/  # 铁锈战争文档      → /rusted-warfare
+├── docs-custom-image/    # 自定义镜像文档    → /custom-image
+├── sidebars-web.ts       # Web 实例侧边栏
+├── sidebars-mcje.ts      # MCJE 实例侧边栏
+├── sidebars-mcbe.ts      # MCBE 实例侧边栏
+├── sidebars-terraria.ts  # 泰拉瑞亚实例侧边栏
+├── sidebars-mindustry.ts # 像素工厂实例侧边栏
+├── sidebars-rusted-warfare.ts # 铁锈战争实例侧边栏
+├── sidebars-custom-image.ts   # 自定义镜像实例侧边栏
 ├── src/pages/index.tsx   # 首页（充当总览页）
 ├── static/img/           # 静态资源（logo、favicon、社交卡片）
 └── docusaurus.config.ts
 ```
 
-三套文档目录统一采用 `docs-*` 前缀，便于在文件树中相邻排列。
+七套文档目录统一采用 `docs-*` 前缀，便于在文件树中相邻排列。
 
-## 三套文档实例的工作方式
+## 七套文档实例的工作方式
 
-三个产品文档由 `@docusaurus/plugin-content-docs` 的**多实例能力**提供：每个实例有独立的 `id`、`path`、`routeBasePath` 和 `sidebarPath`。
+七个产品文档由 `@docusaurus/plugin-content-docs` 的**多实例能力**提供：每个实例有独立的 `id`、`path`、`routeBasePath` 和 `sidebarPath`。
 
-**内容贡献者请看 [贡献指南](CONTRIBUTING.md#三三套文档实例的目录映射)**，那里有面向写作者的说明。下面是面向开发者的注意事项。
+**内容贡献者请看 [贡献指南](CONTRIBUTING.md#三七套文档实例的目录映射)**，那里有面向写作者的说明。下面是面向开发者的注意事项。
 
 新增一套文档需要同时改 4 处，**漏掉任何一处都会出问题**：
 
@@ -117,7 +125,7 @@ npm run write-heading-ids -- --syntax mdx-comment --migrate
 
 ## 关于默认文档实例
 
-`preset-classic` 的 `docs` 设为 **`false`**：本站只有三套产品文档，全部由独立插件实例提供，保留预设自带实例会多出一个无关的第四套。
+`preset-classic` 的 `docs` 设为 **`false`**：本站七套产品文档全部由独立插件实例提供，保留预设自带实例会多出一个无关的额外实例。
 
 这样做的安全性依据（源码级确认）：
 
@@ -228,8 +236,8 @@ themes: [
   [
     '@easyops-cn/docusaurus-search-local',
     {
-      docsRouteBasePath: ['web', 'mcje', 'mcbe'],
-      docsDir: ['docs-web', 'docs-mcje', 'docs-mcbe'],
+      docsRouteBasePath: ['web', 'mcje', 'mcbe', 'terraria', 'mindustry', 'rusted-warfare', 'custom-image'],
+      docsDir: ['docs-web', 'docs-mcje', 'docs-mcbe', 'docs-terraria', 'docs-mindustry', 'docs-rusted-warfare', 'docs-custom-image'],
       indexBlog: false,
       indexPages: true,
       language: ['en', 'zh'],
@@ -244,6 +252,10 @@ themes: [
         {label: '官网使用指南', path: 'web'},
         {label: 'MCJE', path: 'mcje'},
         {label: 'MCBE', path: 'mcbe'},
+        {label: '泰拉瑞亚', path: 'terraria'},
+        {label: '像素工厂', path: 'mindustry'},
+        {label: '铁锈战争', path: 'rusted-warfare'},
+        {label: '自定义镜像', path: 'custom-image'},
       ],
       // 与上面配套，缺了它首页就搜不到东西（详见坑四）
       useAllContextsWithNoSearchContext: true,
@@ -275,7 +287,7 @@ forg ← forge     leav ← leaves     languag ← language     permiss ← perm
 
 ### ⚠️ 坑二：`docsRouteBasePath` 必须手写，因为本站没有默认 docs 实例
 
-插件默认值是 `["docs"]`，而本站是 `docs: false` + 三个独立实例（`/web`、`/mcje`、`/mcbe`）。
+插件默认值是 `["docs"]`，而本站是 `docs: false` + 七个独立实例（`/web`、`/mcje`、`/mcbe`、`/terraria`、`/mindustry`、`/rusted-warfare`、`/custom-image`）。
 **不配置的话索引会是空的**，搜索栏能显示但搜不到任何东西。
 
 顺带说明两个选项的分工，别搞混：
@@ -301,7 +313,7 @@ Error: Docusaurus plugin global data not found for
 "docusaurus-plugin-content-docs" plugin with id "default"
 ```
 
-指向任一真实实例即可（三个实例的 `isLast` 均为 `true`，所以都不会改写索引 URL）。
+指向任一真实实例即可（七个实例的 `isLast` 均为 `true`，所以都不会改写索引 URL）。
 
 ### ⚠️ 坑四：开了 `searchContextByPaths` 就**必须**同时开 `useAllContextsWithNoSearchContext`
 
@@ -316,7 +328,7 @@ if (matchedPaths.length > 0 && !useAllContextsWithNoSearchContext) {
 ```
 
 也就是说：**默认情况下，凡是命中分库的文档都会被排除出根索引**。
-本站三个分库覆盖了全部文档路径，于是根索引会变成**空的**。
+本站七个分库覆盖了全部文档路径，于是根索引会变成**空的**。
 
 而客户端每次查询**只 fetch 一个索引**（`worker.js`）：
 
@@ -343,24 +355,26 @@ const url = `${baseUrl}${searchIndexUrl.replace("{dir}", searchContext ? `-${sea
 
 插件会把路由去掉 `baseUrl` 后再比较，写 `/web` 匹配不上。写 `web`。
 
-### 已实测确认
+### 历史搜索验证记录
 
-构建产物与真实浏览器（无头 Edge + CDP）均已验证：
+> 构建产物与真实浏览器（无头 Edge + CDP）曾按下述早期配置验证：
 
-**索引文件**
+> 以下索引大小和结果数量来自早期仅含 Web、MCJE、MCBE 的历史构建，仅用于说明搜索插件行为，不代表当前七套文档的实时数据。当前索引范围以 `docsRouteBasePath` 和 `searchContextByPaths` 配置为准。
 
 | 文件 | 覆盖 |
 | --- | --- |
 | `search-index.json`（根） | 8 篇全量：`web` 3 + `mcje` 2 + `mcbe` 3 |
 | `search-index-web.json` | 仅 `web` 3 篇 |
 | `search-index-mcje.json` | 仅 `mcje` 2 篇 |
-| `search-index-mcbe.json` | 仅 `mcbe` 3 篇 |
+| `search-index-mcbe.json` | 仅 `mcbe` 文档 |
+
+> 当前七套实例的索引范围由上方 `docsRouteBasePath` 和 `searchContextByPaths` 配置决定；具体产物文件名应以成功构建后的 `build/` 目录为准。
 
 **搜索行为**（查询 → 结果数）
 
 | 查询 | 结果 | 命中示例 |
 | --- | --- | --- |
-| 中文 `服务器`（全库） | 55 条 | `如何创建服务器` → `/web/create_server` |
+| 中文 `服务器`（全库） | 55 条 | `如何创建服务器`（历史路由已调整） |
 | 中文 `服务端`（全库） | 55 条 | `【MCBE】主流服务端介绍` → `/mcbe/select_server` |
 | 英文 `forge` | 17 条 | `Forge ⭐` → `/mcje/select_server` |
 | 英文 `server.properties` | 16 条 | `【MCBE】服务端配置文件介绍` → `/mcbe/server_properties` |
@@ -371,7 +385,7 @@ const url = `${baseUrl}${searchIndexUrl.replace("{dir}", searchContext ? `-${sea
 **其他**
 
 - 搜索栏渲染在导航栏**右侧**（`navbar__search-input`，`aria-label="Search"`）
-- `/search` 页作用域下拉选项为 `["所有", "官网使用指南", "MCJE", "MCBE"]`
+- `/search` 页作用域下拉选项覆盖 `所有`、`官网使用指南`、`MCJE`、`MCBE`、`泰拉瑞亚`、`像素工厂`、`铁锈战争`、`自定义镜像`
 - 结果链接带 `?_highlight=…`，说明 `highlightSearchTermsOnTargetPage` 生效
 - 快捷键 `Ctrl/Cmd + K` 聚焦搜索栏，`Esc` 关闭
 
@@ -527,6 +541,6 @@ npm run build      # 产物输出到 build/
 
 - [ ] `npm run typecheck` 通过
 - [ ] `npm run build` 通过（`onBrokenLinks: 'throw'` 会拦住所有站内死链）
-- [ ] `npm run serve` 后抽查 `/`、`/web/intro`、`/mcje/intro`、`/mcbe/intro` 均正常
+- [ ] `npm run serve` 后抽查 `/`、`/web/intro`、`/mcje/select_server`、`/mcbe/select_server` 均正常
 - [ ] 确认 `baseUrl` 与实际挂载路径一致
 - [ ] 确认 `static/img/` 中的 logo 与 favicon 是最新版本

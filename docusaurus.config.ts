@@ -54,9 +54,10 @@ const config: Config = {
       'classic',
       {
         // The default docs instance is DISABLED on purpose.
-        // This site has exactly three doc sets, all provided by the standalone
-        // plugin instances below (docs-web / docs-mcje / docs-mcbe). Keeping the
-        // preset's default instance would add a fourth, unrelated one.
+        // This site has seven doc sets, all provided by the standalone
+        // plugin instances below (web / terraria / mindustry / rusted-warfare /
+        // custom-image / mcje / mcbe). Keeping the preset's default instance would
+        // add an unrelated extra one.
         //
         // Safe to disable: the navbar logo links to the site root (`/`), not to
         // `/docs` — see theme-classic `Logo`: `useBaseUrl(logo?.href || '/')`.
@@ -162,8 +163,9 @@ const config: Config = {
     [
       '@easyops-cn/docusaurus-search-local',
       {
-        // This site has NO default docs instance (`docs: false`) — all three doc
-        // sets come from standalone plugin instances at /web, /mcje, /mcbe.
+        // This site has NO default docs instance (`docs: false`) — all seven doc
+        // sets come from standalone plugin instances at /web, /mcje, /mcbe,
+        // /terraria, /mindustry, /rusted-warfare, and /custom-image.
         // The plugin defaults to ["docs"], which would index nothing at all.
         // Leading slashes are optional; the plugin strips them.
         docsRouteBasePath: ['web', 'mcje', 'mcbe', 'terraria', 'mindustry', 'rusted-warfare', 'custom-image'],
@@ -196,8 +198,8 @@ const config: Config = {
         // Bust the browser-cached index whenever doc content changes.
         hashed: true,
 
-        // The left navbar is already full (logo + 3 doc entries), so pin the
-        // search bar to the right instead of relying on autodetection.
+        // The left navbar contains seven doc entries, so pin the search bar to
+        // the right instead of relying on autodetection.
         searchBarPosition: 'right',
 
         // REQUIRED on this site. SearchBar calls:
@@ -207,7 +209,7 @@ const config: Config = {
         // Because this site runs `docs: false`, no docs plugin with id "default"
         // exists and the SSG pass crashes with:
         //   Docusaurus plugin global data not found for "docusaurus-plugin-content-docs" plugin with id "default"
-        // Pointing it at a real instance fixes that. Any instance works; all three
+        // Pointing it at a real instance fixes that. Any instance works; all seven
         // have isLast=true, so none of them rewrites the search index URL.
         docsPluginIdForPreferredVersion: 'web',
 
@@ -236,14 +238,14 @@ const config: Config = {
         // By default the plugin partitions HARD: a document matching a context is
         // `continue`d and thereby EXCLUDED from the root index
         // (postBuildFactory.js: `if (matchedPaths.length > 0 && !useAllContextsWithNoSearchContext) continue;`).
-        // Our three contexts cover every doc path, so without this flag the root
+        // Our seven contexts cover every doc path, so without this flag the root
         // index ends up EMPTY — and since the worker fetches exactly ONE index per
         // query (`searchIndexUrl.replace("{dir}", searchContext ? ... : "")`), the
         // homepage and the /search page would find NOTHING at all.
         //
         // With it enabled:
         //   • root index            -> every doc  ("search everywhere" still works)
-        //   • the three contexts    -> their own doc set only
+        //   • the seven contexts    -> their own doc set only
         //   • /search page gets an extra "Everywhere" scope option
         useAllContextsWithNoSearchContext: true,
       },
@@ -302,8 +304,8 @@ const config: Config = {
       },
       items: [
         // `docsPluginId` is MANDATORY on every product entry. Without it the
-        // navbar item resolves against the default docs instance and all three
-        // links point at the same sidebar.
+        // navbar item resolves against the default docs instance instead of the
+        // matching sidebar, so every product link can point to the wrong place.
         {
           type: 'docSidebar',
           docsPluginId: 'web',
