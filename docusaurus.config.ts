@@ -433,7 +433,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 简幻欢社区维基. Built with Docusaurus.<br /><a class="footer__link-item" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">黑ICP备2024025211号-2</a>`,
+      copyright: `Copyright © ${new Date().getFullYear()} 简幻欢社区维基. Built with Docusaurus.<br /><a class="footer__link-item" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">黑ICP备2024025211号-2</a><span style="margin: 0 8px;">|</span><a class="footer__link-item" href="https://beian.mps.gov.cn/#/query/webSearch?code=23030002000215" target="_blank" rel="noopener noreferrer"><img src="/img/beian.png" alt="公安备案图标" style="height: 16px; width: auto; margin-right: 4px; vertical-align: -3px;" />黑公网安备23030002000215号</a>`,
     },
     prism: {
       theme: prismThemes.github,
