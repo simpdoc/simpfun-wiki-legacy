@@ -22,7 +22,7 @@
 | 简幻云官网 | <https://v2.simpcloud.cn/> |
 | 简幻欢社区维基新版 | <https://next.simpdoc.top/> |
 | 官方使用文档（语雀） | <https://www.yuque.com/simpfun/sfe/main> |
-| 第三方镜像文档 | <https://doc.ideafox.top/> |
+| 第三方镜像文档 | <https://tpmd.simpdoc.top/> |
 
 ## 许可证
 
