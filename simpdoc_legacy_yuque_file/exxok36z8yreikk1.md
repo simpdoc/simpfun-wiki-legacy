@@ -26,5 +26,5 @@
 [SimpBBS 是主营简幻社区内容与相关游戏的综合社区](https://www.simpbbs.com)
 
 ### 第三方镜像文档：
-[简幻欢第三方镜像文档站](https://doc.ideafox.top)
+[简幻欢第三方镜像文档站](https://tpmd.simpdoc.top)
 

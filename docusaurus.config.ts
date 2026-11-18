@@ -424,7 +424,7 @@ const config: Config = {
           items: [
             {
               label: '简幻欢第三方镜像文档',
-              href: 'https://doc.ideafox.top/',
+              href: 'https://tpmd.simpdoc.top/',
             },
             {
               label: 'GitHub',
