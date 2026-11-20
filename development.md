@@ -509,14 +509,38 @@ curl -H 'Accept: text/html' http://localhost:3000/web/intro
 
 ## 部署
 
-部署目标为自定义域名 **simpdoc.top**，站点位于域名根路径：
+### 部署方式（重要：自动集成，无需手动上传）
+
+本站通过 **EdgeOne Makers（腾讯云 EdgeOne Pages）** 的 GitHub 集成自动部署：
+
+- 控制台项目名：`simpfun-wiki-legacy`（GitHub 仓库 `simpdoc/simpfun-wiki-legacy`，分支 `main`）
+- **推送到 `main` 即自动触发构建和上线**（构建命令 `npm run build`，产物目录 `build`，Node 24）
+- 生产域名：**`legacy.simpdoc.top`**（控制台里绑定的自定义域名）
+- ⚠️ **不要手动把 `build/` 上传到任何托管平台**——那会绕过平台管线，造成 URL 解析行为不一致（嵌套无后缀 URL、目录索引、尾斜杠归一化都会失效）。历史文档里"上传 build/ 目录"的说法已过时。
+
+### edgeone.json（重定向规则）
+
+仓库根目录的 `edgeone.json` 会被 EdgeOne 构建管线读取并写入部署的路由清单，**改动后推送 main 才会生效**。当前包含 4 条 301 重定向：
+
+| 规则 | 作用 |
+| --- | --- |
+| `/mcje` → `/mcje/select_server` | 文档入口归一化 |
+| `/mcbe` → `/mcbe/select_server` | 文档入口归一化 |
+| `/custom-image` → `/custom-image/multi_env/quick_start` | 文档入口归一化 |
+| `/*/` → `/:splat` | 把带尾斜杠的 URL 301 到无尾斜杠形式 |
+
+注意：`/*/` 通配规则依赖 EdgeOne 当前的路由引擎（可在部署详情的 `MetaData` 中核对）。若线上出现"带尾斜杠 404"，先用浏览器直接访问项目预览域名（`*.edgeone.cool`）对比行为，排除域名接入层配置问题后再改规则。
+
+### 站点 URL 配置
+
+部署目标为自定义域名 **`legacy.simpdoc.top`**，站点位于域名根路径：
 
 ```ts
-url: 'https://simpdoc.top',
+url: 'https://legacy.simpdoc.top',
 baseUrl: '/',            // 根路径部署。若将来挪到子路径，这里必须同步改
 ```
 
-`baseUrl` 直接影响所有静态资源与站内链接的生成。**它是子路径部署时最常见的出错点**：若把产物挂到 `https://simpdoc.top/wiki/` 却保持 `baseUrl: '/'`，CSS/JS 会全部 404。
+`baseUrl` 直接影响所有静态资源与站内链接的生成。**它是子路径部署时最常见的出错点**：若把产物挂到子路径却保持 `baseUrl: '/'`，CSS/JS 会全部 404。
 
 ### 与 GitHub Pages 相关的两个字段
 
@@ -525,17 +549,17 @@ organizationName: 'simpdoc',
 projectName: 'simpfun-wiki-legacy',
 ```
 
-这两个字段**仅被 `docusaurus deploy` 命令读取**（见 `@docusaurus/core/lib/commands/deploy.js`），静态构建完全不使用，因此对 simpdoc.top 部署**无影响**，留着也不会导致构建错误。若确定永不使用 `npm run deploy`，可以删掉以减少困惑。
+这两个字段**仅被 `docusaurus deploy` 命令读取**（见 `@docusaurus/core/lib/commands/deploy.js`），静态构建完全不使用，因此对 legacy.simpdoc.top 部署**无影响**，留着也不会导致构建错误。若确定永不使用 `npm run deploy`，可以删掉以减少困惑。
 
 ### 部署流程
 
 ```bash
-npm run build      # 产物输出到 build/
+npm run build      # 本地验证构建（产物输出到 build/）
 ```
 
-将 `build/` 整个目录上传到 simpdoc.top 的站点根目录即可。
+本地构建通过后，**直接推送到 `main` 分支**，EdgeOne 会自动构建并上线，无需手动上传任何目录。
 
-> **注意**：`build/` 目录下**不要**添加 `CNAME` 文件。`CNAME` 是 GitHub Pages 专用的自定义域名标记，对其他静态托管平台无用，部分平台还可能将其当作普通文件发布，导致 `https://simpdoc.top/CNAME` 可被公开访问。
+> **注意**：`build/` 目录下**不要**添加 `CNAME` 文件。`CNAME` 是 GitHub Pages 专用的自定义域名标记，对其他静态托管平台无用，部分平台还可能将其当作普通文件发布。
 
 ### 上线前检查清单
 
