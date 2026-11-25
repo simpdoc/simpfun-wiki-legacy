@@ -1,0 +1,490 @@
+{
+  "generatedFrom": "Docusaurus production build",
+  "site": "https://legacy.simpdoc.top",
+  "pageCount": 92,
+  "redirectCount": 3,
+  "pages": [
+    {
+      "legacyUrl": "/custom-image/intro",
+      "newUrl": "/docs/custom-image/intro",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/custom-image/multi_env/how_to_use",
+      "newUrl": "/docs/custom-image/multi_env/how_to_use",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/custom-image/multi_env/path_list",
+      "newUrl": "/docs/custom-image/multi_env/path_list",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/custom-image/multi_env/quick_start",
+      "newUrl": "/docs/custom-image/multi_env/quick_start",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/custom-image/multi_env/start_script",
+      "newUrl": "/docs/custom-image/multi_env/start_script",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/bds-add-plugin",
+      "newUrl": "/docs/mcbe/bds-add-plugin",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/bds-input-addon",
+      "newUrl": "/docs/mcbe/bds-input-addon",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/bds-input-worlds",
+      "newUrl": "/docs/mcbe/bds-input-worlds",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/bds-upload-worlds",
+      "newUrl": "/docs/mcbe/bds-upload-worlds",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/common_operations/allow_cheat",
+      "newUrl": "/docs/mcbe/common_operations/allow_cheat",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/common_operations/command_block",
+      "newUrl": "/docs/mcbe/common_operations/command_block",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/common_operations/coords",
+      "newUrl": "/docs/mcbe/common_operations/coords",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/common_operations/keepinventory",
+      "newUrl": "/docs/mcbe/common_operations/keepinventory",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/common_operations/locatorbar",
+      "newUrl": "/docs/mcbe/common_operations/locatorbar",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/common_operations/setop",
+      "newUrl": "/docs/mcbe/common_operations/setop",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/common_operations/showplaydays",
+      "newUrl": "/docs/mcbe/common_operations/showplaydays",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/customer-mcbe-installbds",
+      "newUrl": "/docs/mcbe/customer-mcbe-installbds",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/experiments",
+      "newUrl": "/docs/mcbe/experiments",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/levilamina/install",
+      "newUrl": "/docs/mcbe/levilamina/install",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/new_network_protocol",
+      "newUrl": "/docs/mcbe/new_network_protocol",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/select_server",
+      "newUrl": "/docs/mcbe/select_server",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcbe/server_properties",
+      "newUrl": "/docs/mcbe/server_properties",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/advanced/addownjava",
+      "newUrl": "/docs/mcje/advanced/addownjava",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/advanced/authlib_injector",
+      "newUrl": "/docs/mcje/advanced/authlib_injector",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/auth_type",
+      "newUrl": "/docs/mcje/auth_type",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/common_operations/allow_flight",
+      "newUrl": "/docs/mcje/common_operations/allow_flight",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/common_operations/enable_commandblock",
+      "newUrl": "/docs/mcje/common_operations/enable_commandblock",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/common_operations/gamerules",
+      "newUrl": "/docs/mcje/common_operations/gamerules",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/common_operations/keepinventory",
+      "newUrl": "/docs/mcje/common_operations/keepinventory",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/common_operations/locatorbar",
+      "newUrl": "/docs/mcje/common_operations/locatorbar",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/common_operations/mobgriefing",
+      "newUrl": "/docs/mcje/common_operations/mobgriefing",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/common_operations/online_mode",
+      "newUrl": "/docs/mcje/common_operations/online_mode",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/common_operations/op",
+      "newUrl": "/docs/mcje/common_operations/op",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/common_operations/setworldspawn",
+      "newUrl": "/docs/mcje/common_operations/setworldspawn",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/extensions/adddatapack",
+      "newUrl": "/docs/mcje/extensions/adddatapack",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/extensions/addmod",
+      "newUrl": "/docs/mcje/extensions/addmod",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/extensions/addplugin",
+      "newUrl": "/docs/mcje/extensions/addplugin",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/extensions/addshaders",
+      "newUrl": "/docs/mcje/extensions/addshaders",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/extensions/setmotd",
+      "newUrl": "/docs/mcje/extensions/setmotd",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/geyser/addgeyser",
+      "newUrl": "/docs/mcje/geyser/addgeyser",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/geyser/configgeyser",
+      "newUrl": "/docs/mcje/geyser/configgeyser",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/geyser/floodgate",
+      "newUrl": "/docs/mcje/geyser/floodgate",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/geyser/geyser_qa",
+      "newUrl": "/docs/mcje/geyser/geyser_qa",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/geyser/nethernet",
+      "newUrl": "/docs/mcje/geyser/nethernet",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/geyser/whatisgeyser",
+      "newUrl": "/docs/mcje/geyser/whatisgeyser",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/mcdr",
+      "newUrl": "/docs/mcje/mcdr",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/modpack_perf",
+      "newUrl": "/docs/mcje/modpack_perf",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/playerdata",
+      "newUrl": "/docs/mcje/playerdata",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/select_server",
+      "newUrl": "/docs/mcje/select_server",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/server_files",
+      "newUrl": "/docs/mcje/server_files",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/server_install/fabric",
+      "newUrl": "/docs/mcje/server_install/fabric",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/server_install/forge",
+      "newUrl": "/docs/mcje/server_install/forge",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/server_install/mix",
+      "newUrl": "/docs/mcje/server_install/mix",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/server_install/neoforge",
+      "newUrl": "/docs/mcje/server_install/neoforge",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/server_install/serverpackcreator",
+      "newUrl": "/docs/mcje/server_install/serverpackcreator",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/server_install/vanilla_bukkit",
+      "newUrl": "/docs/mcje/server_install/vanilla_bukkit",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/server_properties",
+      "newUrl": "/docs/mcje/server_properties",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/serverpack_install",
+      "newUrl": "/docs/mcje/serverpack_install",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/world_io/download_worlds",
+      "newUrl": "/docs/mcje/world_io/download_worlds",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mcje/world_io/upload_worlds",
+      "newUrl": "/docs/mcje/world_io/upload_worlds",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/mindustry",
+      "newUrl": "/docs/mindustry",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/rusted-warfare",
+      "newUrl": "/docs/rusted-warfare",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/terraria",
+      "newUrl": "/docs/terraria",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/advanced/check_file_size",
+      "newUrl": "/docs/web/advanced/check_file_size",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/advanced/curl",
+      "newUrl": "/docs/web/advanced/curl",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/advanced/custom_env",
+      "newUrl": "/docs/web/advanced/custom_env",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/advanced/dns",
+      "newUrl": "/docs/web/advanced/dns",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/advanced/sftp",
+      "newUrl": "/docs/web/advanced/sftp",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/advanced/zip",
+      "newUrl": "/docs/web/advanced/zip",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/create",
+      "newUrl": "/docs/web/create",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/easy_to_use",
+      "newUrl": "/docs/web/easy_to_use",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/faq",
+      "newUrl": "/docs/web/faq",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/features/console",
+      "newUrl": "/docs/web/features/console",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/features/default_start",
+      "newUrl": "/docs/web/features/default_start",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/features/instance/backup",
+      "newUrl": "/docs/web/features/instance/backup",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/features/instance/fileoperations",
+      "newUrl": "/docs/web/features/instance/fileoperations",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/features/instance/manage",
+      "newUrl": "/docs/web/features/instance/manage",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/features/instance/reinstall",
+      "newUrl": "/docs/web/features/instance/reinstall",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/features/instance/shell",
+      "newUrl": "/docs/web/features/instance/shell",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/features/instance/statistics",
+      "newUrl": "/docs/web/features/instance/statistics",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/features/instance/tasks",
+      "newUrl": "/docs/web/features/instance/tasks",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/features/mini_apps",
+      "newUrl": "/docs/web/features/mini_apps",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/howtoask",
+      "newUrl": "/docs/web/howtoask",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/intro",
+      "newUrl": "/docs/web/intro",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/joinqqgroup",
+      "newUrl": "/docs/web/joinqqgroup",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/joinqqgroup/general_chat",
+      "newUrl": "/docs/web/joinqqgroup/general_chat",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/joinqqgroup/support",
+      "newUrl": "/docs/web/joinqqgroup/support",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/joinqqgroup/third_party",
+      "newUrl": "/docs/web/joinqqgroup/third_party",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/joinqqgroup/ui_testing",
+      "newUrl": "/docs/web/joinqqgroup/ui_testing",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/mechanism",
+      "newUrl": "/docs/web/mechanism",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/reduce_traffic",
+      "newUrl": "/docs/web/reduce_traffic",
+      "kind": "page"
+    },
+    {
+      "legacyUrl": "/web/register",
+      "newUrl": "/docs/web/register",
+      "kind": "page"
+    }
+  ],
+  "redirects": [
+    {
+      "legacyUrl": "/custom-image",
+      "newUrl": "/docs/custom-image/multi_env/quick_start",
+      "kind": "redirect"
+    },
+    {
+      "legacyUrl": "/mcbe",
+      "newUrl": "/docs/mcbe/select_server",
+      "kind": "redirect"
+    },
+    {
+      "legacyUrl": "/mcje",
+      "newUrl": "/docs/mcje/select_server",
+      "kind": "redirect"
+    }
+  ],
+  "ignoredRoutes": [
+    "/",
+    "/404.html",
+    "/search"
+  ]
+}

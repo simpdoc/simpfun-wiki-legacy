@@ -1,0 +1,78 @@
+---
+title: "使用 NetherNet 网络协议"
+sidebar_position: 9
+---
+
+Minecraft 基岩版自 26.50 起，联机传输层从 RakNet 切换到了 NetherNet（基于 WebRTC 的 P2P 传输），同时使用 TCP 端口与 UDP 端口来为玩家提供游戏服务。
+
+26.60 版本起，RakNet 协议被标记为废弃，未来将会被彻底移除。
+
+早期版本的 NetherNet 协议同时使用了复数个 UDP 端口为多人游戏提供服务，这对所有玩家与服务商来说都是非常不便的。
+
+现版本的 NetherNet 协议仅使用一个 UDP 端口来为所有玩家提供游戏服务，因此你可以放心的将服务器使用的网络协议切换为 NetherNet。
+
+## 使用新版 NetherNet 网络协议
+
+在 server.properties 中，找到下面这些配置项：
+
+```properties title="server.properties"
+server-port=10002
+#server-ip=
+server-udp-ports=19132
+transport=nethernet
+enable-lan-visibility=true
+```
+
+然后对这些配置项进行如下修改：
+
+#### server-port
+
+将其修改为你的实例分配到的端口（一般会自动修改）。
+
+#### server-ip
+
+取消注释（删掉前面的 `#` ），修改值为 `0.0.0.0` 。
+
+#### server-udp-ports
+
+将其修改为如下格式：
+
+`简幻欢公网IP:实例端口:实例端口`
+
+**简幻欢公网IP**为 `play.simpfun.cn` 解析出来的 IP 地址，一般情况下为 `103.85.86.51` 或 `103.85.86.151` ，如果有变动则以当前解析出的最新结果为准。
+
+例如，实例分配到的端口为 `10002`，那么这项配置就应该修改为：
+
+```properties
+server-udp-ports=103.85.86.51:10002:10002
+```
+
+:::tip[提示]
+如何查询 play.simpfun.cn 解析出来的 IP 地址？
+
+Windows ：打开命令提示符，输入 `nslookup play.simpfun.cn`，回车后即可看到解析出来的 IP 地址。   
+Linux ：打开终端，输入 `dig play.simpfun.cn`，回车后即可看到解析出来的 IP 地址。   
+手机：使用网页工具在线查询。
+:::
+
+#### transport
+
+将其修改为 `nethernet`。
+
+#### enable-lan-visibility
+
+不要去动这项配置，保持为 `true` 即可。
+
+---
+
+全部修改完后，格式应该如下所示：
+
+```properties title="server.properties"
+server-port=10002
+server-ip=0.0.0.0
+server-udp-ports=103.85.86.51:10002:10002
+transport=nethernet
+enable-lan-visibility=true
+```
+
+修改完成后保存配置，然后启动服务器就可以正常游玩了。

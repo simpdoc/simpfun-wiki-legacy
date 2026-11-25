@@ -1,0 +1,12 @@
+{
+  "title": "Geyser(JE-BE互通)",
+  "pages": [
+    "01-geyser_qa",
+    "02-whatisgeyser",
+    "03-addgeyser",
+    "04-configgeyser",
+    "05-floodgate",
+    "06-nethernet"
+  ],
+  "defaultOpen": true
+}

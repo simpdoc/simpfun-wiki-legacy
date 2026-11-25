@@ -1,0 +1,11 @@
+{
+  "title": "为服务器添加额外内容",
+  "pages": [
+    "01-addmod",
+    "02-addplugin",
+    "03-adddatapack",
+    "04-addshaders",
+    "05-setmotd"
+  ],
+  "defaultOpen": true
+}

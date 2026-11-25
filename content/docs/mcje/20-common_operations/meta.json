@@ -1,0 +1,15 @@
+{
+  "title": "JE常用操作",
+  "pages": [
+    "01-gamerules",
+    "02-op",
+    "03-keepinventory",
+    "04-enable_commandblock",
+    "05-setworldspawn",
+    "06-allow_flight",
+    "07-mobgriefing",
+    "08-locatorbar",
+    "09-online_mode"
+  ],
+  "defaultOpen": true
+}

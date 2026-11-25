@@ -1,24 +1,656 @@
 {
+  "buildCommand": "pnpm build",
+  "installCommand": "pnpm install",
+  "framework": "nextjs",
   "redirects": [
     {
-      "source": "/mcje",
-      "destination": "/mcje/select_server",
+      "source": "/custom-image",
+      "destination": "/docs/custom-image/multi_env/quick_start",
+      "statusCode": 301
+    },
+    {
+      "source": "/custom-image/*",
+      "destination": "/docs/custom-image/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/custom-image/intro",
+      "destination": "/docs/custom-image/intro",
+      "statusCode": 301
+    },
+    {
+      "source": "/custom-image/multi_env/how_to_use",
+      "destination": "/docs/custom-image/multi_env/how_to_use",
+      "statusCode": 301
+    },
+    {
+      "source": "/custom-image/multi_env/path_list",
+      "destination": "/docs/custom-image/multi_env/path_list",
+      "statusCode": 301
+    },
+    {
+      "source": "/custom-image/multi_env/quick_start",
+      "destination": "/docs/custom-image/multi_env/quick_start",
+      "statusCode": 301
+    },
+    {
+      "source": "/custom-image/multi_env/start_script",
+      "destination": "/docs/custom-image/multi_env/start_script",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/custom-image",
+      "destination": "/docs/custom-image/multi_env/quick_start",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/mcbe",
+      "destination": "/docs/mcbe/select_server",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/mcje",
+      "destination": "/docs/mcje/select_server",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/web",
+      "destination": "/docs/web/intro",
       "statusCode": 301
     },
     {
       "source": "/mcbe",
-      "destination": "/mcbe/select_server",
+      "destination": "/docs/mcbe/select_server",
       "statusCode": 301
     },
     {
-      "source": "/custom-image",
-      "destination": "/custom-image/multi_env/quick_start",
+      "source": "/mcbe/*",
+      "destination": "/docs/mcbe/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/bds-add-plugin",
+      "destination": "/docs/mcbe/bds-add-plugin",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/bds-input-addon",
+      "destination": "/docs/mcbe/bds-input-addon",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/bds-input-worlds",
+      "destination": "/docs/mcbe/bds-input-worlds",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/bds-upload-worlds",
+      "destination": "/docs/mcbe/bds-upload-worlds",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/common_operations/allow_cheat",
+      "destination": "/docs/mcbe/common_operations/allow_cheat",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/common_operations/command_block",
+      "destination": "/docs/mcbe/common_operations/command_block",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/common_operations/coords",
+      "destination": "/docs/mcbe/common_operations/coords",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/common_operations/keepinventory",
+      "destination": "/docs/mcbe/common_operations/keepinventory",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/common_operations/locatorbar",
+      "destination": "/docs/mcbe/common_operations/locatorbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/common_operations/setop",
+      "destination": "/docs/mcbe/common_operations/setop",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/common_operations/showplaydays",
+      "destination": "/docs/mcbe/common_operations/showplaydays",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/customer-mcbe-installbds",
+      "destination": "/docs/mcbe/customer-mcbe-installbds",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/experiments",
+      "destination": "/docs/mcbe/experiments",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/levilamina/install",
+      "destination": "/docs/mcbe/levilamina/install",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/new_network_protocol",
+      "destination": "/docs/mcbe/new_network_protocol",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/select_server",
+      "destination": "/docs/mcbe/select_server",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcbe/server_properties",
+      "destination": "/docs/mcbe/server_properties",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje",
+      "destination": "/docs/mcje/select_server",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/*",
+      "destination": "/docs/mcje/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/advanced/addownjava",
+      "destination": "/docs/mcje/advanced/addownjava",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/advanced/authlib_injector",
+      "destination": "/docs/mcje/advanced/authlib_injector",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/auth_type",
+      "destination": "/docs/mcje/auth_type",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/common_operations/allow_flight",
+      "destination": "/docs/mcje/common_operations/allow_flight",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/common_operations/enable_commandblock",
+      "destination": "/docs/mcje/common_operations/enable_commandblock",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/common_operations/gamerules",
+      "destination": "/docs/mcje/common_operations/gamerules",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/common_operations/keepinventory",
+      "destination": "/docs/mcje/common_operations/keepinventory",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/common_operations/locatorbar",
+      "destination": "/docs/mcje/common_operations/locatorbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/common_operations/mobgriefing",
+      "destination": "/docs/mcje/common_operations/mobgriefing",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/common_operations/online_mode",
+      "destination": "/docs/mcje/common_operations/online_mode",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/common_operations/op",
+      "destination": "/docs/mcje/common_operations/op",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/common_operations/setworldspawn",
+      "destination": "/docs/mcje/common_operations/setworldspawn",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/extensions/adddatapack",
+      "destination": "/docs/mcje/extensions/adddatapack",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/extensions/addmod",
+      "destination": "/docs/mcje/extensions/addmod",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/extensions/addplugin",
+      "destination": "/docs/mcje/extensions/addplugin",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/extensions/addshaders",
+      "destination": "/docs/mcje/extensions/addshaders",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/extensions/setmotd",
+      "destination": "/docs/mcje/extensions/setmotd",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/geyser/addgeyser",
+      "destination": "/docs/mcje/geyser/addgeyser",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/geyser/configgeyser",
+      "destination": "/docs/mcje/geyser/configgeyser",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/geyser/floodgate",
+      "destination": "/docs/mcje/geyser/floodgate",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/geyser/geyser_qa",
+      "destination": "/docs/mcje/geyser/geyser_qa",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/geyser/nethernet",
+      "destination": "/docs/mcje/geyser/nethernet",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/geyser/whatisgeyser",
+      "destination": "/docs/mcje/geyser/whatisgeyser",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/mcdr",
+      "destination": "/docs/mcje/mcdr",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/modpack_perf",
+      "destination": "/docs/mcje/modpack_perf",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/playerdata",
+      "destination": "/docs/mcje/playerdata",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/select_server",
+      "destination": "/docs/mcje/select_server",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/server_files",
+      "destination": "/docs/mcje/server_files",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/server_install/fabric",
+      "destination": "/docs/mcje/server_install/fabric",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/server_install/forge",
+      "destination": "/docs/mcje/server_install/forge",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/server_install/mix",
+      "destination": "/docs/mcje/server_install/mix",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/server_install/neoforge",
+      "destination": "/docs/mcje/server_install/neoforge",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/server_install/serverpackcreator",
+      "destination": "/docs/mcje/server_install/serverpackcreator",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/server_install/vanilla_bukkit",
+      "destination": "/docs/mcje/server_install/vanilla_bukkit",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/server_properties",
+      "destination": "/docs/mcje/server_properties",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/serverpack_install",
+      "destination": "/docs/mcje/serverpack_install",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/world_io/download_worlds",
+      "destination": "/docs/mcje/world_io/download_worlds",
+      "statusCode": 301
+    },
+    {
+      "source": "/mcje/world_io/upload_worlds",
+      "destination": "/docs/mcje/world_io/upload_worlds",
+      "statusCode": 301
+    },
+    {
+      "source": "/mindustry",
+      "destination": "/docs/mindustry",
+      "statusCode": 301
+    },
+    {
+      "source": "/mindustry/*",
+      "destination": "/docs/mindustry/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/rusted-warfare",
+      "destination": "/docs/rusted-warfare",
+      "statusCode": 301
+    },
+    {
+      "source": "/rusted-warfare/*",
+      "destination": "/docs/rusted-warfare/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/terraria",
+      "destination": "/docs/terraria",
+      "statusCode": 301
+    },
+    {
+      "source": "/terraria/*",
+      "destination": "/docs/terraria/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/web",
+      "destination": "/docs/web/intro",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/*",
+      "destination": "/docs/web/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/advanced/check_file_size",
+      "destination": "/docs/web/advanced/check_file_size",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/advanced/curl",
+      "destination": "/docs/web/advanced/curl",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/advanced/custom_env",
+      "destination": "/docs/web/advanced/custom_env",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/advanced/dns",
+      "destination": "/docs/web/advanced/dns",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/advanced/sftp",
+      "destination": "/docs/web/advanced/sftp",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/advanced/zip",
+      "destination": "/docs/web/advanced/zip",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/create",
+      "destination": "/docs/web/create",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/easy_to_use",
+      "destination": "/docs/web/easy_to_use",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/faq",
+      "destination": "/docs/web/faq",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/features/console",
+      "destination": "/docs/web/features/console",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/features/default_start",
+      "destination": "/docs/web/features/default_start",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/features/instance/backup",
+      "destination": "/docs/web/features/instance/backup",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/features/instance/fileoperations",
+      "destination": "/docs/web/features/instance/fileoperations",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/features/instance/manage",
+      "destination": "/docs/web/features/instance/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/features/instance/reinstall",
+      "destination": "/docs/web/features/instance/reinstall",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/features/instance/shell",
+      "destination": "/docs/web/features/instance/shell",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/features/instance/statistics",
+      "destination": "/docs/web/features/instance/statistics",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/features/instance/tasks",
+      "destination": "/docs/web/features/instance/tasks",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/features/mini_apps",
+      "destination": "/docs/web/features/mini_apps",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/howtoask",
+      "destination": "/docs/web/howtoask",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/intro",
+      "destination": "/docs/web/intro",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/joinqqgroup",
+      "destination": "/docs/web/joinqqgroup",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/joinqqgroup/general_chat",
+      "destination": "/docs/web/joinqqgroup/general_chat",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/joinqqgroup/support",
+      "destination": "/docs/web/joinqqgroup/support",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/joinqqgroup/third_party",
+      "destination": "/docs/web/joinqqgroup/third_party",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/joinqqgroup/ui_testing",
+      "destination": "/docs/web/joinqqgroup/ui_testing",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/mechanism",
+      "destination": "/docs/web/mechanism",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/reduce_traffic",
+      "destination": "/docs/web/reduce_traffic",
+      "statusCode": 301
+    },
+    {
+      "source": "/web/register",
+      "destination": "/docs/web/register",
       "statusCode": 301
     },
     {
       "source": "/*/",
       "destination": "/:splat",
       "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/llms.mdx/*",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/_next/static/*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/img/*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/docs",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/docs/*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/404.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/llms-full.txt",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/api/search",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/api/*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
     }
   ]
 }

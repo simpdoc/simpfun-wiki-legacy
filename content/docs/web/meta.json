@@ -1,0 +1,18 @@
+{
+  "title": "官网使用指南",
+  "pages": [
+    "01-intro",
+    "02-register",
+    "03-create",
+    "04-easy_to_use",
+    "05-mechanism",
+    "06-faq",
+    "08-reduce_traffic",
+    "09-joinqqgroup",
+    "10-howtoask",
+    "20-features",
+    "50-advanced"
+  ],
+  "description": "简幻欢官网使用指南",
+  "root": true
+}

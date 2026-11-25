@@ -1,0 +1,9 @@
+{
+  "title": "自定义镜像",
+  "pages": [
+    "01-intro",
+    "10-multi_env"
+  ],
+  "description": "简幻欢自定义镜像文档",
+  "root": true
+}

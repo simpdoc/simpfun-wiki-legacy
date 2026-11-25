@@ -1,0 +1,23 @@
+import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import { defineTranslations } from 'fumadocs-core/i18n';
+import { uiTranslations } from 'fumadocs-ui/i18n';
+import { zhCN } from '@fumadocs/language/zh-cn';
+import { appName, gitConfig } from './shared';
+import Image from 'next/image';
+
+export const translations = defineTranslations().extend(uiTranslations()).preset(zhCN());
+
+export function baseOptions(): BaseLayoutProps {
+  return {
+    nav: {
+      // JSX supported
+      title: (
+        <span className="flex items-center gap-2">
+          <Image src="/img/simpfun.png" alt="" width={28} height={28} className="h-7 w-auto" />
+          <span className="font-bold">{appName}</span>
+        </span>
+      ),
+    },
+    githubUrl: `https://github.com/${gitConfig.user}/${gitConfig.repo}`,
+  };
+}

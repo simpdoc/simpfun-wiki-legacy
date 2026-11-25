@@ -1,0 +1,13 @@
+{
+  "title": "BE常用操作",
+  "pages": [
+    "01-setop",
+    "02-allow_cheat",
+    "03-keepinventory",
+    "04-coords",
+    "05-showplaydays",
+    "06-locatorbar",
+    "07-command_block"
+  ],
+  "defaultOpen": true
+}

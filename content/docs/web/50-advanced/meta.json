@@ -1,0 +1,12 @@
+{
+  "title": "进阶操作",
+  "pages": [
+    "01-sftp",
+    "02-check_file_size",
+    "03-custom_env",
+    "04-curl",
+    "05-zip",
+    "06-dns"
+  ],
+  "defaultOpen": true
+}

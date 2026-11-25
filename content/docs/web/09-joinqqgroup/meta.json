@@ -1,0 +1,11 @@
+{
+  "title": "加入 QQ 交流群",
+  "pages": [
+    "index",
+    "01-general_chat",
+    "02-third_party",
+    "03-ui_testing",
+    "04-support"
+  ],
+  "defaultOpen": true
+}

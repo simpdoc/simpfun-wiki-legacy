@@ -1,0 +1,13 @@
+{
+  "title": "实例管理",
+  "pages": [
+    "01-shell",
+    "02-fileoperations",
+    "03-reinstall",
+    "04-backup",
+    "05-manage",
+    "06-statistics",
+    "07-tasks"
+  ],
+  "defaultOpen": true
+}
