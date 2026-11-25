@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { ArrowRight, Bot, BookOpen, Search } from 'lucide-react';
+import { ArrowRight, Bot, BookOpen, HeartHandshake, Sparkles } from 'lucide-react';
 import { buttonVariants } from 'fumadocs-ui/components/ui/button';
 import { source } from '@/lib/source';
 import { appName } from '@/lib/shared';
@@ -15,18 +15,18 @@ export const metadata: Metadata = {
 const highlights = [
   {
     icon: BookOpen,
-    title: '七套历史文档',
-    description: '官网、MCJE、MCBE、泰拉瑞亚、像素工厂、铁锈战争与自定义镜像。',
+    title: '社区维基',
+    description: '源码在 GitHub 开源，欢迎加入我们的编写。',
   },
   {
-    icon: Bot,
-    title: 'AI 可直接读取',
-    description: '提供 llms.txt、全站合集和逐页 Markdown 出口。',
+    icon: HeartHandshake,
+    title: '完全免费',
+    description: '所有内容均可自由免费查阅，不需要一分钱。',
   },
   {
-    icon: Search,
-    title: '静态全文搜索',
-    description: '无需后端服务，可按文档分区筛选搜索结果。',
+    icon: Sparkles,
+    title: '最新内容',
+    description: '本维基已同步 SFE v4.0 的信息。',
   },
 ];
 
