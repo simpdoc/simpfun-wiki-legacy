@@ -4,9 +4,6 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const repoRoot = process.cwd();
-const legacyRoutes = JSON.parse(
-  readFileSync(resolve(repoRoot, 'migration/legacy-routes.json'), 'utf8'),
-);
 const generatedRoutes = JSON.parse(
   readFileSync(resolve(repoRoot, 'migration/generated-routes.json'), 'utf8'),
 );
@@ -21,20 +18,28 @@ const sectionEntries = [
   ['custom-image', '/docs/custom-image/multi_env/quick_start'],
 ];
 
-const redirects = new Map();
-function addRedirect(source, destination) {
-  if (source !== destination) redirects.set(source, destination);
-}
-
-for (const page of legacyRoutes.pages) addRedirect(page.legacyUrl, page.newUrl);
-for (const redirect of legacyRoutes.redirects) addRedirect(redirect.legacyUrl, redirect.newUrl);
+const redirects = [];
 
 for (const [section, entry] of sectionEntries) {
-  addRedirect(`/${section}`, entry);
-  addRedirect(`/${section}/*`, `/docs/${section}/:splat`);
+  redirects.push(
+    {
+      source: `/${section}`,
+      destination: entry,
+      statusCode: 301,
+    },
+    {
+      source: `/${section}/*`,
+      destination: `/docs/${section}/:splat`,
+      statusCode: 301,
+    },
+  );
 
   if (!generatedRoutes.pages.some((page) => page.newUrl === `/docs/${section}`)) {
-    addRedirect(`/docs/${section}`, entry);
+    redirects.push({
+      source: `/docs/${section}`,
+      destination: entry,
+      statusCode: 301,
+    });
   }
 }
 
@@ -42,18 +47,7 @@ const edgeone = {
   buildCommand: 'pnpm build',
   installCommand: 'pnpm install',
   framework: 'nextjs',
-  redirects: [...redirects]
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([source, destination]) => ({
-      source,
-      destination,
-      statusCode: 301,
-    }))
-    .concat({
-      source: '/*/',
-      destination: '/:splat',
-      statusCode: 301,
-    }),
+  redirects,
   headers: [
     {
       source: '/llms.mdx/*',
@@ -93,13 +87,6 @@ const edgeone = {
     {
       source: '/llms-full.txt',
       headers: [{ key: 'Cache-Control', value: 'no-cache' }],
-    },
-    {
-      source: '/api/search',
-      headers: [
-        { key: 'Content-Type', value: 'application/json; charset=utf-8' },
-        { key: 'Cache-Control', value: 'no-cache' },
-      ],
     },
     {
       source: '/api/*',
