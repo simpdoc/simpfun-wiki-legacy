@@ -75,8 +75,19 @@ function toPosix(path) {
   return path.replaceAll('\\', '/');
 }
 
-function sha256(path) {
-  return createHash('sha256').update(readFileSync(path)).digest('hex');
+function sha256(path, normalizeLineEndings = false) {
+  const content = readFileSync(path);
+  // Git checks out text with platform-dependent endings. Normalize text
+  // fingerprints so a Windows checkout and a Linux deployment agree.
+  const data = normalizeLineEndings
+    ? Buffer.from(content.toString('utf8').replaceAll('\r\n', '\n'))
+    : content;
+  return createHash('sha256').update(data).digest('hex');
+}
+
+function contentBytes(path, normalizeLineEndings = false) {
+  if (!normalizeLineEndings) return statSync(path).size;
+  return readFileSync(path).toString('utf8').replaceAll('\r\n', '\n').length;
 }
 
 function walk(dir) {
@@ -244,12 +255,14 @@ for (const section of sections) {
 
   for (const sourcePath of walk(sourceDir)) {
     const destinationPath = join(destinationDir, relative(sourceDir, sourcePath));
+    const sourceExtension = sourcePath.match(/\.[^.]+$/)?.[0] ?? '';
+    const isDocument = pageExtensions.has(sourceExtension) || sourceExtension === '.json';
     manifestEntries.push({
       kind: 'document',
       source: toPosix(relative(repoRoot, sourcePath)),
       destination: toPosix(relative(repoRoot, destinationPath)),
-      bytes: statSync(sourcePath).size,
-      sha256: sha256(sourcePath),
+      bytes: contentBytes(sourcePath, isDocument),
+      sha256: sha256(sourcePath, isDocument),
     });
   }
 

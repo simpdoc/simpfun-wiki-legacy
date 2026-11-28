@@ -26,8 +26,13 @@ function walk(dir) {
   });
 }
 
-function sha256(path) {
-  return createHash('sha256').update(readFileSync(path)).digest('hex');
+function sha256(path, normalizeLineEndings = false) {
+  const content = readFileSync(path);
+  // Match migration fingerprints across Git's Windows CRLF and Linux LF checkouts.
+  const data = normalizeLineEndings
+    ? Buffer.from(content.toString('utf8').replaceAll('\r\n', '\n'))
+    : content;
+  return createHash('sha256').update(data).digest('hex');
 }
 
 const errors = [];
@@ -45,8 +50,9 @@ for (const entry of manifest.files) {
     continue;
   }
 
-  const sourceHash = sha256(source);
-  const destinationHash = sha256(destination);
+  const normalizeLineEndings = entry.kind === 'document';
+  const sourceHash = sha256(source, normalizeLineEndings);
+  const destinationHash = sha256(destination, normalizeLineEndings);
   if (sourceHash !== entry.sha256) errors.push(`source changed: ${entry.source}`);
   if (destinationHash !== entry.sha256) errors.push(`copy changed: ${entry.destination}`);
   if (sourceHash !== destinationHash) {
