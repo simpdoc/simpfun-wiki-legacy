@@ -1,0 +1,10 @@
+{
+  "title": "AIO v1 (多环境镜像)",
+  "pages": [
+    "01-quick_start",
+    "02-how_to_use",
+    "03-path_list",
+    "04-start_script"
+  ],
+  "defaultOpen": true
+}

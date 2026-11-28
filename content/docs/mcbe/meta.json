@@ -1,0 +1,18 @@
+{
+  "title": "MCBE 文档",
+  "pages": [
+    "01-select_server",
+    "02-server_properties",
+    "03-bds-upload-worlds",
+    "04-bds-input-worlds",
+    "05-bds-input-addon",
+    "06-bds-add-plugin",
+    "07-customer-mcbe-installbds",
+    "08-experiments",
+    "09-new_network_protocol",
+    "20-levilamina",
+    "40-common_operations"
+  ],
+  "description": "Minecraft 基岩版文档",
+  "root": true
+}

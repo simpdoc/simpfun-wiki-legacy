@@ -1,0 +1,8 @@
+{
+  "title": "导入导出存档",
+  "pages": [
+    "01-upload_worlds",
+    "02-download_worlds"
+  ],
+  "defaultOpen": true
+}

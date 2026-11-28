@@ -1,0 +1,21 @@
+{
+  "title": "MCJE 文档",
+  "pages": [
+    "01-select_server",
+    "02-server_properties",
+    "03-server_files",
+    "04-playerdata",
+    "05-auth_type",
+    "06-modpack_perf",
+    "07-serverpack_install",
+    "08-mcdr",
+    "20-common_operations",
+    "30-world_io",
+    "40-extensions",
+    "50-server_install",
+    "60-advanced",
+    "95-geyser"
+  ],
+  "description": "Minecraft Java 版文档",
+  "root": true
+}

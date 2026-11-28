@@ -1,0 +1,3266 @@
+{
+  "sources": {
+    "docs": [
+      "docs-web",
+      "docs-mcje",
+      "docs-mcbe",
+      "docs-terraria",
+      "docs-mindustry",
+      "docs-rusted-warfare",
+      "docs-custom-image"
+    ],
+    "images": "static/img",
+    "ai": "../Simpfun-Wiki/content/docs/ai.mdx"
+  },
+  "fileCount": 464,
+  "files": [
+    {
+      "kind": "document",
+      "source": "docs-custom-image/01-intro.mdx",
+      "destination": "content/docs/custom-image/01-intro.mdx",
+      "bytes": 849,
+      "sha256": "e90e8e571990fe81b72ab294954dc160111b84ba657bb88e26854f34c4c10d6d"
+    },
+    {
+      "kind": "document",
+      "source": "docs-custom-image/10-multi_env/_category_.json",
+      "destination": "content/docs/custom-image/10-multi_env/_category_.json",
+      "bytes": 64,
+      "sha256": "36a3a9e3c47c11c3e9ad843d51bbec47b24877818472b7e488e57666b339bb99"
+    },
+    {
+      "kind": "document",
+      "source": "docs-custom-image/10-multi_env/01-quick_start.mdx",
+      "destination": "content/docs/custom-image/10-multi_env/01-quick_start.mdx",
+      "bytes": 1906,
+      "sha256": "e17630538ed8cf96146feb8e72364c0be4ce9b8fdb32c6a95350d7d105a1125d"
+    },
+    {
+      "kind": "document",
+      "source": "docs-custom-image/10-multi_env/02-how_to_use.mdx",
+      "destination": "content/docs/custom-image/10-multi_env/02-how_to_use.mdx",
+      "bytes": 1503,
+      "sha256": "2dc20beb8b1a2630ea4d746289587d6b5c62aaa41a702124387eccd9dd647107"
+    },
+    {
+      "kind": "document",
+      "source": "docs-custom-image/10-multi_env/03-path_list.mdx",
+      "destination": "content/docs/custom-image/10-multi_env/03-path_list.mdx",
+      "bytes": 2307,
+      "sha256": "c466c7c325d0529ca42f4416cadc78db4e8a6ee55ef43409f3b2a52b0641ce05"
+    },
+    {
+      "kind": "document",
+      "source": "docs-custom-image/10-multi_env/04-start_script.mdx",
+      "destination": "content/docs/custom-image/10-multi_env/04-start_script.mdx",
+      "bytes": 1182,
+      "sha256": "94c5f2aa629b08720f6b781e56d3a6dc1f63d7401f410b0f801571bcd1464b49"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/01-select_server.mdx",
+      "destination": "content/docs/mcbe/01-select_server.mdx",
+      "bytes": 3418,
+      "sha256": "e2eee2237ea91d36e7b506e1037a15e32161e3729c668757baa3c34a250c1281"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/02-server_properties.mdx",
+      "destination": "content/docs/mcbe/02-server_properties.mdx",
+      "bytes": 10867,
+      "sha256": "473afee80b4b53a0e2a826dffefdf4f14c2478d15ed0f8b7266b229011618ea0"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/03-bds-upload-worlds.mdx",
+      "destination": "content/docs/mcbe/03-bds-upload-worlds.mdx",
+      "bytes": 2886,
+      "sha256": "26bef699b3d36ab4602f199cedaad98c70e7dd85d899abce6c4eb470843d045d"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/04-bds-input-worlds.mdx",
+      "destination": "content/docs/mcbe/04-bds-input-worlds.mdx",
+      "bytes": 3411,
+      "sha256": "d05b8990406c9934c213357414409da737c00117134a5b1dfce0762c12b228e4"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/05-bds-input-addon.mdx",
+      "destination": "content/docs/mcbe/05-bds-input-addon.mdx",
+      "bytes": 3885,
+      "sha256": "666ad4bf6e52fa13b0949642227a48ac73a8f4a93f63fa812b26fd3a9dad9680"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/06-bds-add-plugin.mdx",
+      "destination": "content/docs/mcbe/06-bds-add-plugin.mdx",
+      "bytes": 1356,
+      "sha256": "a1601eb705545a85f458b9bd7df3be130630fc4dcaf3c03ca430793eeb16dd50"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/07-customer-mcbe-installbds.mdx",
+      "destination": "content/docs/mcbe/07-customer-mcbe-installbds.mdx",
+      "bytes": 1264,
+      "sha256": "16ab31089b32a3e0a65bb0e47b6f3085bc0e45bc5f1a5c0a07d43760454f0212"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/08-experiments.mdx",
+      "destination": "content/docs/mcbe/08-experiments.mdx",
+      "bytes": 2926,
+      "sha256": "26bd26461e99e04b67abe24e9c00375ad256a4fa9f8e835d25f32d1ec9ad3c75"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/09-new_network_protocol.mdx",
+      "destination": "content/docs/mcbe/09-new_network_protocol.mdx",
+      "bytes": 1420,
+      "sha256": "27ee77039cebd6b0d33191c1c629705f5bc81fc2ee2db25f00daf376ff03ec12"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/20-levilamina/_category_.json",
+      "destination": "content/docs/mcbe/20-levilamina/_category_.json",
+      "bytes": 60,
+      "sha256": "2897f3430969e2d8d948b76ead9bb9f7014536b99567ab75faac34dc32ad7332"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/20-levilamina/01-install.mdx",
+      "destination": "content/docs/mcbe/20-levilamina/01-install.mdx",
+      "bytes": 705,
+      "sha256": "ab5e5b80be3161e715ef2a610bc52b9c33222a7fc3dff73ef7b901b7a871cbf1"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/40-common_operations/_category_.json",
+      "destination": "content/docs/mcbe/40-common_operations/_category_.json",
+      "bytes": 56,
+      "sha256": "91d438fc54ea2bc71ade7be3324503817ac22e65ed7302744521f06d3db4e0e6"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/40-common_operations/01-setop.mdx",
+      "destination": "content/docs/mcbe/40-common_operations/01-setop.mdx",
+      "bytes": 395,
+      "sha256": "bc8d5cd11f291613dbac8cc372a1a787fe8f447be6eadcd1bbb05d067a3e2fc5"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/40-common_operations/02-allow_cheat.mdx",
+      "destination": "content/docs/mcbe/40-common_operations/02-allow_cheat.mdx",
+      "bytes": 774,
+      "sha256": "b0afeed5282e7ee0f3b77eecb48d5678b23db3e17707c07c3cdfab68322f522b"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/40-common_operations/03-keepinventory.mdx",
+      "destination": "content/docs/mcbe/40-common_operations/03-keepinventory.mdx",
+      "bytes": 528,
+      "sha256": "b637152550763611f235ca64e381dcc47e2665e578b34f16b14b00b251d5da9c"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/40-common_operations/04-coords.mdx",
+      "destination": "content/docs/mcbe/40-common_operations/04-coords.mdx",
+      "bytes": 565,
+      "sha256": "92bfba7e3566d7fdfd0d27bd59ef4e3126b944e1daa652c305dc9b392ee6e0a9"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/40-common_operations/05-showplaydays.mdx",
+      "destination": "content/docs/mcbe/40-common_operations/05-showplaydays.mdx",
+      "bytes": 582,
+      "sha256": "fc8db8e7e474ce66f7a1087355cb11cb80e6590729942525b90853a3e8502c54"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/40-common_operations/06-locatorbar.mdx",
+      "destination": "content/docs/mcbe/40-common_operations/06-locatorbar.mdx",
+      "bytes": 792,
+      "sha256": "97452114b94820b97e05269248aa778e093488ea1926050cd82b1bb027bd1ab9"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcbe/40-common_operations/07-command_block.mdx",
+      "destination": "content/docs/mcbe/40-common_operations/07-command_block.mdx",
+      "bytes": 578,
+      "sha256": "6e32bef25809e46a8ee718583f0709c3d3840030f4fab5d0c3b709f6c31b0d93"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/01-select_server.mdx",
+      "destination": "content/docs/mcje/01-select_server.mdx",
+      "bytes": 7007,
+      "sha256": "fc15e00c22919ce15264e07043e253689102d164086a2595faa3329bdc89960b"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/02-server_properties.mdx",
+      "destination": "content/docs/mcje/02-server_properties.mdx",
+      "bytes": 15957,
+      "sha256": "bf9d844174028fe1320cbcb19ba7810a55b7ab49e03a52b3a2d0524c78c174e0"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/03-server_files.mdx",
+      "destination": "content/docs/mcje/03-server_files.mdx",
+      "bytes": 5941,
+      "sha256": "29ea355c1cbbe6ea9a580193e75412d77a991552a5a210af683d124f1561359f"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/04-playerdata.mdx",
+      "destination": "content/docs/mcje/04-playerdata.mdx",
+      "bytes": 3170,
+      "sha256": "0ca0ebd5c2ab180121610f7407d1705d20738e1fc15038fb5dae483374902635"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/05-auth_type.mdx",
+      "destination": "content/docs/mcje/05-auth_type.mdx",
+      "bytes": 3239,
+      "sha256": "f78008c088e27d408a2bb7ee777cc1054e1785d05a967916a3de977789948e3a"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/06-modpack_perf.mdx",
+      "destination": "content/docs/mcje/06-modpack_perf.mdx",
+      "bytes": 4366,
+      "sha256": "254caa5a40fae19ab9a23113ea4e2ad36ecc0d27bc72083f8e5ec7124171ee74"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/07-serverpack_install.mdx",
+      "destination": "content/docs/mcje/07-serverpack_install.mdx",
+      "bytes": 970,
+      "sha256": "8c972f2e7424d0873b0d3c86c718de10a34d3b339f754152b65f923a5a50766b"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/08-mcdr.mdx",
+      "destination": "content/docs/mcje/08-mcdr.mdx",
+      "bytes": 15467,
+      "sha256": "45dd1298020e650e92ab29f2f0b8ec93b4dd865332439f77de877b269a9f3b27"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/20-common_operations/_category_.json",
+      "destination": "content/docs/mcje/20-common_operations/_category_.json",
+      "bytes": 56,
+      "sha256": "23c38b4314c5b7d0270ed975cdb26dfa66234278e33d631040363b9cfccdbb92"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/20-common_operations/01-gamerules.mdx",
+      "destination": "content/docs/mcje/20-common_operations/01-gamerules.mdx",
+      "bytes": 7100,
+      "sha256": "2dd48ab2a4efe16fb0d46290c95cc74f5b627c79c992858bd372501391353be6"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/20-common_operations/02-op.mdx",
+      "destination": "content/docs/mcje/20-common_operations/02-op.mdx",
+      "bytes": 284,
+      "sha256": "5c50adae052efbc281c335ad9ac42b1d15d88ccb3c0e61da91f27e554cada3fa"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/20-common_operations/03-keepinventory.mdx",
+      "destination": "content/docs/mcje/20-common_operations/03-keepinventory.mdx",
+      "bytes": 468,
+      "sha256": "bf59cb58c8b483d0cfad69dfef96e21c7e956b52b11e08689b7dcc22afe2f763"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/20-common_operations/04-enable_commandblock.mdx",
+      "destination": "content/docs/mcje/20-common_operations/04-enable_commandblock.mdx",
+      "bytes": 605,
+      "sha256": "fca9824f6d0523be5782ebbf21987d26d8c5464ba491b9a163895d8321bab15a"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/20-common_operations/05-setworldspawn.mdx",
+      "destination": "content/docs/mcje/20-common_operations/05-setworldspawn.mdx",
+      "bytes": 295,
+      "sha256": "e67ddd37d86f5702d753be3589d8d0d5fe136651060d36b1655803d60c2bba67"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/20-common_operations/06-allow_flight.mdx",
+      "destination": "content/docs/mcje/20-common_operations/06-allow_flight.mdx",
+      "bytes": 331,
+      "sha256": "eb71d82faf8419b595c4c1a49895f7a09e01f9294fa73c4736232bc55d51d984"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/20-common_operations/07-mobgriefing.mdx",
+      "destination": "content/docs/mcje/20-common_operations/07-mobgriefing.mdx",
+      "bytes": 388,
+      "sha256": "0e8a97ebc168fd33c0603728109871258499dcecc18a9d6fc48480a279f4f147"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/20-common_operations/08-locatorbar.mdx",
+      "destination": "content/docs/mcje/20-common_operations/08-locatorbar.mdx",
+      "bytes": 411,
+      "sha256": "a72867dbca3da034bc77593295b1b23927c5d2228365e65fbc3aa9901877d644"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/20-common_operations/09-online_mode.mdx",
+      "destination": "content/docs/mcje/20-common_operations/09-online_mode.mdx",
+      "bytes": 994,
+      "sha256": "565dd4968630420bc6d2d7b53925cfabf25dc5f888f75ab53ef4848dd15432c9"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/30-world_io/_category_.json",
+      "destination": "content/docs/mcje/30-world_io/_category_.json",
+      "bytes": 56,
+      "sha256": "5f3410ffb0fd8d642f5dd824c1f60432340f0719a842c1fc2c89b617f16a0376"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/30-world_io/01-upload_worlds.mdx",
+      "destination": "content/docs/mcje/30-world_io/01-upload_worlds.mdx",
+      "bytes": 1169,
+      "sha256": "2d06cf4834b4a2cdf5c39230949a9a1f9cec4a716d211a5835a4bf01262bac7f"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/30-world_io/02-download_worlds.mdx",
+      "destination": "content/docs/mcje/30-world_io/02-download_worlds.mdx",
+      "bytes": 2536,
+      "sha256": "1e6eca2d34be973a779acaed046d54dc458816d3075a21587471168e4f382161"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/40-extensions/_category_.json",
+      "destination": "content/docs/mcje/40-extensions/_category_.json",
+      "bytes": 60,
+      "sha256": "e9bccc5a2a35125e706fa8d7544b0b9c1ed1473b916d9ba4e181ec6033d6b3b5"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/40-extensions/01-addmod.mdx",
+      "destination": "content/docs/mcje/40-extensions/01-addmod.mdx",
+      "bytes": 770,
+      "sha256": "4c2d02446fa7033faea0826bead3bd6f16ec7e578ecd4a5176da4fd8cae4eb93"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/40-extensions/02-addplugin.mdx",
+      "destination": "content/docs/mcje/40-extensions/02-addplugin.mdx",
+      "bytes": 1246,
+      "sha256": "6285d1fac9b90d641baa027d164454b88ebe98408389abeafd89c7071e646bd6"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/40-extensions/03-adddatapack.mdx",
+      "destination": "content/docs/mcje/40-extensions/03-adddatapack.mdx",
+      "bytes": 508,
+      "sha256": "736bb1d976f44d1f2ba681029f1078880c6b4fc24ad1caa4c7118d31d9d24461"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/40-extensions/04-addshaders.mdx",
+      "destination": "content/docs/mcje/40-extensions/04-addshaders.mdx",
+      "bytes": 4399,
+      "sha256": "647501ced14c0e7ab3b09c35e5df065161faa358ea43136fb98c9cd304c148d5"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/40-extensions/05-setmotd.mdx",
+      "destination": "content/docs/mcje/40-extensions/05-setmotd.mdx",
+      "bytes": 1544,
+      "sha256": "53251ceb504faf05caa9c542c66fdcd14bb0b72ade3e805353c2c5f381be6a20"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/50-server_install/_category_.json",
+      "destination": "content/docs/mcje/50-server_install/_category_.json",
+      "bytes": 60,
+      "sha256": "17d3c76c609c080e528909ac9e0e6785009af4427044820604449705d0e29f32"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/50-server_install/01-vanilla_bukkit.mdx",
+      "destination": "content/docs/mcje/50-server_install/01-vanilla_bukkit.mdx",
+      "bytes": 6875,
+      "sha256": "131b1d3836f108511313e45933b0518f98169da30c2ce5e099a20e059581fba1"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/50-server_install/02-forge.mdx",
+      "destination": "content/docs/mcje/50-server_install/02-forge.mdx",
+      "bytes": 7262,
+      "sha256": "393748105183858f61ba1dd39446de119a47a460cda58ff1b71cdb4d74671fa0"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/50-server_install/03-fabric.mdx",
+      "destination": "content/docs/mcje/50-server_install/03-fabric.mdx",
+      "bytes": 6261,
+      "sha256": "459b9481d65ae709844336513d7ba3bdf8b3bc9964cc46e69f3353750be720d4"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/50-server_install/04-neoforge.mdx",
+      "destination": "content/docs/mcje/50-server_install/04-neoforge.mdx",
+      "bytes": 3879,
+      "sha256": "dd55e8479fff8e7c8adbc71863f3924ad7064d84bbe0c87bb59e74191126b057"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/50-server_install/05-mix.mdx",
+      "destination": "content/docs/mcje/50-server_install/05-mix.mdx",
+      "bytes": 3653,
+      "sha256": "f00031fa5bee23a164e4659f81e2b3c00f67f121f09d1b67a58770d64e2f9f98"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/50-server_install/06-serverpackcreator.mdx",
+      "destination": "content/docs/mcje/50-server_install/06-serverpackcreator.mdx",
+      "bytes": 2192,
+      "sha256": "99d8836ef65281ccd3a21b27b430163cd814a3f39566a3351be0f08510adc8e8"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/60-advanced/_category_.json",
+      "destination": "content/docs/mcje/60-advanced/_category_.json",
+      "bytes": 54,
+      "sha256": "8ccb75cc8b10e16b7ffe3580118d9a118ae4dc27531101e93aa2e1370cce17b1"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/60-advanced/01-addownjava.mdx",
+      "destination": "content/docs/mcje/60-advanced/01-addownjava.mdx",
+      "bytes": 963,
+      "sha256": "459a1ec7c1b6bf17e6b1b09c25d7c360f448441566fbd45db74d448dacc5647b"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/60-advanced/02-authlib_injector.mdx",
+      "destination": "content/docs/mcje/60-advanced/02-authlib_injector.mdx",
+      "bytes": 4122,
+      "sha256": "66cf69f7e1f722f5eb398f1abda1db9f1ede831eaf396351f16c2d6d6a5a9c31"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/95-geyser/_category_.json",
+      "destination": "content/docs/mcje/95-geyser/_category_.json",
+      "bytes": 65,
+      "sha256": "286f4fd1a50339ce7fa7d2cc00b82f298e002cd2f5f99c196191e0f5732b3f0a"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/95-geyser/01-geyser_qa.mdx",
+      "destination": "content/docs/mcje/95-geyser/01-geyser_qa.mdx",
+      "bytes": 1972,
+      "sha256": "e3e568742d27670492ab8c3e8c2edab5f1c6be5551371a13be6fe68c80d56c45"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/95-geyser/02-whatisgeyser.mdx",
+      "destination": "content/docs/mcje/95-geyser/02-whatisgeyser.mdx",
+      "bytes": 765,
+      "sha256": "167f39b04dd9f83bcc9c18dfbb1430e7b03c039ac4a2fb8a9a2b98444a96762d"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/95-geyser/03-addgeyser.mdx",
+      "destination": "content/docs/mcje/95-geyser/03-addgeyser.mdx",
+      "bytes": 1488,
+      "sha256": "ad212d140b75b1a2319d3a2595bc0bdd74078b810bc07ae9c0fef6f11efdb2b1"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/95-geyser/04-configgeyser.mdx",
+      "destination": "content/docs/mcje/95-geyser/04-configgeyser.mdx",
+      "bytes": 10454,
+      "sha256": "9e38a28c020a20e16a50184593ad79269e49a84a9d04cfe2a29d804c85413792"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/95-geyser/05-floodgate.mdx",
+      "destination": "content/docs/mcje/95-geyser/05-floodgate.mdx",
+      "bytes": 2728,
+      "sha256": "e36b83442489096c0b6eff92ecc49365ac07e734ae1f24f95b9371a6e7d057eb"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mcje/95-geyser/06-nethernet.mdx",
+      "destination": "content/docs/mcje/95-geyser/06-nethernet.mdx",
+      "bytes": 4004,
+      "sha256": "6e42802987d65cbb1ff18af0bf17fea7145db7e54eea57c81fa5403d7313082c"
+    },
+    {
+      "kind": "document",
+      "source": "docs-mindustry/index.mdx",
+      "destination": "content/docs/mindustry/index.mdx",
+      "bytes": 4792,
+      "sha256": "b7c9bfc641b2c7d6a5f8e50d0596d0244afc43c0565fd9c8af3d3c54ba237146"
+    },
+    {
+      "kind": "document",
+      "source": "docs-rusted-warfare/01-index.mdx",
+      "destination": "content/docs/rusted-warfare/01-index.mdx",
+      "bytes": 809,
+      "sha256": "100226842dfd95800f2aba7e3d7619ecd2c26db79ea721c117a0975cc1bd1523"
+    },
+    {
+      "kind": "document",
+      "source": "docs-terraria/01-index.mdx",
+      "destination": "content/docs/terraria/01-index.mdx",
+      "bytes": 1358,
+      "sha256": "c963ebbaa61a505c77041c0daa34123609ffed7692580179de23dafa7e1390e8"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/01-intro.mdx",
+      "destination": "content/docs/web/01-intro.mdx",
+      "bytes": 1296,
+      "sha256": "8cafbcd9278c26fa5fd0ace175201599fa5d06ee5b6bcfa2ba5d54c00feed368"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/02-register.mdx",
+      "destination": "content/docs/web/02-register.mdx",
+      "bytes": 2238,
+      "sha256": "37d3610ae14ae1419007a708988dd3c1b7bc0d25ac79c8de7c98ff6477941044"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/03-create.mdx",
+      "destination": "content/docs/web/03-create.mdx",
+      "bytes": 1756,
+      "sha256": "9d1c4cbe266a7795b0f46e63d2de311ae3e6f11896f41644746907e864078bd9"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/04-easy_to_use.mdx",
+      "destination": "content/docs/web/04-easy_to_use.mdx",
+      "bytes": 1162,
+      "sha256": "4a735696ccd975cb1ac1b270d1405cf0693b0336f2f39b387264a66fcd491776"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/05-mechanism.mdx",
+      "destination": "content/docs/web/05-mechanism.mdx",
+      "bytes": 1954,
+      "sha256": "1897516b59336289dba90706c71022a6fa22221cb8cbf96fd17116d441915d60"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/06-faq.mdx",
+      "destination": "content/docs/web/06-faq.mdx",
+      "bytes": 2337,
+      "sha256": "d57e68fcd56e6d03466ef77e62cbf779efe2e1ee66f3fefa5522f82dd4679cff"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/08-reduce_traffic.mdx",
+      "destination": "content/docs/web/08-reduce_traffic.mdx",
+      "bytes": 3732,
+      "sha256": "89325a4c932cfe8f5612a45d0ecaf9e670fdcacdd9d91c64c166a100a9c5ab6b"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/09-joinqqgroup/_category_.json",
+      "destination": "content/docs/web/09-joinqqgroup/_category_.json",
+      "bytes": 72,
+      "sha256": "bdeaf10a79957c66cbff3e003a11c65701811f9573d23c9bf227a1a8748b0911"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/09-joinqqgroup/01-general_chat.mdx",
+      "destination": "content/docs/web/09-joinqqgroup/01-general_chat.mdx",
+      "bytes": 1363,
+      "sha256": "d4b425b051fafcac71055fd555c0342e01ac2479afb29cb5e36931c91f077193"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/09-joinqqgroup/02-third_party.mdx",
+      "destination": "content/docs/web/09-joinqqgroup/02-third_party.mdx",
+      "bytes": 1128,
+      "sha256": "a40e01f38996c96e3b16e63a44c7ddf199843722b5d76b1eb3e65607179200db"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/09-joinqqgroup/03-ui_testing.mdx",
+      "destination": "content/docs/web/09-joinqqgroup/03-ui_testing.mdx",
+      "bytes": 487,
+      "sha256": "93f854e18027b882d0c26af180b55fedeccfa40d2ee6bbf3776dfb8939df4820"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/09-joinqqgroup/04-support.mdx",
+      "destination": "content/docs/web/09-joinqqgroup/04-support.mdx",
+      "bytes": 1054,
+      "sha256": "f99b7a58b9779c0d0fca8710654c5854a79fc897251ed3fcc5510acb6ebab883"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/09-joinqqgroup/index.mdx",
+      "destination": "content/docs/web/09-joinqqgroup/index.mdx",
+      "bytes": 1022,
+      "sha256": "41c810c4d2333ef9e83e4eae24d4146c531b7213b4bef72f08c7ccc364131fa4"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/10-howtoask.mdx",
+      "destination": "content/docs/web/10-howtoask.mdx",
+      "bytes": 1272,
+      "sha256": "156eaec0e2cc3cef1fead4fe44fbcbe915fd980bf80a11df32175198be53ecff"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/20-features/_category_.json",
+      "destination": "content/docs/web/20-features/_category_.json",
+      "bytes": 57,
+      "sha256": "1f97118ab5a1930c103097cb199c3d0f0b2b95dff75aeb0e2cd1da73b0bde6f0"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/20-features/01-console.mdx",
+      "destination": "content/docs/web/20-features/01-console.mdx",
+      "bytes": 821,
+      "sha256": "050d1f81e32275286b0aa6b89c999af92594e4ca9beffa85cbb65c347150a383"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/20-features/10-instance/_category_.json",
+      "destination": "content/docs/web/20-features/10-instance/_category_.json",
+      "bytes": 54,
+      "sha256": "4c8105af5990f1c3f15d2baa8021dcc21e920ebea47f4d7a45e1ebcd0b47e49f"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/20-features/10-instance/01-shell.mdx",
+      "destination": "content/docs/web/20-features/10-instance/01-shell.mdx",
+      "bytes": 512,
+      "sha256": "0ad8d7a8941250585b3cc581eb7f2498d1b2f1de97ca143f8f5a0c009b67b845"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/20-features/10-instance/02-fileoperations.mdx",
+      "destination": "content/docs/web/20-features/10-instance/02-fileoperations.mdx",
+      "bytes": 2325,
+      "sha256": "a7079ae800722a9a58fcb7f1d47dcf86359e8302412ee60963920f3ea84de9e9"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/20-features/10-instance/03-reinstall.mdx",
+      "destination": "content/docs/web/20-features/10-instance/03-reinstall.mdx",
+      "bytes": 920,
+      "sha256": "3a76c4bcda4dfda733f961f6911b8e9ff247e793b039ddb7d702d02f181b75bf"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/20-features/10-instance/04-backup.mdx",
+      "destination": "content/docs/web/20-features/10-instance/04-backup.mdx",
+      "bytes": 967,
+      "sha256": "debd40469ec58b5339d5095f3d204ad3bc245be1d1d61ae2016c1d4f16f86fbd"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/20-features/10-instance/05-manage.mdx",
+      "destination": "content/docs/web/20-features/10-instance/05-manage.mdx",
+      "bytes": 1405,
+      "sha256": "5bd3dd0671ce32c65073cad2ce317e791833be10dd6f4accf955ffc9b30709ad"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/20-features/10-instance/06-statistics.mdx",
+      "destination": "content/docs/web/20-features/10-instance/06-statistics.mdx",
+      "bytes": 161,
+      "sha256": "5d27ba576170295f476ed305d5de4a3efb7c093a288f0a98935ebd11d5bb082d"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/20-features/10-instance/07-tasks.mdx",
+      "destination": "content/docs/web/20-features/10-instance/07-tasks.mdx",
+      "bytes": 461,
+      "sha256": "675a4739ab1fdbcc85116e5f3822ef0d70554182827d77c016f8f29dd52f0e55"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/20-features/20-mini_apps.mdx",
+      "destination": "content/docs/web/20-features/20-mini_apps.mdx",
+      "bytes": 797,
+      "sha256": "19217f812882074345b4bf927cd54ed7e14b8597c3accfa00a8dfadcd9497e8a"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/20-features/30-default_start.mdx",
+      "destination": "content/docs/web/20-features/30-default_start.mdx",
+      "bytes": 1376,
+      "sha256": "ce8bdd6a36f06a75b7222b255bface465258b0bad128d61285b0fecc18c52ebf"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/50-advanced/_category_.json",
+      "destination": "content/docs/web/50-advanced/_category_.json",
+      "bytes": 54,
+      "sha256": "59ddcf7dab836d56f389703828d6d38dc2882757377470d353b885081d798737"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/50-advanced/01-sftp.mdx",
+      "destination": "content/docs/web/50-advanced/01-sftp.mdx",
+      "bytes": 3211,
+      "sha256": "5a92568facc78a717ced3296fd48ce888a3ebb055c1e1333f21874d93f5e8d4a"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/50-advanced/02-check_file_size.mdx",
+      "destination": "content/docs/web/50-advanced/02-check_file_size.mdx",
+      "bytes": 1028,
+      "sha256": "1595fb3d9b0df9363c688dbf014c9e98148a2d198532ebf7d8a9f89ffe36eeeb"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/50-advanced/03-custom_env.mdx",
+      "destination": "content/docs/web/50-advanced/03-custom_env.mdx",
+      "bytes": 626,
+      "sha256": "df5ae98d02b94aa5ab38d732bebbc80d8728397143c559445faadd68653d99a6"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/50-advanced/04-curl.mdx",
+      "destination": "content/docs/web/50-advanced/04-curl.mdx",
+      "bytes": 1566,
+      "sha256": "4399eebccbb19db2e5949008dc402233963cd30f910e549a1b60560aadb559fb"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/50-advanced/05-zip.mdx",
+      "destination": "content/docs/web/50-advanced/05-zip.mdx",
+      "bytes": 1706,
+      "sha256": "7adbcb8c7bc6c1bf5cb1f5a726b9c42f83a552772f73404f438f7beb5755e204"
+    },
+    {
+      "kind": "document",
+      "source": "docs-web/50-advanced/06-dns.mdx",
+      "destination": "content/docs/web/50-advanced/06-dns.mdx",
+      "bytes": 1151,
+      "sha256": "6fbe4fd860040d78cdd82fcb13261878ec06aa33c3045792ca79991afaae7bd1"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/beian.png",
+      "destination": "public/img/beian.png",
+      "bytes": 1403,
+      "sha256": "8dfecad0dfcb3dc584f2c2447943eefb1fd65a058856eb0611e2c56ddc4c1fe1"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/favicon.ico",
+      "destination": "public/img/favicon.ico",
+      "bytes": 16958,
+      "sha256": "b029ff1ac9a0ede639326eaed98fc1a883770abf0c5efbba158ae5c1701ec9b9"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/console-1.webp",
+      "destination": "public/img/pages/console-1.webp",
+      "bytes": 57118,
+      "sha256": "22fc96fff91fa96b139b7e2a50a877f3c0c595052d6ae8ba5bd8a2766ac4d3c3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/console-2.webp",
+      "destination": "public/img/pages/console-2.webp",
+      "bytes": 64604,
+      "sha256": "a178bba3cfaf55e3ebf9669293fac3ca7efec853413ee9febd682b84747d2b84"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/custom-image/custom-start-script-1.png",
+      "destination": "public/img/pages/custom-image/custom-start-script-1.png",
+      "bytes": 7625,
+      "sha256": "fc89e1a616225f7f8240a54db76d32b1caf2cf60af402f9eca38722e68d147ae"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/custom-image/custom-start-script-2.png",
+      "destination": "public/img/pages/custom-image/custom-start-script-2.png",
+      "bytes": 5462,
+      "sha256": "d888e02b2c826b6606e7316168db76808379ff547ff6bc1a0d8201f53954dee2"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/custom-image/custom-start-script-3.png",
+      "destination": "public/img/pages/custom-image/custom-start-script-3.png",
+      "bytes": 17012,
+      "sha256": "76d7d6ca00676a630c5563b8f76d993a535383211d6a51f5da78fac3c88ced09"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/custom-image/custom-start-script-4.png",
+      "destination": "public/img/pages/custom-image/custom-start-script-4.png",
+      "bytes": 9503,
+      "sha256": "52103d8f617e20a9d0da41aa14d7e3664772752c456b2dbac7aac26cb3138a99"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/custom-image/custom-start-script-5.png",
+      "destination": "public/img/pages/custom-image/custom-start-script-5.png",
+      "bytes": 3474,
+      "sha256": "550a06d910f536a08405e407a72acfc6bc9b3b63ed723590b30ce8414e79ecbb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/custom-image/custom-start-script-6.png",
+      "destination": "public/img/pages/custom-image/custom-start-script-6.png",
+      "bytes": 16602,
+      "sha256": "57d92844f3d72b06fda635928d2154bd7dd1fe70dc446ce83413a5b82bd6a862"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/custom-image/customer-aio-how-to-use-mise-1.png",
+      "destination": "public/img/pages/custom-image/customer-aio-how-to-use-mise-1.png",
+      "bytes": 174777,
+      "sha256": "b597d605a784426426c4000bafbc2d0494b8bacdde3d31ec81f791b37507f85c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/custom-image/customer-aio-how-to-use-mise-2.png",
+      "destination": "public/img/pages/custom-image/customer-aio-how-to-use-mise-2.png",
+      "bytes": 120326,
+      "sha256": "d15b8502261bd0f6c42c7f68b81e9e6c97198ff3c076110a05a8ee72359265fb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/custom-image/customer-aio-how-to-use-mise-3.png",
+      "destination": "public/img/pages/custom-image/customer-aio-how-to-use-mise-3.png",
+      "bytes": 138660,
+      "sha256": "7b9e4bd97ab0eeef33736a330c86d9c7a98ee29a73f380ca09894606b58426fd"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/custom-image/customer-aio-how-to-use-mise-4.png",
+      "destination": "public/img/pages/custom-image/customer-aio-how-to-use-mise-4.png",
+      "bytes": 148105,
+      "sha256": "c21ee27ec0b8e5e191a4883a90377acdd274ed3e9171d054e5cb68925f50837a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/custom-image/customer-aio-path-list-1.png",
+      "destination": "public/img/pages/custom-image/customer-aio-path-list-1.png",
+      "bytes": 44809,
+      "sha256": "7effe9059492d7b0a86ac8abf726fb178a5820e39defdfa82bfc70eb665998cb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/ins-1.png",
+      "destination": "public/img/pages/ins-1.png",
+      "bytes": 160223,
+      "sha256": "c092a573a0bb1525b76ed745b4a4a86f81fa1317ab5136e8a5197c59bc2bcee2"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/ins-console-2.webp",
+      "destination": "public/img/pages/ins-console-2.webp",
+      "bytes": 77240,
+      "sha256": "87544becec4b65a459c261d78dff9819403290d924265fa59a01d95e158cbdeb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/main-1.png",
+      "destination": "public/img/pages/main-1.png",
+      "bytes": 135243,
+      "sha256": "6646ac849a992c5c55438183428ce988ace7ac070386cebdd450aee3a991513a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/03-sp-1.gif",
+      "destination": "public/img/pages/mcbe/03-sp-1.gif",
+      "bytes": 2547551,
+      "sha256": "f6adee2addbed4c300dbcce0b836c0255fbc1bf869280df723b7f2286a29ece9"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/03-sp-2.png",
+      "destination": "public/img/pages/mcbe/03-sp-2.png",
+      "bytes": 29685,
+      "sha256": "9ab7b777aa9fea6e9019f9213fd321c41e1adb0a1ac8eb0b8cef8ff0234864f8"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-add-plugin-1.png",
+      "destination": "public/img/pages/mcbe/bds-add-plugin-1.png",
+      "bytes": 38333,
+      "sha256": "3ad8fe6c205a6afa38972da879d6f65fd51c37c1b2793e4b9514fd369def5c54"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-add-plugin-2.png",
+      "destination": "public/img/pages/mcbe/bds-add-plugin-2.png",
+      "bytes": 65449,
+      "sha256": "bfdf9fdf914437941a669a338a5f8ec38ba39bb36a747447ae13562297cd4d0d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-allow_cheat-1.png",
+      "destination": "public/img/pages/mcbe/bds-allow_cheat-1.png",
+      "bytes": 30882,
+      "sha256": "71d1db642ba0ad53472444e54510e426c1f99d2716c5c46030232d7448c5d861"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-allow_cheat-2.png",
+      "destination": "public/img/pages/mcbe/bds-allow_cheat-2.png",
+      "bytes": 410099,
+      "sha256": "55da3cee17ae95be03fe204b3ac20d4754548441d64678271c19080a6a6a1076"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-enable-command-block-1.png",
+      "destination": "public/img/pages/mcbe/bds-enable-command-block-1.png",
+      "bytes": 48489,
+      "sha256": "99903ae15576778a874a07b53d8f7021c69e6671a81a8374bfa63ad1ec534fd3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-enable-command-block-2.png",
+      "destination": "public/img/pages/mcbe/bds-enable-command-block-2.png",
+      "bytes": 30882,
+      "sha256": "71d1db642ba0ad53472444e54510e426c1f99d2716c5c46030232d7448c5d861"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-addon-1.png",
+      "destination": "public/img/pages/mcbe/bds-input-addon-1.png",
+      "bytes": 158114,
+      "sha256": "7021897d369984d8a3e06db00a9a91743699804d2c0d32e3eddbbe570ac1740a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-addon-2.png",
+      "destination": "public/img/pages/mcbe/bds-input-addon-2.png",
+      "bytes": 18323,
+      "sha256": "9e9c5d6503e82961b4004257bc2d641af614b87527be8f92000ec221a30a2b1b"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-addon-3.png",
+      "destination": "public/img/pages/mcbe/bds-input-addon-3.png",
+      "bytes": 4555,
+      "sha256": "7983c32d232623f4f1b06b3a84997f6658bc438cc0237bc9e551a004c1df6582"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-addon-4.png",
+      "destination": "public/img/pages/mcbe/bds-input-addon-4.png",
+      "bytes": 79218,
+      "sha256": "0ed3980c6a0c69f536e8d4b201ddc492ff558f054f5b4a3d283dee9ead943b67"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-addon-5.png",
+      "destination": "public/img/pages/mcbe/bds-input-addon-5.png",
+      "bytes": 58773,
+      "sha256": "930a57144b5cf37ab69e4ec2039926b9c738a8ffc49fdcfd1410bb9dc896c5c2"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-addon-6.png",
+      "destination": "public/img/pages/mcbe/bds-input-addon-6.png",
+      "bytes": 34860,
+      "sha256": "a0db3d39eb1c6cb53d39bee77c5a72cdb1818c7b99aed1409316e222a6375bfb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-addon-7.png",
+      "destination": "public/img/pages/mcbe/bds-input-addon-7.png",
+      "bytes": 36236,
+      "sha256": "7695bd6f0c6a5583893fc2dfd5a1c90c27847b62e780aeda95cc2cb0f2a11066"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-addon-8.png",
+      "destination": "public/img/pages/mcbe/bds-input-addon-8.png",
+      "bytes": 26613,
+      "sha256": "f989b27fbb61cb7cf7778ed97c2f017da3c915e4c3f656fff6e109636dc2f56d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-worlds-1.png",
+      "destination": "public/img/pages/mcbe/bds-input-worlds-1.png",
+      "bytes": 9678,
+      "sha256": "46efb5d07cc78a580190102e5feea01152f1c9bc94b19b5b4c3d1616c7b8ee6d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-worlds-10.png",
+      "destination": "public/img/pages/mcbe/bds-input-worlds-10.png",
+      "bytes": 78465,
+      "sha256": "8c470b4a5f80899b0cd594f239deeaffb4c9efa3b50d6ac43f366c3cabd0d1eb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-worlds-11.png",
+      "destination": "public/img/pages/mcbe/bds-input-worlds-11.png",
+      "bytes": 26264,
+      "sha256": "52af97f00222f00f8ef92ac30c906912abbeef7157921a0f26cbaea9aac218bc"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-worlds-12.png",
+      "destination": "public/img/pages/mcbe/bds-input-worlds-12.png",
+      "bytes": 156511,
+      "sha256": "8ab937880de066e41b1711a7ae9f8149760ae4b6476f61c8f4959dd022fd5e4c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-worlds-13.png",
+      "destination": "public/img/pages/mcbe/bds-input-worlds-13.png",
+      "bytes": 142628,
+      "sha256": "a924533bcef08dea1f0b803e00cc344d33f1c2e34413f71d289df331bfd1bea1"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-worlds-2.png",
+      "destination": "public/img/pages/mcbe/bds-input-worlds-2.png",
+      "bytes": 7827,
+      "sha256": "93c3d602dd6612ffdb4820cf5a79a0ed0800559f91f637a42bc50fd9057616c9"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-worlds-3.png",
+      "destination": "public/img/pages/mcbe/bds-input-worlds-3.png",
+      "bytes": 12044,
+      "sha256": "96f37968054ac26dc19976c6ae4fa01aa7fe1e000eff4ef63849a8f62d3a73f1"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-worlds-4.png",
+      "destination": "public/img/pages/mcbe/bds-input-worlds-4.png",
+      "bytes": 22153,
+      "sha256": "4172b36f55bbb3778205ac9de6b3279da026c931945d8a6dc15a3a5b5870fb1f"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-worlds-5.png",
+      "destination": "public/img/pages/mcbe/bds-input-worlds-5.png",
+      "bytes": 14107,
+      "sha256": "c02ef96b7003e8c57e2fff812415b1a044e91e7157a3fbd092442d91b331ad03"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-worlds-6.png",
+      "destination": "public/img/pages/mcbe/bds-input-worlds-6.png",
+      "bytes": 22246,
+      "sha256": "ba088754358c8c7da3b09e9b4fc11e8f9012d6c679cdbef956ba0505279a0165"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-worlds-7.png",
+      "destination": "public/img/pages/mcbe/bds-input-worlds-7.png",
+      "bytes": 543971,
+      "sha256": "e89e5e5fff230dd5e50f9aa62174c930b88f046803b2a549415f512d15147b56"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-worlds-8.png",
+      "destination": "public/img/pages/mcbe/bds-input-worlds-8.png",
+      "bytes": 289425,
+      "sha256": "a09785d7ef75dc548411575cffb71d62f603c149ce658e5df9258862bca9933d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-input-worlds-9.png",
+      "destination": "public/img/pages/mcbe/bds-input-worlds-9.png",
+      "bytes": 134415,
+      "sha256": "71229d37ed97c1da88951a432e571d98effa7ab5dac09b450ec426d03c5f8eee"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-keepinventory-1.png",
+      "destination": "public/img/pages/mcbe/bds-keepinventory-1.png",
+      "bytes": 48489,
+      "sha256": "99903ae15576778a874a07b53d8f7021c69e6671a81a8374bfa63ad1ec534fd3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-server-properties-1.gif",
+      "destination": "public/img/pages/mcbe/bds-server-properties-1.gif",
+      "bytes": 2547551,
+      "sha256": "f6adee2addbed4c300dbcce0b836c0255fbc1bf869280df723b7f2286a29ece9"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-server-properties-2.png",
+      "destination": "public/img/pages/mcbe/bds-server-properties-2.png",
+      "bytes": 29685,
+      "sha256": "9ab7b777aa9fea6e9019f9213fd321c41e1adb0a1ac8eb0b8cef8ff0234864f8"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-setop-1.png",
+      "destination": "public/img/pages/mcbe/bds-setop-1.png",
+      "bytes": 48489,
+      "sha256": "99903ae15576778a874a07b53d8f7021c69e6671a81a8374bfa63ad1ec534fd3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-setworldspawn-1.png",
+      "destination": "public/img/pages/mcbe/bds-setworldspawn-1.png",
+      "bytes": 48489,
+      "sha256": "99903ae15576778a874a07b53d8f7021c69e6671a81a8374bfa63ad1ec534fd3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-setworldspawn-2.png",
+      "destination": "public/img/pages/mcbe/bds-setworldspawn-2.png",
+      "bytes": 30882,
+      "sha256": "71d1db642ba0ad53472444e54510e426c1f99d2716c5c46030232d7448c5d861"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-upload-worlds-1.png",
+      "destination": "public/img/pages/mcbe/bds-upload-worlds-1.png",
+      "bytes": 134415,
+      "sha256": "71229d37ed97c1da88951a432e571d98effa7ab5dac09b450ec426d03c5f8eee"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-upload-worlds-10.png",
+      "destination": "public/img/pages/mcbe/bds-upload-worlds-10.png",
+      "bytes": 22614,
+      "sha256": "19496cd678c43aab98f043659fb660da2ea3ba13de61946bb6d80d7c099ebc85"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-upload-worlds-11.png",
+      "destination": "public/img/pages/mcbe/bds-upload-worlds-11.png",
+      "bytes": 17314,
+      "sha256": "22d41d698a207490f31c2c4dab80d223244ff70422b19cb9cafe65d3ea17b429"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-upload-worlds-12.png",
+      "destination": "public/img/pages/mcbe/bds-upload-worlds-12.png",
+      "bytes": 4555,
+      "sha256": "7983c32d232623f4f1b06b3a84997f6658bc438cc0237bc9e551a004c1df6582"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-upload-worlds-2.jpeg",
+      "destination": "public/img/pages/mcbe/bds-upload-worlds-2.jpeg",
+      "bytes": 69082,
+      "sha256": "e6d5b7df1f52951a35ae852240b5cf076f47ca9a37a5fdcb8eebd743a5d19d9a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-upload-worlds-3.png",
+      "destination": "public/img/pages/mcbe/bds-upload-worlds-3.png",
+      "bytes": 212024,
+      "sha256": "9e31ca4a9d96d9756158c3c3a95a3d71417f1d73f98f176767dc4ca36083ce11"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-upload-worlds-4.png",
+      "destination": "public/img/pages/mcbe/bds-upload-worlds-4.png",
+      "bytes": 1058661,
+      "sha256": "0b737e12156f79028534a830ee208b0db5cf4972bcb20b61ef4a7351158ba36d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-upload-worlds-5.png",
+      "destination": "public/img/pages/mcbe/bds-upload-worlds-5.png",
+      "bytes": 35558,
+      "sha256": "379ba669b8d12b265d53e9be835423a6e485a609bd780117bc978224ea7cf8ea"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-upload-worlds-6.png",
+      "destination": "public/img/pages/mcbe/bds-upload-worlds-6.png",
+      "bytes": 283316,
+      "sha256": "6dd508392b7cd5ba3dde6ceba474a725edc6aced158c3f70d2e5e51d6c6db50f"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-upload-worlds-7.jpeg",
+      "destination": "public/img/pages/mcbe/bds-upload-worlds-7.jpeg",
+      "bytes": 420084,
+      "sha256": "8e418ad500332ae52f09bc8d0b38e238e42f5cb1e4d40683467c95ac39e4f30a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-upload-worlds-8.png",
+      "destination": "public/img/pages/mcbe/bds-upload-worlds-8.png",
+      "bytes": 222457,
+      "sha256": "96b209791b4061f8b7e264e15919ecf8a229844e7867c0bcf3298fd3c3640330"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/bds-upload-worlds-9.png",
+      "destination": "public/img/pages/mcbe/bds-upload-worlds-9.png",
+      "bytes": 554141,
+      "sha256": "4b95e8d15f5602fe6b3381ca7402a95cdcf362eee56d64c3862d2dea6f8656f9"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/customer-mcbe-installbds-1.avif",
+      "destination": "public/img/pages/mcbe/customer-mcbe-installbds-1.avif",
+      "bytes": 62335,
+      "sha256": "8290e744127d64cbcc4d456da2c628c9421667f076304e5af34418659f9c655e"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/customer-mcbe-installbds-2.jpeg",
+      "destination": "public/img/pages/mcbe/customer-mcbe-installbds-2.jpeg",
+      "bytes": 207072,
+      "sha256": "63051bf70ec19eef90426529ff77a05e5c1206a5d290f46f1e682f5ee6ca7f6c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/experiments-1.png",
+      "destination": "public/img/pages/mcbe/experiments-1.png",
+      "bytes": 60333,
+      "sha256": "e768bb80a078ef9a01cc6e6d0dabab98fca9146bbef7a605e61276e89cf60130"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/experiments-10.png",
+      "destination": "public/img/pages/mcbe/experiments-10.png",
+      "bytes": 11787,
+      "sha256": "4df997909e601fa2e7ae9585c74977303e44f56420a26d09eef2e6e472a23ffb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/experiments-2.png",
+      "destination": "public/img/pages/mcbe/experiments-2.png",
+      "bytes": 362491,
+      "sha256": "35cb2e25d8fdecf9d3487f2b04b25fab2e5ad0a5fcb4b6c4675066675a21ae96"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/experiments-3.png",
+      "destination": "public/img/pages/mcbe/experiments-3.png",
+      "bytes": 12189,
+      "sha256": "7e2d938f5fcbcbf6846bc1effc67e4e5d53bd54be4a261d5eead3fc7ebe40511"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/experiments-4.png",
+      "destination": "public/img/pages/mcbe/experiments-4.png",
+      "bytes": 11040,
+      "sha256": "c673d222b9ed5b8bfdd6eb5f1a241a145d0f2be414942f6b6254f6d4023a9bac"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/experiments-5.png",
+      "destination": "public/img/pages/mcbe/experiments-5.png",
+      "bytes": 12003,
+      "sha256": "20b44a228cccab905f064332cef68e967bd7eacefdd4e8b49f2bb39871d1949b"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/experiments-6.png",
+      "destination": "public/img/pages/mcbe/experiments-6.png",
+      "bytes": 229612,
+      "sha256": "37834ec2dbff02d7a1fea82a205510e6bd292174d5f4315a8f570648fdcbd35d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/experiments-7.png",
+      "destination": "public/img/pages/mcbe/experiments-7.png",
+      "bytes": 17041,
+      "sha256": "2f2a5aff99ee70e635fb6902cf5e56c85507e792309612c1300eea172d8180ef"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/experiments-8.png",
+      "destination": "public/img/pages/mcbe/experiments-8.png",
+      "bytes": 10119,
+      "sha256": "cacd3d7e877a4586ff2a1adebd23888ea05d6554a85e852c9e52892d027840d2"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/experiments-9.png",
+      "destination": "public/img/pages/mcbe/experiments-9.png",
+      "bytes": 12833,
+      "sha256": "90071be3fedad45d8dd72921e07a494c4e91d094e7ded55eb3711a42ea7adf89"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/mcbe-locatorbar-1.png",
+      "destination": "public/img/pages/mcbe/mcbe-locatorbar-1.png",
+      "bytes": 48489,
+      "sha256": "99903ae15576778a874a07b53d8f7021c69e6671a81a8374bfa63ad1ec534fd3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/mcbe-showplaydays-1.png",
+      "destination": "public/img/pages/mcbe/mcbe-showplaydays-1.png",
+      "bytes": 21386,
+      "sha256": "aa85fa5af3344560438dff885f6146bace435eec9289bf84c1de27d7ba3471e5"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/xveib7sepf8z6qup-1.png",
+      "destination": "public/img/pages/mcbe/xveib7sepf8z6qup-1.png",
+      "bytes": 5808,
+      "sha256": "ae1464be3814950c339708a529d78fdf899f8796701c32b36d45620b3bf4d494"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcbe/xveib7sepf8z6qup-2.png",
+      "destination": "public/img/pages/mcbe/xveib7sepf8z6qup-2.png",
+      "bytes": 40824,
+      "sha256": "de591b9f8724b72f84a6185b501d948631efe17def43db20622dca95c09bb96f"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/04-sf-1.webp",
+      "destination": "public/img/pages/mcje/04-sf-1.webp",
+      "bytes": 34616,
+      "sha256": "c79f8b5683d145b9e6657742c102c55e40de36428518eae8d43183813b61299c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/04-sf-2.webp",
+      "destination": "public/img/pages/mcje/04-sf-2.webp",
+      "bytes": 44902,
+      "sha256": "9898adf67263ea2dfc8a932abdec9b7f80ba45cb76e3dfb76f7c7bbb4a9e7278"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/04-sf-3.webp",
+      "destination": "public/img/pages/mcje/04-sf-3.webp",
+      "bytes": 56494,
+      "sha256": "463e07653ba89704fbc5ff2701971e9edd0cdd153c29ac096b7352e73d6123c8"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/04-sf-4.webp",
+      "destination": "public/img/pages/mcje/04-sf-4.webp",
+      "bytes": 34962,
+      "sha256": "3a1a3be8ce46400afa3769046f681adc5ea03b20081a6fecee753c5f61268126"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/04-sf-5.webp",
+      "destination": "public/img/pages/mcje/04-sf-5.webp",
+      "bytes": 32666,
+      "sha256": "67e6a36129cfb63fc7f9fe9b33bd7f6785d60b832639a3f5e98a6848d9268212"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/04-sf-6.webp",
+      "destination": "public/img/pages/mcje/04-sf-6.webp",
+      "bytes": 61160,
+      "sha256": "48595ef758f97c6a7f65b603647bd1d0853e6ec9fa1a0665ba193890d9d9c005"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/04-sf-7.webp",
+      "destination": "public/img/pages/mcje/04-sf-7.webp",
+      "bytes": 39758,
+      "sha256": "6b07e6b1580288e0bcace3e224083deeb233028bc0292850e0c5bbc2dd493953"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/04-sf-8.webp",
+      "destination": "public/img/pages/mcje/04-sf-8.webp",
+      "bytes": 41076,
+      "sha256": "36cbda8273a2d9de854625ee18705386c3f3c8dca98d5dd473e0e2a9d4e6baeb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addgeyser-1.png",
+      "destination": "public/img/pages/mcje/addgeyser-1.png",
+      "bytes": 1594068,
+      "sha256": "b96557b7417ecd4dee43f2131003be325561228a96f5c30c9bcb50ccc288c0df"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addgeyser-2.png",
+      "destination": "public/img/pages/mcje/addgeyser-2.png",
+      "bytes": 459437,
+      "sha256": "0a2938834bca87198d6117a38fa4799800b290d90b3be49606d321f140956669"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addmod-1.png",
+      "destination": "public/img/pages/mcje/addmod-1.png",
+      "bytes": 73760,
+      "sha256": "d319c7d3f33f236a7c6e2b2527043989209e90d60ef1b19e244ec6a3e7aebb55"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addownjava-1.png",
+      "destination": "public/img/pages/mcje/addownjava-1.png",
+      "bytes": 168065,
+      "sha256": "ff9f71d0c635314e465e466c5a4143ac6d1ae8959e18285bf715ca12b410e3ac"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addownjava-2.png",
+      "destination": "public/img/pages/mcje/addownjava-2.png",
+      "bytes": 67414,
+      "sha256": "5bf0ac0f66ee2370a23bf1dd3a1d151fc121eab95cd310925f7b5bff236f5696"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addownjava-3.png",
+      "destination": "public/img/pages/mcje/addownjava-3.png",
+      "bytes": 58653,
+      "sha256": "6ba30f4e7b098fae355aee0852ba952079c7d0514980b58bb6f866efbd505e1a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addownjava-4.png",
+      "destination": "public/img/pages/mcje/addownjava-4.png",
+      "bytes": 57942,
+      "sha256": "b8ae2b86b73156ced4e227c7dd0641372bd473bec8e437a6f1fc31d03e12253a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addownjava-5.png",
+      "destination": "public/img/pages/mcje/addownjava-5.png",
+      "bytes": 57542,
+      "sha256": "2e961509b3cf347c50eb193949876b2c3a131d8e62a84726df85c64bd956a8e9"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addownjava-6.png",
+      "destination": "public/img/pages/mcje/addownjava-6.png",
+      "bytes": 36248,
+      "sha256": "a1746bd1c6dfd097d59fdf5808ae0540dd2ff8c9d60220559e79ea0f5c7f66f5"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addshaders-1.png",
+      "destination": "public/img/pages/mcje/addshaders-1.png",
+      "bytes": 474801,
+      "sha256": "bed11f9e940db20355a3423f3de38960cbf580beed97af32ab450d78f3658162"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addshaders-2.png",
+      "destination": "public/img/pages/mcje/addshaders-2.png",
+      "bytes": 757667,
+      "sha256": "eeae730b99638ca396c71ac1fbba963bcef46ad546a3f91a4c7f6ccff33117db"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addshaders-3.png",
+      "destination": "public/img/pages/mcje/addshaders-3.png",
+      "bytes": 1062332,
+      "sha256": "a33c9e2d9f86b9c9c4e13cabafa0d0c101c1739d07a6a1558f44f24e6be1516f"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addshaders-4.png",
+      "destination": "public/img/pages/mcje/addshaders-4.png",
+      "bytes": 273385,
+      "sha256": "e8bab63c840184dd6bea4e3559c8dd652a53d4a14425bf5b3a8aaa1e85b1f72d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addshaders-5.png",
+      "destination": "public/img/pages/mcje/addshaders-5.png",
+      "bytes": 104302,
+      "sha256": "2f9199eafa900fbcb2139b353b764cf8e4a1172bb9c800a29cbd74fa00f039ea"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addshaders-6.png",
+      "destination": "public/img/pages/mcje/addshaders-6.png",
+      "bytes": 116411,
+      "sha256": "0e6dcf11c8a001a5e9e2a63041b92bb11a25f2a31210d921de66223ac1e756f1"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addshaders-7.png",
+      "destination": "public/img/pages/mcje/addshaders-7.png",
+      "bytes": 136816,
+      "sha256": "9d806a2c793a4c28729161389e335dd814e688616a1cd59a2e40ad217818e375"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addshaders-8.png",
+      "destination": "public/img/pages/mcje/addshaders-8.png",
+      "bytes": 44352,
+      "sha256": "4e9670b8e60e429a85216cdc6b36d77d8be64f56478fe56be71617fc21294cc4"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/addshaders-9.png",
+      "destination": "public/img/pages/mcje/addshaders-9.png",
+      "bytes": 235680,
+      "sha256": "788c2a5289a6c3ee2af494caf125884f897eff5e266efa95b7d0fce5da66a7b5"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/authlib-injector-1.png",
+      "destination": "public/img/pages/mcje/authlib-injector-1.png",
+      "bytes": 69001,
+      "sha256": "df88d845483577b9f821fc591556c58b68af3bfc5cf31dac20e09b9dffd703e8"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/authlib-injector-2.png",
+      "destination": "public/img/pages/mcje/authlib-injector-2.png",
+      "bytes": 188001,
+      "sha256": "9d40eed119231095be1011adf25d19d2ac10f91bbb13a81ef23ecdc75ef1b220"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/authlib-injector-3.png",
+      "destination": "public/img/pages/mcje/authlib-injector-3.png",
+      "bytes": 1552852,
+      "sha256": "4f1e793e5aceae3b1c2fdde56b73c248d27e483d3fa59c5c82c3d368da8070ae"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/authlib-injector-4.png",
+      "destination": "public/img/pages/mcje/authlib-injector-4.png",
+      "bytes": 1660440,
+      "sha256": "18c5a7785fd3eba6e283ced5c101282813b077e9125f3e87c4a5e4784952bfd5"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/authlib-injector-5.png",
+      "destination": "public/img/pages/mcje/authlib-injector-5.png",
+      "bytes": 118579,
+      "sha256": "f53af5b9151474e32fe482d174c0d7a5c328dcf47eedc79cdb375ff7bc251d16"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/authlib-injector-6.png",
+      "destination": "public/img/pages/mcje/authlib-injector-6.png",
+      "bytes": 96706,
+      "sha256": "8943ffda5c378c2d366e37ae29a5221316eeb71e7b5a1c18a3a345e9adcb0247"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/authlib-injector-7.png",
+      "destination": "public/img/pages/mcje/authlib-injector-7.png",
+      "bytes": 129292,
+      "sha256": "1967fb96bdede704e12d2de3d51b5f2dc25075da6cfd9b70ed72d36b48ff9ff2"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/authlib-injector-8.png",
+      "destination": "public/img/pages/mcje/authlib-injector-8.png",
+      "bytes": 129906,
+      "sha256": "b99af5e84f321018eb7fdef08d2d7e8e69b3abe02120c897c7464270d17eb149"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/configgeyser-1.png",
+      "destination": "public/img/pages/mcje/configgeyser-1.png",
+      "bytes": 419168,
+      "sha256": "5ed45460487e4cbbdb56e751d618a77d5404ada801360e5f81917df30bb8526e"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/configgeyser-2.png",
+      "destination": "public/img/pages/mcje/configgeyser-2.png",
+      "bytes": 185272,
+      "sha256": "ff4e261ed4c7fd78d252512636f6c56449e06d76a00a6d22843a9d5af1587b76"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/configgeyser-3.png",
+      "destination": "public/img/pages/mcje/configgeyser-3.png",
+      "bytes": 167194,
+      "sha256": "18d0271a2336d61b1b274ad9fdd526362adf709786db0e9046b81a2d1edbbd95"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/configgeyser-4.png",
+      "destination": "public/img/pages/mcje/configgeyser-4.png",
+      "bytes": 157023,
+      "sha256": "5718c1700b417fd5810ef484d601823ddd27d3103386065c7b814908fdbad23d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/configgeyser-5.png",
+      "destination": "public/img/pages/mcje/configgeyser-5.png",
+      "bytes": 537613,
+      "sha256": "cfcdf01024b0347880ce78171f4ee8f06c44398f67e912fd2c072abb1113ca4e"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-fabric-server-1.png",
+      "destination": "public/img/pages/mcje/customer-mcje-fabric-server-1.png",
+      "bytes": 15083,
+      "sha256": "19811e094576ad693d97e52c09ea65888d0907c18adfe28fc1d780982a50c40a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-fabric-server-2.png",
+      "destination": "public/img/pages/mcje/customer-mcje-fabric-server-2.png",
+      "bytes": 253515,
+      "sha256": "30aca5c47784787f9920d74b77ddb1c4a27006d5bae29f1de92e23271bed4905"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-fabric-server-3.png",
+      "destination": "public/img/pages/mcje/customer-mcje-fabric-server-3.png",
+      "bytes": 248619,
+      "sha256": "36fcc986fe9c8147e3fc635074fa1f1323fc821b2e5e7798db22b6cd6bf747c2"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-fabric-server-4.png",
+      "destination": "public/img/pages/mcje/customer-mcje-fabric-server-4.png",
+      "bytes": 6058,
+      "sha256": "6a74b48bd6c36cd81958e6a5314f6878c3c2b3a1c5ed1dce1b6bfca9a36a0f5c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-fabric-server-5.png",
+      "destination": "public/img/pages/mcje/customer-mcje-fabric-server-5.png",
+      "bytes": 117268,
+      "sha256": "d3ae355bbf8adc221440a28fb57fbbbc71ae769b830a43887530bb002aae040c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-fabric-server-6.png",
+      "destination": "public/img/pages/mcje/customer-mcje-fabric-server-6.png",
+      "bytes": 90637,
+      "sha256": "65cf0be7a3eef69446927665939e63ffcb58a4410bacb991894c85e92fff2303"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-fabric-server-7.png",
+      "destination": "public/img/pages/mcje/customer-mcje-fabric-server-7.png",
+      "bytes": 164519,
+      "sha256": "a21675bdb784f4a2e7520b165f49aa56e12b6bf0e7d855446072afdf2e49bdf1"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-fabric-server-8.png",
+      "destination": "public/img/pages/mcje/customer-mcje-fabric-server-8.png",
+      "bytes": 40416,
+      "sha256": "709d99630e2828a204fb80e873f4b2ffc6e897bace8410e4912aaf20fb6ce097"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-forge-server-1.png",
+      "destination": "public/img/pages/mcje/customer-mcje-forge-server-1.png",
+      "bytes": 22680,
+      "sha256": "5e42b2c886362c1b53e234d15e64917f461fe49ada7a148c3e6aa2178e58007a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-forge-server-2.png",
+      "destination": "public/img/pages/mcje/customer-mcje-forge-server-2.png",
+      "bytes": 22160,
+      "sha256": "66f8acfaebb62f12f195bc5e72987cc71a8d6765b8bedd8f0e9031d1644d0e82"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-forge-server-3.png",
+      "destination": "public/img/pages/mcje/customer-mcje-forge-server-3.png",
+      "bytes": 210257,
+      "sha256": "489584446bfdfc8314b2deb0ed5886fd8207109aff97232b4ee039b8cd02b577"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-forge-server-4.png",
+      "destination": "public/img/pages/mcje/customer-mcje-forge-server-4.png",
+      "bytes": 53216,
+      "sha256": "a15805cfd12fc356c5f581a28a096e350550b1229d774aacd520b3114ff40747"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-forge-server-5.png",
+      "destination": "public/img/pages/mcje/customer-mcje-forge-server-5.png",
+      "bytes": 44510,
+      "sha256": "7e421668a39626c1102c671f6ddd895dc95dab3baeaccee40f1363c28ac4359d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-forge-server-6.png",
+      "destination": "public/img/pages/mcje/customer-mcje-forge-server-6.png",
+      "bytes": 239061,
+      "sha256": "46f5012ecf532e43f42003f7f18afe85a3eb321ced846e2a34815972710c123d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-forge-server-7.png",
+      "destination": "public/img/pages/mcje/customer-mcje-forge-server-7.png",
+      "bytes": 26479,
+      "sha256": "f3f8d271253cc6cccc335d794a16bfa4396821ae649d9975f21b3d5a2fa77513"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-forge-server-8.png",
+      "destination": "public/img/pages/mcje/customer-mcje-forge-server-8.png",
+      "bytes": 35846,
+      "sha256": "d862458c1abbda04f9fd53ab30086090eb564e378d128e4696229bb81a0b2aac"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-forge-server-9.png",
+      "destination": "public/img/pages/mcje/customer-mcje-forge-server-9.png",
+      "bytes": 24107,
+      "sha256": "1de7cba26ac529342c87ead6d56d9bd3eb360e4cce12d9e9441c5c035ee91451"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-mix-server-1.png",
+      "destination": "public/img/pages/mcje/customer-mcje-mix-server-1.png",
+      "bytes": 130637,
+      "sha256": "803075a525547f744db88afb2a2f5d8bfdd9ab87314213eba63b7f485e8e9fb5"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-neoforge-server-1.png",
+      "destination": "public/img/pages/mcje/customer-mcje-neoforge-server-1.png",
+      "bytes": 24800,
+      "sha256": "aea353f37428cc6e8bfdb30531b1250e14f191adeedb6fbb7d0e86a7ab95092f"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-neoforge-server-2.png",
+      "destination": "public/img/pages/mcje/customer-mcje-neoforge-server-2.png",
+      "bytes": 9050,
+      "sha256": "170263ddf7b49a93a20485c0a55aadca08d39984c578f68893438d79ebe67781"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-neoforge-server-3.png",
+      "destination": "public/img/pages/mcje/customer-mcje-neoforge-server-3.png",
+      "bytes": 350635,
+      "sha256": "3a8d6bac1205835f88181b41f5b1f0abbda0e3f39f6d18fda539c93894d0e58c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-neoforge-server-4.png",
+      "destination": "public/img/pages/mcje/customer-mcje-neoforge-server-4.png",
+      "bytes": 93651,
+      "sha256": "32b9d69c30838d5910a2ff7efea25efb73f4879d1cdd776a20151335a78e7a09"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-neoforge-server-5.png",
+      "destination": "public/img/pages/mcje/customer-mcje-neoforge-server-5.png",
+      "bytes": 79865,
+      "sha256": "f93c2ceca4945673334f5687d8a4a273b2e82c624d095e79e2b49a3e50b812a5"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-serverpackcreator-1.png",
+      "destination": "public/img/pages/mcje/customer-mcje-serverpackcreator-1.png",
+      "bytes": 68356,
+      "sha256": "a5c87a2c46059715deb5c4136e08efdaf2f92474dceca2e0d60fdf5af47f43c0"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-serverpackcreator-2.png",
+      "destination": "public/img/pages/mcje/customer-mcje-serverpackcreator-2.png",
+      "bytes": 11592,
+      "sha256": "5315a730af16238a4a1480ccf5f1f672b1b92bab11676d2d06e2e80e9eec0567"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-serverpackcreator-3.png",
+      "destination": "public/img/pages/mcje/customer-mcje-serverpackcreator-3.png",
+      "bytes": 97769,
+      "sha256": "4ff2e75964ce46e7e94bfbc4cfa8ba825e8ffdcbc530c3db7374982f98108995"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-serverpackcreator-4.png",
+      "destination": "public/img/pages/mcje/customer-mcje-serverpackcreator-4.png",
+      "bytes": 64266,
+      "sha256": "235f3eede22810a4a21cc5a74c64b2037a8fff7fcc9db31a79ec007550e509fc"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-serverpackcreator-5.png",
+      "destination": "public/img/pages/mcje/customer-mcje-serverpackcreator-5.png",
+      "bytes": 35683,
+      "sha256": "b25bbccc1318e089111d64f39fed028173dc40ec3b97b6eb5773ea26960186a4"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-serverpackcreator-6.png",
+      "destination": "public/img/pages/mcje/customer-mcje-serverpackcreator-6.png",
+      "bytes": 48909,
+      "sha256": "7f15ccf763fb00eff8e535ae0f51e8c03a0fa65c5d10ebe30ed1f31ba370837e"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-serverpackinstall-1.jpeg",
+      "destination": "public/img/pages/mcje/customer-mcje-serverpackinstall-1.jpeg",
+      "bytes": 98266,
+      "sha256": "382841642fd5baa45d6e98b52d4d64def5fc78fe18cd4b1d98bec8f83d694158"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-serverpackinstall-2.jpeg",
+      "destination": "public/img/pages/mcje/customer-mcje-serverpackinstall-2.jpeg",
+      "bytes": 51254,
+      "sha256": "032f365ff0323f172275582ebdcbd2c7bc70ec32d5e460921f1458d61ded8d30"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-vanilla-bukkit-server-1.png",
+      "destination": "public/img/pages/mcje/customer-mcje-vanilla-bukkit-server-1.png",
+      "bytes": 162495,
+      "sha256": "da028cce88ad9dd83b2db65dffbcfa24712bfc889eed0e6631c95ed74e2d6fed"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-vanilla-bukkit-server-2.png",
+      "destination": "public/img/pages/mcje/customer-mcje-vanilla-bukkit-server-2.png",
+      "bytes": 57686,
+      "sha256": "7bb1169648c3b5bb28344ab5fd1d284fcc27b565ef43e6af68e2666efc69b838"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-vanilla-bukkit-server-3.png",
+      "destination": "public/img/pages/mcje/customer-mcje-vanilla-bukkit-server-3.png",
+      "bytes": 120953,
+      "sha256": "3b9a6e959c4501939cb6cefa9d002a0e578931a1c4ba3871f0cb0e882d5a0489"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-vanilla-bukkit-server-4.png",
+      "destination": "public/img/pages/mcje/customer-mcje-vanilla-bukkit-server-4.png",
+      "bytes": 45790,
+      "sha256": "8bb3181d3e631ff69b68d46bc5913b8470b2ea8333076821ca09c5a22621d72f"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/customer-mcje-vanilla-bukkit-server-5.png",
+      "destination": "public/img/pages/mcje/customer-mcje-vanilla-bukkit-server-5.png",
+      "bytes": 57686,
+      "sha256": "7bb1169648c3b5bb28344ab5fd1d284fcc27b565ef43e6af68e2666efc69b838"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/download-worlds-1.png",
+      "destination": "public/img/pages/mcje/download-worlds-1.png",
+      "bytes": 326688,
+      "sha256": "a2aad030865ef595467f8a2ab2c20395b788fbba89e86f710f611207c0bada10"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/download-worlds-2.png",
+      "destination": "public/img/pages/mcje/download-worlds-2.png",
+      "bytes": 11177,
+      "sha256": "cd559493d73ce8c1ccd61331c2d0a47b26b82919b3d8f401e6795104994b22c0"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/download-worlds-3.png",
+      "destination": "public/img/pages/mcje/download-worlds-3.png",
+      "bytes": 39830,
+      "sha256": "6528757166ada207cad17674cd80355550573788dfd0100dbb3b9509ba03631d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/download-worlds-4.png",
+      "destination": "public/img/pages/mcje/download-worlds-4.png",
+      "bytes": 326688,
+      "sha256": "a2aad030865ef595467f8a2ab2c20395b788fbba89e86f710f611207c0bada10"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/download-worlds-5.png",
+      "destination": "public/img/pages/mcje/download-worlds-5.png",
+      "bytes": 11177,
+      "sha256": "cd559493d73ce8c1ccd61331c2d0a47b26b82919b3d8f401e6795104994b22c0"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/download-worlds-6.png",
+      "destination": "public/img/pages/mcje/download-worlds-6.png",
+      "bytes": 39830,
+      "sha256": "6528757166ada207cad17674cd80355550573788dfd0100dbb3b9509ba03631d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/download-worlds-7.png",
+      "destination": "public/img/pages/mcje/download-worlds-7.png",
+      "bytes": 122939,
+      "sha256": "d29cbedd8e21f68f7c9620f41a510826b0afa9734dc2d95d373aa65fcbcc33c8"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/floodgate-1.png",
+      "destination": "public/img/pages/mcje/floodgate-1.png",
+      "bytes": 746983,
+      "sha256": "f981151d34b22f7e4ea4e9403073a225834a41faf81e6c2c72735b4e443fb34c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/floodgate-2.png",
+      "destination": "public/img/pages/mcje/floodgate-2.png",
+      "bytes": 157988,
+      "sha256": "0cc73313e4a39f1b30f6037afa528b15cead06198b52f77646d70708085d370c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/floodgate-3.png",
+      "destination": "public/img/pages/mcje/floodgate-3.png",
+      "bytes": 436988,
+      "sha256": "8a8a853d3cdf9adbb7475a1db03d7f233ada2bd48ebab9d8b6e847bf3c82b214"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/floodgate-4.png",
+      "destination": "public/img/pages/mcje/floodgate-4.png",
+      "bytes": 1594068,
+      "sha256": "b96557b7417ecd4dee43f2131003be325561228a96f5c30c9bcb50ccc288c0df"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/floodgate-5.png",
+      "destination": "public/img/pages/mcje/floodgate-5.png",
+      "bytes": 784511,
+      "sha256": "762a70425a41111ee65949647f8b924c7f278f640dc7945894fd36bf0d93f4d3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/floodgate-6.png",
+      "destination": "public/img/pages/mcje/floodgate-6.png",
+      "bytes": 182955,
+      "sha256": "002cf70a80897f7a52a4fefe39fae80f8c3bed1f1691e828f65ce8bb0099b449"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/floodgate-7.png",
+      "destination": "public/img/pages/mcje/floodgate-7.png",
+      "bytes": 165735,
+      "sha256": "2bf6f968536d283eff97c5bc9e04081be9ce5f34f9d1cfbe219a6fa2f2f837f2"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/geyser/01-qa-1.avif",
+      "destination": "public/img/pages/mcje/geyser/01-qa-1.avif",
+      "bytes": 53528,
+      "sha256": "e4162f0ed47c51b559da2df7c3207843f610e4bd4efeb5befc5df7d358360860"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/geyser/01-qa-2.avif",
+      "destination": "public/img/pages/mcje/geyser/01-qa-2.avif",
+      "bytes": 44937,
+      "sha256": "97dc69753adee9cbbe1835acdc4de76a948c42759ff2c150a35de22ec8e04b29"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/geyser/01-qa-3.avif",
+      "destination": "public/img/pages/mcje/geyser/01-qa-3.avif",
+      "bytes": 31336,
+      "sha256": "b493f9a6386405cff375abc53c79d4b7854aaa2b49837f4c88c40006e024c89e"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/geyser/01-qa-4.avif",
+      "destination": "public/img/pages/mcje/geyser/01-qa-4.avif",
+      "bytes": 60470,
+      "sha256": "7a111727e1f4e616eb09362f61381b221aa5eccba49e26bca394c01cb121e0d0"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/geyser/01-qa-5.avif",
+      "destination": "public/img/pages/mcje/geyser/01-qa-5.avif",
+      "bytes": 7595,
+      "sha256": "b8280fedc98b1c739192ef422b5522cea1b7d138a804dd2b7077c52ca6341781"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/geyser/01-qa-6.avif",
+      "destination": "public/img/pages/mcje/geyser/01-qa-6.avif",
+      "bytes": 319228,
+      "sha256": "b00392812e7916d0b93d835f293adacedf39e82dde2c67c3c28ae473e2d1c3a9"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/geyser/03-4.webp",
+      "destination": "public/img/pages/mcje/geyser/03-4.webp",
+      "bytes": 7540,
+      "sha256": "c52f7422746a19eb7a810f3b97012774f3398f06973197909a99416508e9b467"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/geyser/03-nether_net-1.png",
+      "destination": "public/img/pages/mcje/geyser/03-nether_net-1.png",
+      "bytes": 29664,
+      "sha256": "c472d8f2ecdaf14ea179d137e293257f06a9e0c13e982bb0eb534378c9f237f2"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/geyser/03-nether_net-2.png",
+      "destination": "public/img/pages/mcje/geyser/03-nether_net-2.png",
+      "bytes": 76161,
+      "sha256": "3a0d42e2bbe8a59681e97cc9c14ce4e12cd6bb1dfacb6f234bb4859e7e7de493"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/geyser/03-nether_net-3.png",
+      "destination": "public/img/pages/mcje/geyser/03-nether_net-3.png",
+      "bytes": 16075,
+      "sha256": "54f6d3d96c3c5c2e4b04b978ac8a06ef9b0a219cfef5c82d084a83b7985b912d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcdr-how-to-use-1.webp",
+      "destination": "public/img/pages/mcje/mcdr-how-to-use-1.webp",
+      "bytes": 11702,
+      "sha256": "e3ebecd50c11fb962e58f004aff7aab8b746930602b1c773274ee5bbc1de504a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcdr-how-to-use-10.webp",
+      "destination": "public/img/pages/mcje/mcdr-how-to-use-10.webp",
+      "bytes": 8784,
+      "sha256": "26ea6494e4e1929a3a234747304bc7c38fd6643a438bc4f7101cef96bf315ed7"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcdr-how-to-use-11.webp",
+      "destination": "public/img/pages/mcje/mcdr-how-to-use-11.webp",
+      "bytes": 10186,
+      "sha256": "0f552e357c43867c6f1caa0189d215c2a7cb0d8098d10dd28cf57c476ef59688"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcdr-how-to-use-12.webp",
+      "destination": "public/img/pages/mcje/mcdr-how-to-use-12.webp",
+      "bytes": 8794,
+      "sha256": "e6180c1b98c7acc3158f0ee0eaf2333887d8d0f7d9a4e9f3961bab855f3e019c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcdr-how-to-use-13.webp",
+      "destination": "public/img/pages/mcje/mcdr-how-to-use-13.webp",
+      "bytes": 10186,
+      "sha256": "0f552e357c43867c6f1caa0189d215c2a7cb0d8098d10dd28cf57c476ef59688"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcdr-how-to-use-14.webp",
+      "destination": "public/img/pages/mcje/mcdr-how-to-use-14.webp",
+      "bytes": 40452,
+      "sha256": "170b306b8ab1f8a803f225566190f481ee15bd5041e20d8a757ab62afa4fb36c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcdr-how-to-use-2.webp",
+      "destination": "public/img/pages/mcje/mcdr-how-to-use-2.webp",
+      "bytes": 8818,
+      "sha256": "8c35024001735ccc90c4f245c9dfffa4ef063fa29a7ff4427e960c7e8e134fa6"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcdr-how-to-use-3.webp",
+      "destination": "public/img/pages/mcje/mcdr-how-to-use-3.webp",
+      "bytes": 7862,
+      "sha256": "96aab6d35b85e37f36e3b8285731beb49029e358ad8c688ef78e352962c8fd13"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcdr-how-to-use-4.png",
+      "destination": "public/img/pages/mcje/mcdr-how-to-use-4.png",
+      "bytes": 7294,
+      "sha256": "288b12f1a8be134107c25c355e1199d6483e624176fa5c5d553c5c2708c5901d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcdr-how-to-use-5.png",
+      "destination": "public/img/pages/mcje/mcdr-how-to-use-5.png",
+      "bytes": 8416,
+      "sha256": "d1eb1ba4181529ddb00f47201dfa5959dff42bd77417cbe29e6f984bf6008e86"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcdr-how-to-use-6.png",
+      "destination": "public/img/pages/mcje/mcdr-how-to-use-6.png",
+      "bytes": 13272,
+      "sha256": "80e8c6150bfcb21fec19ca74f6dfca8dd5012256e83dad85797f84f6ac0e9998"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcdr-how-to-use-7.png",
+      "destination": "public/img/pages/mcje/mcdr-how-to-use-7.png",
+      "bytes": 31184,
+      "sha256": "e489550acabd9279488937655f9f58c175c28b2099294b983663e998f9d66bbd"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcdr-how-to-use-8.webp",
+      "destination": "public/img/pages/mcje/mcdr-how-to-use-8.webp",
+      "bytes": 6334,
+      "sha256": "d2a03d12590edb9be3e08faafea6abdb73290598b74583f98ca1d83f826ae6f8"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcdr-how-to-use-9.webp",
+      "destination": "public/img/pages/mcje/mcdr-how-to-use-9.webp",
+      "bytes": 8068,
+      "sha256": "1ea2329aaf29af174b9523da2576684eba01a15834ae31676cbb5f25a411d0f6"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcje-enable-commandblock-1.png",
+      "destination": "public/img/pages/mcje/mcje-enable-commandblock-1.png",
+      "bytes": 21386,
+      "sha256": "aa85fa5af3344560438dff885f6146bace435eec9289bf84c1de27d7ba3471e5"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcje-keepinventory-1.png",
+      "destination": "public/img/pages/mcje/mcje-keepinventory-1.png",
+      "bytes": 48489,
+      "sha256": "99903ae15576778a874a07b53d8f7021c69e6671a81a8374bfa63ad1ec534fd3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcje-online-mode-1.png",
+      "destination": "public/img/pages/mcje/mcje-online-mode-1.png",
+      "bytes": 5278,
+      "sha256": "dd99c6bb74b3621c00dcd1d6ea855eb25e43078f67e14e0fcf96f9718cd2c7bc"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcje-op-1.png",
+      "destination": "public/img/pages/mcje/mcje-op-1.png",
+      "bytes": 48489,
+      "sha256": "99903ae15576778a874a07b53d8f7021c69e6671a81a8374bfa63ad1ec534fd3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcje-playerdata-1.png",
+      "destination": "public/img/pages/mcje/mcje-playerdata-1.png",
+      "bytes": 21773,
+      "sha256": "15f064d5d498cff2b2b04e83bafaa71589a1c66d6d4b16b11aaa26ab40e7bdc7"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcje-playerdata-2.png",
+      "destination": "public/img/pages/mcje/mcje-playerdata-2.png",
+      "bytes": 34200,
+      "sha256": "9141c4084af64c19bd4c6f56a5348faac621994194cb5e898d6484e4f1defca4"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcje-server_properties-1.png",
+      "destination": "public/img/pages/mcje/mcje-server_properties-1.png",
+      "bytes": 161583,
+      "sha256": "6bd00bc1414f2eb9bf73be70f56269721af5a1fbbfe9e6a98553f823f9e80013"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/mcje-setworldspawn-1.png",
+      "destination": "public/img/pages/mcje/mcje-setworldspawn-1.png",
+      "bytes": 48489,
+      "sha256": "99903ae15576778a874a07b53d8f7021c69e6671a81a8374bfa63ad1ec534fd3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/playerdata-1.png",
+      "destination": "public/img/pages/mcje/playerdata-1.png",
+      "bytes": 21773,
+      "sha256": "15f064d5d498cff2b2b04e83bafaa71589a1c66d6d4b16b11aaa26ab40e7bdc7"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/playerdata-2.png",
+      "destination": "public/img/pages/mcje/playerdata-2.png",
+      "bytes": 34200,
+      "sha256": "9141c4084af64c19bd4c6f56a5348faac621994194cb5e898d6484e4f1defca4"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/playerdata-3.png",
+      "destination": "public/img/pages/mcje/playerdata-3.png",
+      "bytes": 122746,
+      "sha256": "118b869d73925949d60f6180cc294a205773a92f9c0e5f5d853cb1cf1b539aa1"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/preinstall-geyser-qa-1.webp",
+      "destination": "public/img/pages/mcje/preinstall-geyser-qa-1.webp",
+      "bytes": 53528,
+      "sha256": "e4162f0ed47c51b559da2df7c3207843f610e4bd4efeb5befc5df7d358360860"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/preinstall-geyser-qa-2.png",
+      "destination": "public/img/pages/mcje/preinstall-geyser-qa-2.png",
+      "bytes": 515658,
+      "sha256": "992959752f8de91ea252efc30fbf955a16626a46ba56700dd7b22a8c88a2222f"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/preinstall-geyser-qa-3.png",
+      "destination": "public/img/pages/mcje/preinstall-geyser-qa-3.png",
+      "bytes": 85481,
+      "sha256": "7e2c743d1f5072eabbcf74545061909ba0d21f591a01485325535729d9d35c79"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/preinstall-geyser-qa-4.jpeg",
+      "destination": "public/img/pages/mcje/preinstall-geyser-qa-4.jpeg",
+      "bytes": 184024,
+      "sha256": "f4407e06a104a50495a37497980b2752334bf57059ab50d5a674058cdd01ee35"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/preinstall-geyser-qa-5.png",
+      "destination": "public/img/pages/mcje/preinstall-geyser-qa-5.png",
+      "bytes": 98749,
+      "sha256": "11a3712747010fdf615eb303c6ea5dec5b57ab4227d88fd873e6a31ed0b15f75"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/preinstall-geyser-qa-6.png",
+      "destination": "public/img/pages/mcje/preinstall-geyser-qa-6.png",
+      "bytes": 742866,
+      "sha256": "26619d10aaf80977664cf2feaa213ecfa08f860755ef8473967f370ec0dde6c4"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/preinstall-geyser-qa-7.png",
+      "destination": "public/img/pages/mcje/preinstall-geyser-qa-7.png",
+      "bytes": 244734,
+      "sha256": "56819968e7aaf7d516c88dcbd4a7b3b15d50e0232c05083599cb9e2781b7fa9c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/preinstall-geyser-qa-8.png",
+      "destination": "public/img/pages/mcje/preinstall-geyser-qa-8.png",
+      "bytes": 94873,
+      "sha256": "3eb42f624c6199086503ffe34d45089b8f8abb3f0ef168bb557ec01a5eb89f33"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/preinstall-geyser-qa-9.png",
+      "destination": "public/img/pages/mcje/preinstall-geyser-qa-9.png",
+      "bytes": 225710,
+      "sha256": "e958fbba8c4c5cf3451ae10928db336bf7fc0a98914fd4f557bb2e6ce4e67043"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/serverproperties-1.png",
+      "destination": "public/img/pages/mcje/serverproperties-1.png",
+      "bytes": 161583,
+      "sha256": "6bd00bc1414f2eb9bf73be70f56269721af5a1fbbfe9e6a98553f823f9e80013"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/setmotd-1.png",
+      "destination": "public/img/pages/mcje/setmotd-1.png",
+      "bytes": 110580,
+      "sha256": "9b775af3d9e32bd8192ea3977a8fd3fafc69f7ff8fa056f1a68b5e0bb1dff852"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/mcje/use-modpack-nature-1.jpeg",
+      "destination": "public/img/pages/mcje/use-modpack-nature-1.jpeg",
+      "bytes": 99187,
+      "sha256": "a9850db3b35327e60ebc9a4aa1edf7c12f5ec8fe72e0cc1ab94f2b2c7647bc30"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/04-etu-1.webp",
+      "destination": "public/img/pages/web/04-etu-1.webp",
+      "bytes": 49134,
+      "sha256": "199539c98e09e136bca12e66ec4c5ec103fe46f0d96744bd38e2e61fb6c87a61"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/04-etu-3.webp",
+      "destination": "public/img/pages/web/04-etu-3.webp",
+      "bytes": 44756,
+      "sha256": "3476513d157ca9a16e4e2e620ca34daa4831e9c320fd73638dac26497c952366"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/advanced-curl-1.png",
+      "destination": "public/img/pages/web/advanced-curl-1.png",
+      "bytes": 18199,
+      "sha256": "8709defd45e4c95317ca70576a2bd0647809baf1fe331aa08e1322704035a579"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/advanced-curl-2.png",
+      "destination": "public/img/pages/web/advanced-curl-2.png",
+      "bytes": 52072,
+      "sha256": "9db21c7bc0e3e81e46868ddd72ae42bf97ca50583ad47af890d4cf549f729025"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/advanced-curl-3.png",
+      "destination": "public/img/pages/web/advanced-curl-3.png",
+      "bytes": 16564,
+      "sha256": "c1a1073ec6c3b0b1b84dc58e0cf435ccfdf27b0802930ff5ecd4dd85974bfa8e"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/advanced-curl-4.png",
+      "destination": "public/img/pages/web/advanced-curl-4.png",
+      "bytes": 20028,
+      "sha256": "4a3639d8f248ede53f6c294120c0145dcb0c0ac2252ba7a897d3266db5ef40c6"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/advanced-curl-5.png",
+      "destination": "public/img/pages/web/advanced-curl-5.png",
+      "bytes": 75989,
+      "sha256": "db65b9e8bc85e8558c1d3e462218b0614acf8f21f5b68f7d9ab6ac11c9c88fb4"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/advanced-zip-1.png",
+      "destination": "public/img/pages/web/advanced-zip-1.png",
+      "bytes": 83351,
+      "sha256": "e0311df0e99359bdaddd0a548519f344bc842cd061e05e471d643f5e846854cd"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/advanced-zip-2.png",
+      "destination": "public/img/pages/web/advanced-zip-2.png",
+      "bytes": 81720,
+      "sha256": "aeb72d9b4571a5d106e16dcdcfff7b0193869b46f08a45496b7b9687806d693d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/advanced-zip-3.png",
+      "destination": "public/img/pages/web/advanced-zip-3.png",
+      "bytes": 6828,
+      "sha256": "a1c2cfd87967bb5498fdf0995f097a9701ee0f055395cd58fa18bf14edd234a7"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/advanced-zip-4.png",
+      "destination": "public/img/pages/web/advanced-zip-4.png",
+      "bytes": 27158,
+      "sha256": "5c6a42fa1b01be5eb0091d8054636d505bee16588fba3f33f6a7e64fa2a0cccb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/backup-1.png",
+      "destination": "public/img/pages/web/backup-1.png",
+      "bytes": 37729,
+      "sha256": "45ca5206478c288eff933f160ab1a293f08d9008fff79aed17cf912c8587b067"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/backup-2.png",
+      "destination": "public/img/pages/web/backup-2.png",
+      "bytes": 35819,
+      "sha256": "fbe476a08eafa4f2460601f240d4d9431a3a5fc6ddf2958578d899c75640b0cb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/backup-3.png",
+      "destination": "public/img/pages/web/backup-3.png",
+      "bytes": 38892,
+      "sha256": "b7606f6051df9f2a5d3f66812863ec11645a48fcd5be37d0167e3b00475acdca"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/backup-4.png",
+      "destination": "public/img/pages/web/backup-4.png",
+      "bytes": 63327,
+      "sha256": "c32cc094e42c732d4983eab2d1b9426420c8f88a0172c3d3b6042ba32dc2ac79"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/backup-5.png",
+      "destination": "public/img/pages/web/backup-5.png",
+      "bytes": 20564,
+      "sha256": "8aa1f61e7fd59871379d61c00bf896dd559a1581a07df1edcd01508c50e54e1a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/check-the-file-size-1.png",
+      "destination": "public/img/pages/web/check-the-file-size-1.png",
+      "bytes": 39426,
+      "sha256": "58e0cc2e64befb8d787610e760f2b1c42c32ac60dfa9bd222a583b096f459c76"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/check-the-file-size-2.png",
+      "destination": "public/img/pages/web/check-the-file-size-2.png",
+      "bytes": 5133,
+      "sha256": "0eb2e6a7d0c18cd7d6655be64c1f7be6053e82b9398f1a9c27d2966d0d2dd76a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/check-the-file-size-3.png",
+      "destination": "public/img/pages/web/check-the-file-size-3.png",
+      "bytes": 22650,
+      "sha256": "7573646841223946b11190e95dd621f958eccb688d70cfdf9fb1414ec0d87b60"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/check-the-file-size-4.png",
+      "destination": "public/img/pages/web/check-the-file-size-4.png",
+      "bytes": 34412,
+      "sha256": "8ae84385da0a4b51a3929c3a892155c4dbd3f8341a65c4823b9b7ca320a004f3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/check-the-file-size-5.png",
+      "destination": "public/img/pages/web/check-the-file-size-5.png",
+      "bytes": 23369,
+      "sha256": "9cafd479d41174b556e6de8fd191acc81e9b161f218060068ab1f72d51a08297"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/check-the-file-size-6.png",
+      "destination": "public/img/pages/web/check-the-file-size-6.png",
+      "bytes": 12444,
+      "sha256": "8bf7f41a1ab0a73e1dcd2e2ead0eafde72710113004d7733be7d5fc22bbc26c3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/console-1.png",
+      "destination": "public/img/pages/web/console-1.png",
+      "bytes": 118193,
+      "sha256": "3bb2c40ea60ecd0b429f0d0bd750ffd492a86649b7ac981694340525cee106ca"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/console-2.png",
+      "destination": "public/img/pages/web/console-2.png",
+      "bytes": 19342,
+      "sha256": "2110dfdce8f6d3e1f099eea02d86c475b5b64a7bbf83496bc03e306672e2ee18"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/console-3.png",
+      "destination": "public/img/pages/web/console-3.png",
+      "bytes": 27111,
+      "sha256": "c79f1ba052e7bd24004045313ec87fd404d46e05fa7e3f8022ea03b9690b04bd"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/console-4.png",
+      "destination": "public/img/pages/web/console-4.png",
+      "bytes": 69552,
+      "sha256": "2a0e5930dcb4352ef6cff871136b752e8f54cf54e57546885b9928438cfd86df"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/console-5.png",
+      "destination": "public/img/pages/web/console-5.png",
+      "bytes": 34445,
+      "sha256": "75a88465208cd49ddf20c19ed75ec86556279e42a480ec6a53a828ba547df776"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/console-6.png",
+      "destination": "public/img/pages/web/console-6.png",
+      "bytes": 89431,
+      "sha256": "7e72851713940a14255ad47986bd7ff01f7dd11fa69375e64c2857ea3686a02d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/console-7.png",
+      "destination": "public/img/pages/web/console-7.png",
+      "bytes": 51741,
+      "sha256": "54b2a88c2b319db991c71f7ae6e8489d432e16ad364e116d2edf36f4c7a12ebb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/create-1.png",
+      "destination": "public/img/pages/web/create-1.png",
+      "bytes": 46773,
+      "sha256": "3d38f4267d20891d7e3ce8790dbc0990f6f3ec78f6dbb8b0c94e4899e3280fe7"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/create-2-1.avif",
+      "destination": "public/img/pages/web/create-2-1.avif",
+      "bytes": 12268,
+      "sha256": "526f9ae7e5d1187db1c891d560e072eff98d00316ec480c6e610af9b987dc590"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/create-2.png",
+      "destination": "public/img/pages/web/create-2.png",
+      "bytes": 24132,
+      "sha256": "2e4689405419fed7d6a6bd359a0a8fdfee9e4d36a01d5bd91d03e287e51b7d7e"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/create-3.png",
+      "destination": "public/img/pages/web/create-3.png",
+      "bytes": 36750,
+      "sha256": "505c679cf69378522db5b6e96b80754168229d894797a0317c9159b90fbd4d59"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/create-4.png",
+      "destination": "public/img/pages/web/create-4.png",
+      "bytes": 54620,
+      "sha256": "d7054292ec8540739587cc4272cf63b0612f805e140aba74c4f3a269f467ee0d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/create-5.png",
+      "destination": "public/img/pages/web/create-5.png",
+      "bytes": 19947,
+      "sha256": "3251ad268aa338f42a3883027a6febea6f02fe74083001dd76280036d62653a8"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/create-6.png",
+      "destination": "public/img/pages/web/create-6.png",
+      "bytes": 36013,
+      "sha256": "6d2303eb40ea4bbfd02edda78801e06480093958cf115b7881e60bf84d723b87"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/create-7.png",
+      "destination": "public/img/pages/web/create-7.png",
+      "bytes": 36038,
+      "sha256": "d884f658d2e45232ec7dc94bc041686f8b88313fa1d4d5c3d083850073f9a2d6"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/custom-aio_v1-user-1.png",
+      "destination": "public/img/pages/web/custom-aio_v1-user-1.png",
+      "bytes": 10579,
+      "sha256": "80ebf3739d01ff3568735a5fbc1c65270397780a2b43bfd5b1bf1e06fe6685dc"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/custom-aio_v1-user-2.png",
+      "destination": "public/img/pages/web/custom-aio_v1-user-2.png",
+      "bytes": 17012,
+      "sha256": "76d7d6ca00676a630c5563b8f76d993a535383211d6a51f5da78fac3c88ced09"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/custom-aio_v1-user-3.png",
+      "destination": "public/img/pages/web/custom-aio_v1-user-3.png",
+      "bytes": 16602,
+      "sha256": "57d92844f3d72b06fda635928d2154bd7dd1fe70dc446ce83413a5b82bd6a862"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/custom-java-default_shell-1.png",
+      "destination": "public/img/pages/web/custom-java-default_shell-1.png",
+      "bytes": 7625,
+      "sha256": "fc89e1a616225f7f8240a54db76d32b1caf2cf60af402f9eca38722e68d147ae"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/custom-java-default_shell-2.png",
+      "destination": "public/img/pages/web/custom-java-default_shell-2.png",
+      "bytes": 5462,
+      "sha256": "d888e02b2c826b6606e7316168db76808379ff547ff6bc1a0d8201f53954dee2"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/custom-java-default_shell-3.png",
+      "destination": "public/img/pages/web/custom-java-default_shell-3.png",
+      "bytes": 17012,
+      "sha256": "76d7d6ca00676a630c5563b8f76d993a535383211d6a51f5da78fac3c88ced09"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/custom-java-default_shell-4.png",
+      "destination": "public/img/pages/web/custom-java-default_shell-4.png",
+      "bytes": 9503,
+      "sha256": "52103d8f617e20a9d0da41aa14d7e3664772752c456b2dbac7aac26cb3138a99"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/custom-java-default_shell-5.png",
+      "destination": "public/img/pages/web/custom-java-default_shell-5.png",
+      "bytes": 3474,
+      "sha256": "550a06d910f536a08405e407a72acfc6bc9b3b63ed723590b30ce8414e79ecbb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/custom-java-default_shell-6.png",
+      "destination": "public/img/pages/web/custom-java-default_shell-6.png",
+      "bytes": 16602,
+      "sha256": "57d92844f3d72b06fda635928d2154bd7dd1fe70dc446ce83413a5b82bd6a862"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/custom-java-env-1.png",
+      "destination": "public/img/pages/web/custom-java-env-1.png",
+      "bytes": 39426,
+      "sha256": "58e0cc2e64befb8d787610e760f2b1c42c32ac60dfa9bd222a583b096f459c76"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/customer-aio_v1-how_to_use-1.png",
+      "destination": "public/img/pages/web/customer-aio_v1-how_to_use-1.png",
+      "bytes": 174777,
+      "sha256": "b597d605a784426426c4000bafbc2d0494b8bacdde3d31ec81f791b37507f85c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/customer-aio_v1-how_to_use-2.png",
+      "destination": "public/img/pages/web/customer-aio_v1-how_to_use-2.png",
+      "bytes": 120326,
+      "sha256": "d15b8502261bd0f6c42c7f68b81e9e6c97198ff3c076110a05a8ee72359265fb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/customer-aio_v1-how_to_use-3.png",
+      "destination": "public/img/pages/web/customer-aio_v1-how_to_use-3.png",
+      "bytes": 138660,
+      "sha256": "7b9e4bd97ab0eeef33736a330c86d9c7a98ee29a73f380ca09894606b58426fd"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/customer-aio_v1-how_to_use-4.png",
+      "destination": "public/img/pages/web/customer-aio_v1-how_to_use-4.png",
+      "bytes": 148105,
+      "sha256": "c21ee27ec0b8e5e191a4883a90377acdd274ed3e9171d054e5cb68925f50837a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/customer-aio_v1-path_list-1.png",
+      "destination": "public/img/pages/web/customer-aio_v1-path_list-1.png",
+      "bytes": 44809,
+      "sha256": "7effe9059492d7b0a86ac8abf726fb178a5820e39defdfa82bfc70eb665998cb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/fileoperations-1.png",
+      "destination": "public/img/pages/web/fileoperations-1.png",
+      "bytes": 85693,
+      "sha256": "78281a50137cda3a69a932253984fb8dc1a7b982f22e26cd87a92dbf5fac8df1"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/fileoperations-2.png",
+      "destination": "public/img/pages/web/fileoperations-2.png",
+      "bytes": 29967,
+      "sha256": "585dfb280fb0bcab2f1f6a33890282cb4e334eab6725d84da7dd13caa8a5a715"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/fileoperations-3.png",
+      "destination": "public/img/pages/web/fileoperations-3.png",
+      "bytes": 24253,
+      "sha256": "d05a06c10fad87ce197194ff5aa14ed32a6655afc25124a08abb617b79dbce64"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/fileoperations-4.png",
+      "destination": "public/img/pages/web/fileoperations-4.png",
+      "bytes": 79849,
+      "sha256": "3ef2bb9f1164631eb6ba7d759c7e35af033db85683e327147d82d991b74fe8b3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/fileoperations-5.png",
+      "destination": "public/img/pages/web/fileoperations-5.png",
+      "bytes": 11177,
+      "sha256": "cd559493d73ce8c1ccd61331c2d0a47b26b82919b3d8f401e6795104994b22c0"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/fileoperations-6.png",
+      "destination": "public/img/pages/web/fileoperations-6.png",
+      "bytes": 102850,
+      "sha256": "7c0a071f51735bd07c3d05ed9187e1c37a64d654ad13fd044db303cc8afa36a3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/fileoperations-7.png",
+      "destination": "public/img/pages/web/fileoperations-7.png",
+      "bytes": 55570,
+      "sha256": "b97bbfe72f003cc2b9a0df9f301202ffde2eda091ac89ae02200f964ef41acbf"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/fileoperations-8.png",
+      "destination": "public/img/pages/web/fileoperations-8.png",
+      "bytes": 87615,
+      "sha256": "572ac4196c4eafb5fe62b476d3f1dac1aa356cd6f24f61097194e8a79e34e322"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/gethelp-1.png",
+      "destination": "public/img/pages/web/gethelp-1.png",
+      "bytes": 861771,
+      "sha256": "3880e6ea7e29f7d283095a112224d9fc480b974d1deddda13118491e678482b1"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/gethelp-2.png",
+      "destination": "public/img/pages/web/gethelp-2.png",
+      "bytes": 212531,
+      "sha256": "c116de7b3ef54444d3e4b6a937fe582b59d9b671998795d0b969875dac1756c7"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/gethelp-3.jpeg",
+      "destination": "public/img/pages/web/gethelp-3.jpeg",
+      "bytes": 46126,
+      "sha256": "25527886fbab809e005a6ff592f756ce8e53a6a11045ce60004f0157ecf33807"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/how-to-reduce-traffic-1.png",
+      "destination": "public/img/pages/web/how-to-reduce-traffic-1.png",
+      "bytes": 14975,
+      "sha256": "b2cdbdda6c4012859879b620b717e1d3dda1cb578c344c05745cd31bdd29b46e"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/how-to-reduce-traffic-2.png",
+      "destination": "public/img/pages/web/how-to-reduce-traffic-2.png",
+      "bytes": 2537,
+      "sha256": "49b3c6c0099047a273e8edd697bee9e4858ce0ab79f2edb2b81ed3d55839ceaf"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/how-to-reduce-traffic-3.png",
+      "destination": "public/img/pages/web/how-to-reduce-traffic-3.png",
+      "bytes": 55661,
+      "sha256": "65e5e671c01233cb07e7bec0d0103cad69b2f81062a6308f84f295bb57e8996d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/how-to-reduce-traffic-4.png",
+      "destination": "public/img/pages/web/how-to-reduce-traffic-4.png",
+      "bytes": 1048,
+      "sha256": "5d1dd4300ad6429b1f4290ebb9eb1840cf6f32564465ec2379142a0bf8ef7c3d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/how-to-reduce-traffic-5.png",
+      "destination": "public/img/pages/web/how-to-reduce-traffic-5.png",
+      "bytes": 1738701,
+      "sha256": "d43f62188a824c7badeb1d92190af109dd7f93abf2ae11f9408f2704ceaaa146"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/how-to-reduce-traffic-6.png",
+      "destination": "public/img/pages/web/how-to-reduce-traffic-6.png",
+      "bytes": 952548,
+      "sha256": "35596bbdbd950a80e318e03e06c062573d968808259363bcd7b4f62f4035fb9f"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/how-to-reduce-traffic-7.png",
+      "destination": "public/img/pages/web/how-to-reduce-traffic-7.png",
+      "bytes": 2050,
+      "sha256": "5f3aa001a74bd39b2b6c83f845d97ce305fad6ed6c7075a7b215de50af90ee57"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/howtoask-1.jpeg",
+      "destination": "public/img/pages/web/howtoask-1.jpeg",
+      "bytes": 46126,
+      "sha256": "25527886fbab809e005a6ff592f756ce8e53a6a11045ce60004f0157ecf33807"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/howtoask-2.png",
+      "destination": "public/img/pages/web/howtoask-2.png",
+      "bytes": 861771,
+      "sha256": "3880e6ea7e29f7d283095a112224d9fc480b974d1deddda13118491e678482b1"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/howtoask-3.png",
+      "destination": "public/img/pages/web/howtoask-3.png",
+      "bytes": 212531,
+      "sha256": "c116de7b3ef54444d3e4b6a937fe582b59d9b671998795d0b969875dac1756c7"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/joinqqgroup-1.png",
+      "destination": "public/img/pages/web/joinqqgroup-1.png",
+      "bytes": 106078,
+      "sha256": "52493762105eb644300ccff5dbfc090551dcf70d01fe5c6c6217aaa7c7fabd3a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/manage-1.png",
+      "destination": "public/img/pages/web/manage-1.png",
+      "bytes": 16557,
+      "sha256": "15e688aad7cf53e7ab82beca9fd024d775443d0ad4a49ee9db2f686dba16cbee"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/manage-2.png",
+      "destination": "public/img/pages/web/manage-2.png",
+      "bytes": 6941,
+      "sha256": "8391c01c2f3b83ed7905ae3d7efdd2e6a9fef867396cd0dbff9e414ed0eccdbf"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/manage-3.png",
+      "destination": "public/img/pages/web/manage-3.png",
+      "bytes": 101270,
+      "sha256": "0b5c335a5e30840f11a79c0fa5ab67a61f30dfd53fbdc583ef1487ceb22858ef"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/manage-4.png",
+      "destination": "public/img/pages/web/manage-4.png",
+      "bytes": 7906,
+      "sha256": "d6d1ef1eb2421c458aee75735d3a3288dd4bf74adbd49e6ff8071709db357bf3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/manage-5.png",
+      "destination": "public/img/pages/web/manage-5.png",
+      "bytes": 5578,
+      "sha256": "7477d8e083115bfe9c9e58bfda8f2484ea27de664bc93969f4c1474720ef5549"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/manage-6.png",
+      "destination": "public/img/pages/web/manage-6.png",
+      "bytes": 22848,
+      "sha256": "21e87cafb8fe2c3b63440c895737f0bd36403bae8e1b5bd65d5c4f293e37f723"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/manage-7.png",
+      "destination": "public/img/pages/web/manage-7.png",
+      "bytes": 1887,
+      "sha256": "b446fb8bd6df820c066b961cb5b655d1bb5a37462114a8a4a4e93c3e761dc634"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mcdr-how-to-use-1.png",
+      "destination": "public/img/pages/web/mcdr-how-to-use-1.png",
+      "bytes": 7294,
+      "sha256": "288b12f1a8be134107c25c355e1199d6483e624176fa5c5d553c5c2708c5901d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mcdr-how-to-use-10.webp",
+      "destination": "public/img/pages/web/mcdr-how-to-use-10.webp",
+      "bytes": 10186,
+      "sha256": "0f552e357c43867c6f1caa0189d215c2a7cb0d8098d10dd28cf57c476ef59688"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mcdr-how-to-use-11.webp",
+      "destination": "public/img/pages/web/mcdr-how-to-use-11.webp",
+      "bytes": 40452,
+      "sha256": "170b306b8ab1f8a803f225566190f481ee15bd5041e20d8a757ab62afa4fb36c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mcdr-how-to-use-12.webp",
+      "destination": "public/img/pages/web/mcdr-how-to-use-12.webp",
+      "bytes": 11702,
+      "sha256": "e3ebecd50c11fb962e58f004aff7aab8b746930602b1c773274ee5bbc1de504a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mcdr-how-to-use-13.webp",
+      "destination": "public/img/pages/web/mcdr-how-to-use-13.webp",
+      "bytes": 8818,
+      "sha256": "8c35024001735ccc90c4f245c9dfffa4ef063fa29a7ff4427e960c7e8e134fa6"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mcdr-how-to-use-14.webp",
+      "destination": "public/img/pages/web/mcdr-how-to-use-14.webp",
+      "bytes": 7862,
+      "sha256": "96aab6d35b85e37f36e3b8285731beb49029e358ad8c688ef78e352962c8fd13"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mcdr-how-to-use-2.png",
+      "destination": "public/img/pages/web/mcdr-how-to-use-2.png",
+      "bytes": 8416,
+      "sha256": "d1eb1ba4181529ddb00f47201dfa5959dff42bd77417cbe29e6f984bf6008e86"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mcdr-how-to-use-3.png",
+      "destination": "public/img/pages/web/mcdr-how-to-use-3.png",
+      "bytes": 13272,
+      "sha256": "80e8c6150bfcb21fec19ca74f6dfca8dd5012256e83dad85797f84f6ac0e9998"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mcdr-how-to-use-4.png",
+      "destination": "public/img/pages/web/mcdr-how-to-use-4.png",
+      "bytes": 31184,
+      "sha256": "e489550acabd9279488937655f9f58c175c28b2099294b983663e998f9d66bbd"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mcdr-how-to-use-5.webp",
+      "destination": "public/img/pages/web/mcdr-how-to-use-5.webp",
+      "bytes": 6334,
+      "sha256": "d2a03d12590edb9be3e08faafea6abdb73290598b74583f98ca1d83f826ae6f8"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mcdr-how-to-use-6.webp",
+      "destination": "public/img/pages/web/mcdr-how-to-use-6.webp",
+      "bytes": 8068,
+      "sha256": "1ea2329aaf29af174b9523da2576684eba01a15834ae31676cbb5f25a411d0f6"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mcdr-how-to-use-7.webp",
+      "destination": "public/img/pages/web/mcdr-how-to-use-7.webp",
+      "bytes": 8784,
+      "sha256": "26ea6494e4e1929a3a234747304bc7c38fd6643a438bc4f7101cef96bf315ed7"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mcdr-how-to-use-8.webp",
+      "destination": "public/img/pages/web/mcdr-how-to-use-8.webp",
+      "bytes": 10186,
+      "sha256": "0f552e357c43867c6f1caa0189d215c2a7cb0d8098d10dd28cf57c476ef59688"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mcdr-how-to-use-9.webp",
+      "destination": "public/img/pages/web/mcdr-how-to-use-9.webp",
+      "bytes": 8794,
+      "sha256": "e6180c1b98c7acc3158f0ee0eaf2333887d8d0f7d9a4e9f3961bab855f3e019c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mechanism-1.png",
+      "destination": "public/img/pages/web/mechanism-1.png",
+      "bytes": 82654,
+      "sha256": "535c036bf94b173912a4c8fecfa0b18063c916862d4712915eef10192498c0b9"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mini-apps-1.png",
+      "destination": "public/img/pages/web/mini-apps-1.png",
+      "bytes": 9592,
+      "sha256": "167a4c03d046501462ea023749ecc18740c1e71f798ce79f61de9e60d4e6def4"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mini-apps-2.png",
+      "destination": "public/img/pages/web/mini-apps-2.png",
+      "bytes": 53002,
+      "sha256": "2ee58bede2cfecf6764020e2d717c08f4a2110a26a4c979936b7c7cfb1512924"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mini-apps-3.png",
+      "destination": "public/img/pages/web/mini-apps-3.png",
+      "bytes": 27733,
+      "sha256": "f1ac275197b744429ee405260f88224745e99941491d5085787f484c3b658bd9"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/mini-apps-4.png",
+      "destination": "public/img/pages/web/mini-apps-4.png",
+      "bytes": 63318,
+      "sha256": "52c3d63421f211e1ae2842ac8791498538c5ff59707a7d550b9e54297b098dee"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/recommend-1.png",
+      "destination": "public/img/pages/web/recommend-1.png",
+      "bytes": 177027,
+      "sha256": "631ccd777d0e9e57fd8b142e754ef89bbea0d54ca37e20eb1c36c8cb09b2fc32"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/register-1.png",
+      "destination": "public/img/pages/web/register-1.png",
+      "bytes": 114113,
+      "sha256": "49d95a3d4d1d35036a8d48277836ca6e3992fdbaea1ccf2f78e35eae7a8d1d4a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/register-2.png",
+      "destination": "public/img/pages/web/register-2.png",
+      "bytes": 28519,
+      "sha256": "c8a3362692f5cec75e6a036b3f340536b5df0cec3c99a117501889b594a6bfbf"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/register-3.png",
+      "destination": "public/img/pages/web/register-3.png",
+      "bytes": 28634,
+      "sha256": "084bf535e0b5843c6a7cee2b263b305cc8629055e2a1acd91556aab6c22a21dc"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/reinstall-1.png",
+      "destination": "public/img/pages/web/reinstall-1.png",
+      "bytes": 33951,
+      "sha256": "bfe6ca0a1ca3d319b0b786937cc29bdc1d4021a023e0e962366d83554c8a1082"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/reinstall-2.png",
+      "destination": "public/img/pages/web/reinstall-2.png",
+      "bytes": 34900,
+      "sha256": "b82112459ad6419dad49bfa238ac8988d27cb14564259c13be8559dae44889ee"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/reinstall-3.png",
+      "destination": "public/img/pages/web/reinstall-3.png",
+      "bytes": 84531,
+      "sha256": "7219052bc42646bc7142257630b9903a0710c24bc0d3c74d7db397d77945286c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-1.png",
+      "destination": "public/img/pages/web/sftp-1.png",
+      "bytes": 126014,
+      "sha256": "f85ee86198ea09acc4f86a76c631cd8dde404e91b7ef83b5f059451a3160054a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-10.png",
+      "destination": "public/img/pages/web/sftp-10.png",
+      "bytes": 32927,
+      "sha256": "d96c152632a25a5613e3c02c5fb92eb5f865c2d88bd9e6361fe73124c7a97037"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-11.png",
+      "destination": "public/img/pages/web/sftp-11.png",
+      "bytes": 292588,
+      "sha256": "355a9f6898a015bbe191ddd7475c2cf9f41d6e3ef93c40c12beed6221325c991"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-12.jpeg",
+      "destination": "public/img/pages/web/sftp-12.jpeg",
+      "bytes": 85754,
+      "sha256": "aebb2260f495fa479d2cea8f06b8f6b69eacbfa5d41f1cb846016f25042683a6"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-13.jpeg",
+      "destination": "public/img/pages/web/sftp-13.jpeg",
+      "bytes": 131416,
+      "sha256": "bca8a82ccef0bcfb989cda1ad9ebb13c8e2da61a29f702d4c038cedc080d0663"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-14.jpeg",
+      "destination": "public/img/pages/web/sftp-14.jpeg",
+      "bytes": 85689,
+      "sha256": "9c1093a8fcd84ef26c724040557da24daa6437a443c1be9ab1539174e88a9633"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-15.png",
+      "destination": "public/img/pages/web/sftp-15.png",
+      "bytes": 55210,
+      "sha256": "75e860ce99e447050f1fcf9b20360c401cc6ee5baf25a3a8e9d0f9e2a189bcc6"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-16.png",
+      "destination": "public/img/pages/web/sftp-16.png",
+      "bytes": 27051,
+      "sha256": "c58e1a1cc134ab6bd11d4c4a855a332ea7cbdd95804ff7ac71b0e8007df1ba8f"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-17.jpeg",
+      "destination": "public/img/pages/web/sftp-17.jpeg",
+      "bytes": 69527,
+      "sha256": "f948fc0aedad229a8ba3c24f18dfeec986c402d8e56345b6e95bb161c9de502a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-18.jpeg",
+      "destination": "public/img/pages/web/sftp-18.jpeg",
+      "bytes": 210840,
+      "sha256": "18a27ad8a26153e1f70caf9d2d556b6449e4ebc3373c8b19a760900407ed4504"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-19.jpeg",
+      "destination": "public/img/pages/web/sftp-19.jpeg",
+      "bytes": 67751,
+      "sha256": "1dcb0aa6c10989c1c133de322f3d0076d9bee17ecce4148e7ad8aac5209c1c76"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-2.png",
+      "destination": "public/img/pages/web/sftp-2.png",
+      "bytes": 36204,
+      "sha256": "23cef4907dd20eeff56c99b91d25f19f4badfc2d1e4bb47cfd0c18b16a545dd7"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-20.png",
+      "destination": "public/img/pages/web/sftp-20.png",
+      "bytes": 132541,
+      "sha256": "0852f811efbd6396e452543a50da7c1a456e650ab0cdc26610462492c62f47a0"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-21.png",
+      "destination": "public/img/pages/web/sftp-21.png",
+      "bytes": 45306,
+      "sha256": "f02084808baba7465b0d8719e1f20d60c42d47cd728d7ddf68379c59032416e5"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-22.png",
+      "destination": "public/img/pages/web/sftp-22.png",
+      "bytes": 48786,
+      "sha256": "77ec0c80f588b0632fa636959fdaa84ab2e2c89743dc972f9e688bc416e2f995"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-23.png",
+      "destination": "public/img/pages/web/sftp-23.png",
+      "bytes": 64783,
+      "sha256": "f15c6e588172783ee48c1986a4befdf38b7cbf066d4b0a232a67f6bc3ae6a89c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-3.png",
+      "destination": "public/img/pages/web/sftp-3.png",
+      "bytes": 36632,
+      "sha256": "538616de38b5e8d8db637876196fb78ac175c509110ccde0f9b3f6432898e890"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-4.png",
+      "destination": "public/img/pages/web/sftp-4.png",
+      "bytes": 19779,
+      "sha256": "bc92bfc63699db61fd7c1c6a5ec71fca8f01a925b2b2290de1fb9277a72a3079"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-5.png",
+      "destination": "public/img/pages/web/sftp-5.png",
+      "bytes": 20418,
+      "sha256": "1577636babf597a6c9fc0dc3cf5689e0c641ef9e551ed9fb219c5000fe424887"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-6.png",
+      "destination": "public/img/pages/web/sftp-6.png",
+      "bytes": 105362,
+      "sha256": "5c26fd152030ae05e99dec787bdcfbc9bd5b12726cea98bbc2bba71ce050bf56"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-7.png",
+      "destination": "public/img/pages/web/sftp-7.png",
+      "bytes": 40165,
+      "sha256": "a4e9f8e9c673bb5e287bd11387e81504176fbd54b5ddbb956ac33f029adae7d2"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-8.png",
+      "destination": "public/img/pages/web/sftp-8.png",
+      "bytes": 6462,
+      "sha256": "30d64d2bd7ceaea1fabde865d3f431f1dbd9430d4d7e9b81cda1c6d0bf06d584"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/sftp-9.png",
+      "destination": "public/img/pages/web/sftp-9.png",
+      "bytes": 34521,
+      "sha256": "f62d10456bd895928871f701ddd8db8b3d47bb63699bda369667c53419039364"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/shell-2.png",
+      "destination": "public/img/pages/web/shell-2.png",
+      "bytes": 33288,
+      "sha256": "6cec7f13c43a1674aa3e73200db58094f3a86492dcaa97932e48127364e2ce3f"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/shell-4.png",
+      "destination": "public/img/pages/web/shell-4.png",
+      "bytes": 59402,
+      "sha256": "9f704ebc2d1159995b397a340cf03d0202ceb9a3e4144655a284fce93f64ea1d"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/shell-6.png",
+      "destination": "public/img/pages/web/shell-6.png",
+      "bytes": 75152,
+      "sha256": "8a68c110cb26b30c302fd1dcd23b296ba2f9e9122ac7d976a68791c99aeee64c"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/shell-7.png",
+      "destination": "public/img/pages/web/shell-7.png",
+      "bytes": 87267,
+      "sha256": "1f500e5b8a155af3e0eed748dbaac4f8f0596e91909587e273e1ef23e834bd8a"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/statistics-1.png",
+      "destination": "public/img/pages/web/statistics-1.png",
+      "bytes": 81192,
+      "sha256": "2bdb979f983a427756f4a9636d51c8946862089ac436393f270680190bfcd68e"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/supported_browsers-1.png",
+      "destination": "public/img/pages/web/supported_browsers-1.png",
+      "bytes": 155438,
+      "sha256": "c669da279362b8cd9582f6d7974e66f80df694517e5e028e50bf9671e2f9a2b0"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/supported_browsers-2.png",
+      "destination": "public/img/pages/web/supported_browsers-2.png",
+      "bytes": 583005,
+      "sha256": "3a63785cd9712f55c23ee6e0689f862133e7ae1aa89b7993b7b7c4390434f3c3"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/supported_browsers-3.png",
+      "destination": "public/img/pages/web/supported_browsers-3.png",
+      "bytes": 163314,
+      "sha256": "6efe7c0ad97186bb009eeb6374141dcdf32c792507e626021a1e30930c2dd638"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/supported_browsers-4.png",
+      "destination": "public/img/pages/web/supported_browsers-4.png",
+      "bytes": 34721,
+      "sha256": "2f027a64a914aabd2fbb6742d732a288f920a367435548d65e608016785892e0"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/tasks-1.png",
+      "destination": "public/img/pages/web/tasks-1.png",
+      "bytes": 30499,
+      "sha256": "b83f050c2025a372c1110bde17eeaec14fc78ff672458bdc652a0aaf61d8bebb"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/pages/web/tasks-2.png",
+      "destination": "public/img/pages/web/tasks-2.png",
+      "bytes": 48808,
+      "sha256": "c5527fd0f0874da84b416bc25f31edf6dc24b93a2ecd597275ecfe6bd7dab525"
+    },
+    {
+      "kind": "asset",
+      "source": "static/img/simpfun.png",
+      "destination": "public/img/simpfun.png",
+      "bytes": 24569,
+      "sha256": "07331d73f2a4b91af84a34f864f3c09d733ae05dfb63321df9ed6ac43d0a3b94"
+    }
+  ]
+}

@@ -1,12 +1,17 @@
 # Dependencies
 /node_modules
 
-# Production
-/build
-
-# Generated files
+# Generated content
+.source
 .docusaurus
 .cache-loader
+
+# Test and build
+/coverage
+/.next/
+/out/
+/build
+*.tsbuildinfo
 
 # Misc
 .DS_Store
@@ -17,12 +22,16 @@ desktop.ini
 .env.production.local
 
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 /.vscode
+.vercel
+next-env.d.ts
 
 # AI coding agent
 .codex
 .claude
 .opencode
 .mimocode
+.zcode

@@ -1,0 +1,54 @@
+import type { ReactNode } from 'react';
+import type { LoaderPlugin } from 'fumadocs-core/source';
+import Image from 'next/image';
+
+/**
+ * Render `icon` strings in meta files (e.g. `/img/logo.webp`) as `<img>` elements.
+ *
+ * Icon containers in the sidebar only size SVG descendants (`[&_svg]:size-4`),
+ * so the image must carry its own fixed size to match text height. Tab boxes
+ * restore full-size rendering via the `tabs.transform` wrapper in docs layout.
+ *
+ * `fetchPriority="low"` opts out of React's automatic image preload. Tab icons
+ * for inactive sections are part of the tab-switcher props but are only mounted
+ * once the switcher is opened, so an eager preload would fetch an image the
+ * initial page never paints (Chrome: "preloaded but not used within a few
+ * seconds"). `fetchPriority="low"` is preferred over `loading="lazy"` here:
+ * lazy images make Edge log an "[Intervention] Images loaded lazily and
+ * replaced with placeholders" console message, while low fetch priority loads
+ * the (tiny) icon immediately without any preload hint.
+ */
+export function imgIcons(): LoaderPlugin {
+  const replace = (icon: ReactNode): ReactNode =>
+    typeof icon === 'string' ? (
+      <Image
+        src={icon}
+        alt=""
+        width={16}
+        height={16}
+        fetchPriority="low"
+        decoding="async"
+        className="size-4 shrink-0 object-contain"
+      />
+    ) : (
+      icon
+    );
+
+  return {
+    name: 'simpfun:img-icons',
+    transformPageTree: {
+      file: (node) => {
+        node.icon = replace(node.icon);
+        return node;
+      },
+      folder: (node) => {
+        node.icon = replace(node.icon);
+        return node;
+      },
+      separator: (node) => {
+        node.icon = replace(node.icon);
+        return node;
+      },
+    },
+  };
+}

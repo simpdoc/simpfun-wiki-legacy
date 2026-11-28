@@ -1,0 +1,10 @@
+{
+  "title": "简幻欢功能详解",
+  "pages": [
+    "01-console",
+    "10-instance",
+    "20-mini_apps",
+    "30-default_start"
+  ],
+  "defaultOpen": true
+}
