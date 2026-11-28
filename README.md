@@ -8,11 +8,13 @@
 
 ## 注意
 
-旧页面 Wiki 已停止支持，除部分必要维护外，将不再接受：
+本 Wiki 已停止支持，官网使用指南将不再维护，但其板块均维护。
+
+除此之外，本仓库不再接受：
 - issue
 - PR
 
-如需反馈问题、提出建议或提交新内容，请前往[新版 Wiki 仓库](https://github.com/simpdoc/simpfun-wiki)和[新版站点](https://next.simpdoc.top/)。旧站内容仅作历史参考和必要维护，不保证旧 Issue、PR 或讨论入口仍会处理。
+如需反馈问题、提出建议或提交新内容，请前往[新版 Wiki 仓库](https://github.com/simpdoc/simpfun-wiki)和[新版站点](https://next.simpdoc.top/)。
 
 ## 相关链接
 

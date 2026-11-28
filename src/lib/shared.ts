@@ -1,6 +1,6 @@
 import { createGetUrl } from 'fumadocs-core/source';
 
-export const appName = '简幻欢社区维基 Legacy';
+export const appName = '简幻欢社区维基';
 export const siteUrl = new URL('https://legacy.simpdoc.top/');
 export const docsRoute = '/docs';
 export const docsImageRoute = '/og/docs';

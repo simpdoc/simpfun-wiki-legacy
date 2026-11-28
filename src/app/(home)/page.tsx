@@ -16,7 +16,7 @@ const highlights = [
   {
     icon: BookOpen,
     title: '社区维基',
-    description: '源码在 GitHub 开源，欢迎加入我们的编写。',
+    description: '源码在 GitHub 开源。',
   },
   {
     icon: HeartHandshake,
@@ -75,7 +75,7 @@ export default function HomePage() {
             </p>
             <h1 className="mt-4 text-3xl font-bold tracking-tight md:text-5xl">简幻欢社区维基</h1>
             <p className="mt-4 max-w-2xl text-balance text-fd-muted-foreground md:text-lg">
-              旧页面文档归档。内容保留原文件名、原始 Markdown 与历史入口，便于继续查阅和引用。
+              适用于现官网的维基，如需查看新页面使用教程请前往 next.simpdoc.top 。
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
@@ -124,7 +124,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-5xl px-4 pb-16">
+      {/* <section className="mx-auto w-full max-w-5xl px-4 pb-16">
         <div className="grid gap-3 md:grid-cols-3">
           {docEntries.map((doc) => {
             const count = pages.filter((page) => page.slugs[0] === doc.slug).length;
@@ -148,7 +148,7 @@ export default function HomePage() {
             );
           })}
         </div>
-      </section>
+      </section> */}
 
       <footer className="mt-auto border-t bg-fd-card/40">
         <div className="mx-auto grid w-full max-w-5xl gap-8 px-4 py-10 sm:grid-cols-3">
